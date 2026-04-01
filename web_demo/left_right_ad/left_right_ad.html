@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="js/jquery.min.js"></script>
+<!--↓单纯用来初始化css 个人网址中不需要复制这个样式表-->
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.double_ad_right_box,.double_ad_left_box {
+	position: fixed;
+	display:none;
+	z-index:99999;
+}
+.double_ad_close {
+	background-repeat: no-repeat;
+	height: 14px;
+	width: 14px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+@font-face {font-family: 'iconfont_double_ad';
+    src: url('font/iconfont.eot'); /* IE9*/
+    src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.double_ad_close{
+    font-family:"iconfont_double_ad" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body style="height:2000px">
+  <div class="double_ad_left_box">
+    <div class="double_ad_close">&#xe7bf;</div>
+    <a href="http://www.wikimoe.com/" target="_blank"><img src="images/7.jpg" width="210" height="300" border="0" /> </a>
+  </div>
+  
+  <div  class="double_ad_right_box">
+    <div class="double_ad_close">&#xe7bf;</div>
+    <a href="http://www.wikimoe.com/" target="_blank"><img src="images/8.jpg" width="210" height="300" border="0" /> </a>
+  </div>
+<script>
+$(document).ready(function(){
+	double_ad_left_right = 100 /*设置距离浏览器窗口左右边框的距离*/
+	double_ad_top = 100 /*设置距离浏览器窗口上边框的距离*/
+	double_ad_animate = 1000 /*设置关闭动画的时间长度*/
+	double_ad_close_color = '#333' /*设置关闭按钮颜色*/
+	double_ad_close_over_color = '#fff' /*设置关闭按钮经过时的颜色*/
+	double_ad_close_opacity = 0.8  /*设置关闭按钮不透明度*/
+	
+	 $(".double_ad_left_box").css('left',double_ad_left_right).css('top',double_ad_top + 'px');
+	 $(".double_ad_right_box").css('right',double_ad_left_right).css('top',double_ad_top + 'px');
+	 $(".double_ad_close").css('color',double_ad_close_color).css('opacity',double_ad_close_opacity);
+	 $(".double_ad_right_box,.double_ad_left_box").show();
+	 $('.double_ad_close').mouseover(function() { 
+	   $(this).css('color',double_ad_close_over_color)
+	});
+	 $('.double_ad_close').mouseout(function() { 
+	   $(this).css('color',double_ad_close_color)
+	});
+	 
+	 $('.double_ad_close').click(function() { 
+	  $(this).parent().hide(double_ad_animate)
+	});
+});
+</script>
+</body>
+</html>

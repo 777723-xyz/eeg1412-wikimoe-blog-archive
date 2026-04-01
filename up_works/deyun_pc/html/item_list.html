@@ -1,0 +1,1087 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>列表</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css" />
+<link href="../css/mall_list.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.9.1.min.js"></script>
+</head>
+
+<body>
+<!-- 这里是添加的导航开始 --> 
+<table class="daohangdaohang">
+    <style>
+        .daohangdaohang{z-index:9999;position:fixed;top:400px;left:10px;background:#CCCCCC;}
+        .daohangdaohang td{border: 1px solid #ccc;background: #fff;height:36px;width:75px;text-align: center}
+        .daohangdaohang td a{text-decoration: none;color:#333;font-size:14px;}
+        .daohangdaohang td a:hover{text-decoration:underline;}
+    </style>
+    <tbody>
+        <tr>
+            <td><a href="donate_block.html">爱心区</a></td>
+            <td><a href="finance.html">时时借</a></td>
+        </tr>
+        <tr>
+            <td><a href="index.html">商场首页</a></td>
+            <td><a href="cloud_super_market.html">云超市</a></td>
+        </tr>
+        <tr>
+            <td><a href="item_list.html">列表页</a></td>
+            <td><a href="goods.html">商品页</a></td>
+        </tr>
+        <tr>
+            <td><a href="pay.html">支付</a></td>
+            <td><a href="index_register.html">注册</a></td>
+        </tr>
+        <tr>
+            <td><a href="member_center_index.html">用户中心</a></td>
+            <td><a href="member_center_buy_card.html">消费卡申请</a></td>
+        </tr>
+        <tr>
+            <td><a href="member_center_recommend.html">推荐收益</a></td>
+            <td><a href="member_center_wallet.html">我的钱包</a></td>
+        </tr>
+        <tr>
+            <td><a href="article_item.html">文章页</a></td>
+            <td><a href="member_center_gmm.html">借款申请</a></td>
+        </tr>
+       
+    </tbody>
+</table> 
+
+<div class="mall_member_top_big_box">
+   <div class="deyun_layout">
+      <div class="member_top_btn_box fr">
+         <!--登录前-->
+         <span class="logon_span">欢迎来到德云，请<a href="#">登录</a><a href="#">免费注册</a></span>
+         <!--登录前结束-->
+         <!--登陆后-->
+         <span class="logon_span" style="display:none;">您好，<a href="#">德云用户</a><a class="top_login_out_link" href="#">退出</a></span>
+         <!--登陆后结束-->
+         <a href="#" class="order_mobile my_order_a">我的订单</a>
+         <a href="#" class="order_mobile mobile_a">手机端</a>
+      </div>
+   </div>
+</div>
+<div class="logo_top_big_box">
+   <div class="deyun_layout tou_big_box">
+      <div class="logo_top_logo fl"><a href="#"><img src="../images/logo.png" width="96" height="32" /></a></div>
+      <div class="top_search_box fl">
+         <input class="top_input_search" type="text" name="search[name]" id="search_keywords" placeholder="">
+         <button type="button" class="top_btn_search" id="btn_search">搜索</button>
+      </div>
+      
+      <div class="top_buycart fr">
+         <a href="#">
+            我的购物车<i class="buycart_nums">0</i>
+         </a>
+      </div>
+   </div>
+</div>
+<div class="deyun_nav_big_box">
+   <div class="deyun_layout deyun_nav_box">
+      <div class="deyun_nav_list_box fl">
+         <div class="deyun_nav_list_box_name">全部商品分类<i class="down_ico_d"></i></div> 
+         <div class="deyun_nav_list_lv1_box">
+         <!--分类最多只能容纳十项-->
+            <ul class="deyun_nav_list_lv1_ul">
+               <li class="deyun_nav_list_lv1_li">
+                  <div class="deyun_nav_list_lv1_name"><a href="#">母婴用品测试超长的文本</a></div>
+                  <div class="deyun_nav_list_lv2_box">
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                  </div>
+               </li>
+               
+               <li class="deyun_nav_list_lv1_li">
+                  <div class="deyun_nav_list_lv1_name"><a href="#">母婴用品</a></div>
+                  <div class="deyun_nav_list_lv2_box">
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                     
+                     <a href="#">零食</a>
+                  </div>
+               </li>
+               <li class="deyun_nav_list_lv1_li">
+                  <div class="deyun_nav_list_lv1_name"><a href="#">母婴用品</a></div>
+                  <div class="deyun_nav_list_lv2_box">
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                    
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                  </div>
+               </li>
+               <li class="deyun_nav_list_lv1_li">
+                  <div class="deyun_nav_list_lv1_name"><a href="#">母婴用品</a></div>
+                  <div class="deyun_nav_list_lv2_box">
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                   
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                  </div>
+               </li>
+               <li class="deyun_nav_list_lv1_li">
+                  <div class="deyun_nav_list_lv1_name"><a href="#">母婴用品</a></div>
+                  <div class="deyun_nav_list_lv2_box">
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                   
+                  </div>
+               </li>
+               <li class="deyun_nav_list_lv1_li">
+                  <div class="deyun_nav_list_lv1_name"><a href="#">母婴用品</a></div>
+                  <div class="deyun_nav_list_lv2_box">
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                  </div>
+               </li>
+               <li class="deyun_nav_list_lv1_li">
+                  <div class="deyun_nav_list_lv1_name"><a href="#">母婴用品</a></div>
+                  <div class="deyun_nav_list_lv2_box">
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                  </div>
+               </li>
+               <li class="deyun_nav_list_lv1_li">
+                  <div class="deyun_nav_list_lv1_name"><a href="#">母婴用品</a></div>
+                  <div class="deyun_nav_list_lv2_box">
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                   
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                  </div>
+               </li>
+               <li class="deyun_nav_list_lv1_li">
+                  <div class="deyun_nav_list_lv1_name"><a href="#">母婴用品</a></div>
+                  <div class="deyun_nav_list_lv2_box">
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                  </div>
+               </li>
+               <li class="deyun_nav_list_lv1_li">
+                  <div class="deyun_nav_list_lv1_name"><a href="#">母婴用品</a></div>
+                  <div class="deyun_nav_list_lv2_box">
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+               
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                  </div>
+               </li>
+            </ul>
+            <div class="deyun_nav_ad">
+               <a href="#"><img src="../images/ad1.jpg" width="180" height="96" /></a>
+            </div>
+         </div>
+      </div>
+      
+      
+      
+      <div class="deyun_nav_item fl">
+         <ul>
+            <li class="deyun_nav_li fl"><a href="#">云超市</a></li>
+            <li class="deyun_nav_li fl"><a href="#">进口超市</a></li>
+            <li class="deyun_nav_li fl"><a href="#">百货超市</a></li>
+            <li class="deyun_nav_li fl"><a href="#">促销区</a></li>
+            <li class="deyun_nav_li fl"><a href="#">时时借</a></li>
+            <li class="deyun_nav_li fl"><a href="#">爱心区</a></li>
+         </ul>
+      </div>
+   </div>
+</div>
+
+
+<div class="deyun_index_content">
+     <div class="deyun_layout shop_list_body">
+     
+        <div class="deyun_list_map_big_box">
+           <span>当前位置：</span>
+           <span><a href="#">首页</a></span>
+           <span>&gt;</span>
+           <span><a href="#">护肤彩妆</a></span>
+           <span>&gt;</span>
+           <span class="map_now">香水</span>
+        </div>
+        
+        <div class="item_type_search_big_box">
+           <div class="item_type_search_lv2_box">
+              <div class="item_type_search_name_box">品牌：</div>
+              <div class="item_type_search_item_box">
+                 <ul>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">很长很长很长的名字的测试</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">丽得姿（LEADERS）</a>
+                    </li>
+                 </ul>
+              </div>
+              <div style="clear:both"></div>
+           </div>
+           
+           <div class="item_type_search_lv2_box">
+              <div class="item_type_search_name_box">品牌：</div>
+              <div class="item_type_search_item_box">
+                 <ul>
+                    <li class="item_type_search_item">
+                       <a href="###" class="active">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">很长很长很长的名字的测试</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">丽得姿（LEADERS）</a>
+                    </li>
+                 </ul>
+              </div>
+              <div style="clear:both"></div>
+           </div>
+           
+           <div class="item_type_search_lv2_box">
+              <div class="item_type_search_name_box">品牌：</div>
+              <div class="item_type_search_item_box">
+                 <ul>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">御泥坊</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">很长很长很长的名字的测试</a>
+                    </li>
+                    <li class="item_type_search_item">
+                       <a href="###">丽得姿（LEADERS）</a>
+                    </li>
+                 </ul>
+              </div>
+              <div style="clear:both"></div>
+           </div>
+        </div>
+        
+        <div class="mjxs_big_box">
+           <ul  class="mjxs_ul">
+              <!--激活状态为li标签加 class="active"-->
+              <li class="normal_box fl"><a href="#">默认</a></li>
+              <li><a href="#">价格<i class="down_up_ico deyun_list_down">&nbsp;</i></a></li>
+              <!--激活状态为li标签加 class="active"-->
+              <li class="active"><a href="#">价格<i class="down_up_ico deyun_list_up">&nbsp;</i></a></li>
+              <li><a href="#">销量<i class="down_up_ico deyun_list_down">&nbsp;</i></a></li>
+              <li><a href="#">销量<i class="down_up_ico deyun_list_up">&nbsp;</i></a></li>
+              <li><a href="#">时间<i class="down_up_ico deyun_list_down">&nbsp;</i></a></li>
+              <li><a href="#">时间<i class="down_up_ico deyun_list_up">&nbsp;</i></a></li>
+           </ul>
+        </div>
+        
+        
+        <div class="hot_susume_big_box type_susume">
+           <div class="hot_susume_item_list_box item_list_no_border">
+           <!--商品内容列表开始-->
+              <div class="hot_susume_item_list_box_e">
+              
+              <!--商品项开始-->
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              <!--商品项结束-->
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              </div>
+              <!--商品内容列表结束-->
+              <div style="clear:both"></div>
+           </div>
+           
+           
+        </div>
+        <!--新版店不二应该集成了不同按钮不同class如果没有的话可以用脚本强行替换的-->
+        <div class="deyun_mini_pageview center_page deyun_item_list_page">
+           <ul class="deyun_page_ul">
+              <li class="page_info"><a>第1/3页 58条</a></li>
+              <li class="go_one_page"><a href="###">第一页</a></li>
+              <li class="pre_page"><a href="###">上一页</a></li>
+              <li class="active"><a>1</a></li>
+              <li><a href="###">2</a></li>
+              <li><a href="###">3</a></li>
+              <li class="next_page"><a href="###">下一页</a></li>
+              <li class="go_last_page"><a href="###">最后页</a></li>
+           </ul>
+        </div>
+<!--清除下一页和上一页的字-->
+<script>
+$(document).ready(function(){
+	$(".deyun_page_ul li a:contains('上一页')").empty()
+	$(".deyun_page_ul li a:contains('下一页')").empty()
+});
+</script>    
+
+        <div class="hot_susume_big_box type_susume">
+           <div class="hot_susume_tit_and_btn_box">
+              <div class="fl hot_susume_tit">猜你喜欢</div>
+              <div class="fr hot_susume_change"><a id="hot_change" href="###">换一批</a></div>
+           </div>
+           <div class="hot_susume_item_list_box" id="change_item_list">
+              <div class="hot_susume_item_list_box_d">
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水3</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水2</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              <div class="hot_susume_item_box">
+                 <!--记得onclick上补上商品链接地址-->
+                 <div class="hot_susume_yellow_line" onclick="window.open('goods.html')"></div>
+                 <div class="hot_item_pic_box"><a href="#" target="_blank"><img src="../images/goods_item.jpg" width="450" height="450" /></a></div>
+                 <div class="hot_item_name_price_box">
+                    <div class="hot_item_name_box"><a href="#" target="_blank">Marc Jacobs雏菊梦境女士淡香水</a></div>
+                    <div class="hot_item_price_box"><span class="coin_type">德币：</span><span class="price_span">780.00</span></div>
+                 </div>
+              </div>
+              </div>
+              <div style="clear:both"></div>
+           </div>
+           
+           
+        </div>        
+     </div>
+     
+</div>
+
+<!--右边功能-->
+<div class="right_slider_big_box">
+   <div class="right_slider_box">
+      <div class="right_slider_buycart_box right_slider_item_box">
+         <a class="right_slider_ico deyun_buycart type_normal" href="###"></a>
+         <a class="right_slider_ico hover_type" style="    border-top-width:0px;display:none" href="###">购物车</a>
+      </div>
+      <div class="right_slider_kefu_box right_slider_item_box">
+         <a class="right_slider_ico deyun_kefu type_normal" href="###"></a>
+         <a class="right_slider_ico hover_type" id="right_slider_kefu" style="display:none" href="###">客服</a>
+         <div class="kefu_qr_box"><img src="../images/kefu_qr.jpg" width="95" height="98" /></div>
+      </div>
+      <div class="right_slider_gotop_box right_slider_item_box" id="gototop">
+         <a class="right_slider_ico deyun_gotop type_normal" href="###"></a>
+         <a class="right_slider_ico hover_type" style="display:none" href="###">置顶</a>
+      </div>
+   </div>
+</div>
+<script>
+$(document).ready(function () {
+        $('.item_type_search_lv2_box').last().addClass('bottom_border')
+});
+</script>
+<script>
+$(document).ready(function () {
+	var deyun_wh = $(window).height();
+	var slider_top = (deyun_wh-152)/2;
+	$('.right_slider_big_box').css('top',slider_top)
+	$(window).resize(function(){
+		var deyun_wh = $(window).height();
+	    var slider_top = (deyun_wh-152)/2;
+		$('.right_slider_big_box').css('top',slider_top)
+	});	
+    $('.right_slider_ico.type_normal').mouseenter(function(){
+		$(this).hide().next().show()
+	});
+	$('.right_slider_item_box').mouseleave(function(){
+		$(this).find('.hover_type').hide();
+		$(this).find('.type_normal').show();
+	});
+	$('#right_slider_kefu').mouseenter(function(){
+		$(this).next().show()
+	});
+	$('#right_slider_kefu').mouseleave(function(){
+		$(this).next().hide()
+	});
+	
+	 //回到页面顶部位置
+	$("#gototop").click(function() {
+	    $('body,html').animate({scrollTop: 0},500);
+	    return false;
+	});
+	
+});
+</script>
+
+<div class="foot_big_box">
+   <div class="deyun_layout foot_box">
+      <div class="fl foot_logo"></div>
+      <div class="fl foot_web_map_box">
+         <div class="foot_web_map_list">
+            <h4 class="foot_web_map_tit">新手上路</h4>
+            <ul>
+               <li class="foot_web_map_li"><a href="###">购物流程</a></li>
+               <li class="foot_web_map_li"><a href="###">会员制度</a></li>
+               <li class="foot_web_map_li"><a href="###">消费卡申请</a></li>
+               <li class="foot_web_map_li"><a href="###">常见问题</a></li>
+            </ul>
+         </div>
+         <div class="foot_web_map_list">
+            <h4 class="foot_web_map_tit">售后服务</h4>
+            <ul>
+               <li class="foot_web_map_li"><a href="###">退换货政策</a></li>
+               <li class="foot_web_map_li"><a href="###">退款说明</a></li>
+               <li class="foot_web_map_li"><a href="###">联系客服</a></li>
+               
+            </ul>
+         </div>
+         <div class="foot_web_map_list">
+            <h4 class="foot_web_map_tit">服务保障</h4>
+            <ul>
+               <li class="foot_web_map_li"><a href="###">隐私保护政策</a></li>
+               <li class="foot_web_map_li"><a href="###">会员注册协议</a></li>
+               <li class="foot_web_map_li"><a href="###">品质承诺</a></li>
+            </ul>
+         </div>
+         <div class="foot_web_map_list">
+            <h4 class="foot_web_map_tit">公司信息</h4>
+            <ul>
+               <li class="foot_web_map_li"><a href="###">关于德云</a></li>
+               <li class="foot_web_map_li"><a href="###">联系我们</a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="fr foot_qr_big_box">
+         <div class="foot_qr_box">
+         <img src="../images/foot_qr.jpg" width="100" height="103" /> 
+         <p>移动端</p>
+         </div>
+         <div class="foot_qr_box">
+         <img src="../images/foot_qr.jpg" width="100" height="103" /> 
+         <p>联系客服</p>
+         </div>
+      </div>
+      <div style="clear:both;"></div>
+   </div>
+   <div class="deyun_layout foot_beian_box">
+      <p class="beian_p">版权所有 2016 © deyuntianxia.com 浙ICP备16008946号</p>
+   </div>
+</div>
+<script src="../js/list_item_hover_for_list.js"></script>
+
+<script src="../js/deyun_nav.js"></script>
+</body>
+</html>

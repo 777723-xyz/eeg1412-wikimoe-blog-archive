@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>支付</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css" />
+<link href="../css/mall_pay.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.jqzoom.js"></script>
+<link href="../js/skins/minimal/yellow.css" rel="stylesheet">
+<script src="../js/icheck.min.js"></script>
+</head>
+<body class="gogagoga_mall_body">
+<!-- 这里是添加的导航开始 --> 
+<!-- 这里是添加的导航开始 --> 
+<table class="daohangdaohang">
+    <style>
+        .daohangdaohang{z-index:9999;position:fixed;top:400px;left:10px;background:#CCCCCC;}
+        .daohangdaohang td{border: 1px solid #141414;background: #FAB900;height:36px;width:75px;text-align: center}
+        .daohangdaohang td a{text-decoration: none;color:#333;font-size:14px;}
+        .daohangdaohang td a:hover{text-decoration:underline;}
+    </style>
+    <tbody>
+        <tr>
+            <td><a href="index.html">首页</a></td>
+            <td><a href="about.html">关于</a></td>
+        </tr>
+        <tr>
+            <td><a href="join.html">加盟</a></td>
+            <td><a href="contact.html">联系</a></td>
+        </tr>
+        <tr>
+            <td><a href="mall_list.html">商城列表</a></td>
+            <td><a href="mall_goods.html">商城详情</a></td>
+        </tr>
+        <tr>
+            <td><a href="mall_paycar.html">购物车</a></td>
+            <td><a href="mall_login.html">登录</a></td>
+        </tr>
+        <tr>
+            <td><a href="mall_register.html">注册</a></td>
+            <td><a href="mall_find_password.html">找回密码</a></td>
+        </tr>
+        <tr>
+            <td><a href="mall_place_an_order.html">下单</a></td>
+            <td><a href="mall_pay.html">支付</a></td>
+        </tr>
+        <tr>
+            <td><a href="mall_pay_ok.html">支付成功</a></td>
+            <td></td>
+        </tr>
+       
+    </tbody>
+</table> 
+<div class="gogagoga_layout">
+  <div class="mall_big_box">
+    <div class="index_tab_box black_tab">
+      <div class="fl">
+        <ul class="share_link_box">
+          <li class="fl"> <a href="###" class="weixin" id="winxin_open"></a>
+            <div class="weixin_qr_box">
+              <div id="qr_close" class="qr_close">×</div>
+              <img src="../images/gogagogaqr.jpg" width="260" height="260" /> </div>
+          </li>
+          <li class="fl"> <a href="###" class="sina"></a> </li>
+          <li class="fl"> <a href="###" class="baidu"></a> </li>
+        </ul>
+      </div>
+      <div class="fl"> <a href="###" class="index_logo_link"></a> </div>
+      <div class="fl">
+        <ul class="tab_list_ul">
+          <li class="fl"> <a href="index.html" class="index_tab_btn"> <span class="tab_for_english">HOME</span> <span class="tab_for_chinese">首页</span> </a> </li>
+          <li class="fl"> <a href="mall_list.html" class="index_tab_btn"> <span class="tab_for_english">MALL</span> <span class="tab_for_chinese">商城</span> </a>
+            <ul class="index_tab_lv2">
+              <li class="tab_lv2_li"><a href="mall_list.html" class="lv2_link">水果小蜜</a></li>
+              <li class="tab_lv2_li"><a href="mall_list.html" class="lv2_link">因果关系</a></li>
+              <li class="tab_lv2_li"><a href="mall_list.html" class="lv2_link">条条有理</a></li>
+            </ul>
+          </li>
+          <li class="fl"> <a href="about.html" class="index_tab_btn"> <span class="tab_for_english">ABOUT</span> <span class="tab_for_chinese">关于</span> </a>
+            <ul class="index_tab_lv2">
+              <li class="tab_lv2_li"><a href="about.html" class="lv2_link">平台介绍</a></li>
+              <li class="tab_lv2_li"><a href="about.html" class="lv2_link">公司介绍</a></li>
+            </ul>
+          </li>
+          <li class="fl"> <a href="join.html" class="index_tab_btn"> <span class="tab_for_english">JOIN</span> <span class="tab_for_chinese">加盟</span> </a>
+            <ul class="index_tab_lv2">
+              <li class="tab_lv2_li"><a href="join.html" class="lv2_link">线上加盟</a></li>
+              <li class="tab_lv2_li"><a href="join.html" class="lv2_link">线下加盟</a></li>
+            </ul>
+          </li>
+          <li class="fl"> <a href="contact.html" class="index_tab_btn"> <span class="tab_for_english">CONTACT</span> <span class="tab_for_chinese">联系</span> </a> </li>
+        </ul>
+      </div>
+    </div>
+    <div style="clear:both;"></div>
+    <div class="mall_place_pay_big_box">
+      <div class="pay">
+        <div class="order_list">
+          <div class="ct">
+            <p><b>订单提交成功，请您尽快付款！订单号：160220010243501907</b></p>
+            <p class="fr">应付金额<strong>￥9.00</strong></p>
+          </div>
+          <div class="cb">
+            <p>收获地址：浙江省温州市平阳县朝阳乡测试0113 收货人：我是测试0113 13566287373</p>
+            <p>帽子女冬天韩国潮毛线帽加厚秋冬季帽子女士韩版时尚护耳针织帽子 </p>
+          </div>
+        </div>
+        <div class="pay_main">
+          <div class="selection ct">
+            <p style="font-size:15px;">已选择支付方式:<b style="color: #F9B700;">支付宝支付</b></p>
+          </div>
+          <div class="ct">
+            <p id="show_change_box">想更换支付方式？</p>
+          </div>
+          <div class="cc" id="change_pay_box" style="">
+            <div class="pay_num"> 支付<strong>￥9.00</strong> </div>
+            <div class="type_btns">
+              <div class="popup-body" style="width: 800px;">
+                <div class="popup-content clearfix">
+                  <div class="change-payment">
+                    <ul>
+                      
+                      <!-- 支付方法开始 -->
+                      
+                      <li class="change-box"> <span class="payinput">
+                        <label>
+                          <input type="radio" name="payment[pay_app_id]" value="alipay" class="action-change-payment icheck_radio">
+                        </label>
+                        </span> <span class="payment-img-box"> <img src="../images/alipay.jpg" width="220" height="70"> <em class="payment-name" id="name_alipay">支付宝支付</em> </span>
+                        <div style="clear:both"></div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <script>
+$(document).ready(function(){
+  $('.icheck_radio').iCheck({
+    checkboxClass: 'icheckbox_minimal-yellow',
+    radioClass: 'iradio_minimal-yellow',
+    increaseArea: '20%' // optional
+  });
+});
+</script> 
+            </div>
+          </div>
+          <div class="atonce"> <a href="index.php?moudle=plugin&amp;control=payment&amp;method=pay&amp;order_id=160220010243501907" target="_blank" class="btn btn-import btn-big action-pay" onclick="gopay()"> 立刻支付 <b></b> </a> </div>
+          <div class="opinion"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="clear:both"></div>
+  <div class="mall_foot_box">
+    <div class="foot_box"> <span>Copyright ©2016 GOGAGOGA All Rights Reserved.杭州果加果加网络科技有限公司 版权所有 浙ICP备15028803号</span> </div>
+  </div>
+</div>
+<script>
+$(document).ready(function () {
+	
+	
+	$('.index_tab_btn').mouseenter(function() { 
+	    $(this).addClass('tab_btn_hover');
+		$(this).find('.tab_for_english').hide();
+		$(this).find('.tab_for_chinese').show();
+    });
+	$('.index_tab_btn').mouseleave(function() { 
+	    $(this).removeClass('tab_btn_hover');
+		$(this).find('.tab_for_english').show();
+		$(this).find('.tab_for_chinese').hide();
+    });
+	
+	$('.tab_list_ul .index_tab_btn').mouseenter(function() { 
+	    $(this).next().show();
+    });
+	$('.tab_list_ul .index_tab_btn').mouseleave(function() { 
+	    $(this).next().hide();
+    });
+	
+	
+	$('.tab_list_ul .index_tab_lv2').mouseenter(function() { 
+	    $(this).show().prev().addClass('tab_btn_hover');
+		$(this).prev().find('.tab_for_english').hide();
+		$(this).prev().find('.tab_for_chinese').show();
+    });
+	$('.tab_list_ul .index_tab_lv2').mouseleave(function() { 
+	    $(this).hide().prev().removeClass('tab_btn_hover');
+		$(this).prev().find('.tab_for_english').show();
+		$(this).prev().find('.tab_for_chinese').hide();
+    });
+	
+	
+	$('.index_tab_btn').last().css('margin-right','0')
+	$(".index_tab_lv2 .tab_lv2_li:last-child").find('.lv2_link').addClass("noborder")
+	
+	var winw = $(window).width()
+	var winh = $(window).height()
+	
+	var emleft = (winw-300)/2
+	var emtop = (winh-300)/2
+	$('.weixin_qr_box').css('left',emleft).css('top',emtop)
+	
+	$(window).resize(function(){
+     	var winw = $(window).width()
+	    var winh = $(window).height()
+	
+	    var emleft = (winw-300)/2
+	    var emtop = (winh-300)/2
+	    $('.weixin_qr_box').css('left',emleft).css('top',emtop)
+    });
+	
+	$('#winxin_open').click(function() { 
+	    $('.weixin_qr_box').show();
+	});
+	$('#qr_close').click(function() { 
+	    $('.weixin_qr_box').hide();
+	});
+});
+</script>
+</body>
+</html>

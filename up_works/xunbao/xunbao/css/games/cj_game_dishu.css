@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+#dishu_ico img, #dishu_ico img.active {
+	position: absolute;
+	width: 33.33%;
+	max-width: 300px;
+	max-height: 300px;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	transition: all .4s ease-out;
+	-webkit-transition: all .4s ease-out;/*动画*/
+}
+#dishu_ico img.active {
+	transform: scale(1);
+	-webkit-transform: scale(1);
+}
+canvas#game_dishu {
+	width: 270px;
+	height: 270px;
+	max-width: 1000px;
+	max-height: 1000px;
+}
+.cj_dishu_canvas_bg{
+	position:fixed;
+	left: 50%;
+	width: 270px;
+	height: 270px;
+	max-width: 700px;
+	max-height: 700px;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);/*居中*/
+	top:50%;
+	z-index:6;
+	background:#eaa515;
+	border:5px solid #eaa515;
+	border-radius:5px;
+}
+#dishu_ico{
+	position:fixed;
+	left: 50%;
+	width: 270px;
+	height: 270px;
+	max-width: 1000px;
+	max-height: 1000px;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);/*居中*/
+	top:50%;
+	z-index:7;
+	border:5px solid rgba(0,0,0,0);
+}
+.dishu_img_temp {
+	position: fixed;
+	top: 200%;
+	left: 200%;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+}
+.cj_dishu_point_body{
+	position:fixed;
+	z-index:6;
+	top:5px;
+	left:0px;
+}
+.cj_game_common_bg{
+	position:relative;
+	z-index:1;
+}
+.cj_dishu_point{
+	color:#fff;
+	padding:5px 10px;
+	font-size:14px;
+	line-height:16px;
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css" />
+<link href="../css/mall_account.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.9.1.min.js"></script>
+<link href="../js/skins/minimal/yellow.css" rel="stylesheet">
+<script src="../js/icheck.min.js"></script>
+</head>
+
+<body class="gogagoga_mall_body">
+<div class="gogagoga_layout">
+    <div class="mall_big_box">
+       <div class="index_tab_box black_tab">
+           <div class="fl">
+             <ul class="share_link_box">
+                  <li class="fl">
+                     <a href="###" class="weixin" id="winxin_open"></a>
+                     <div class="weixin_qr_box">
+                        <div id="qr_close" class="qr_close">×</div>
+                        <img src="../images/gogagogaqr.jpg" width="260" height="260" />
+                     </div>
+                  </li>
+                  <li class="fl">
+                     <a href="###" class="sina"></a>
+                  </li>
+                  <li class="fl">
+                     <a href="###" class="baidu"></a>
+                  </li>                  
+              </ul>
+        </div>  
+           <div class="fl">
+              <a href="###" class="index_logo_link"></a>
+          </div>
+           <div class="fl">
+               <ul class="tab_list_ul">
+                  <li class="fl">
+                     <a href="index.html" class="index_tab_btn">
+                        <span class="tab_for_english">HOME</span>
+                        <span class="tab_for_chinese">首页</span>
+                     </a>
+                  </li>
+                  <li class="fl">
+                     <a href="###" class="index_tab_btn">
+                        <span class="tab_for_english">MALL</span>
+                        <span class="tab_for_chinese">商城</span>
+                     </a>
+                     <ul class="index_tab_lv2">
+                        <li class="tab_lv2_li"><a href="###" class="lv2_link">水果小蜜</a></li>
+                        <li class="tab_lv2_li"><a href="###" class="lv2_link">因果关系</a></li>
+                        <li class="tab_lv2_li"><a href="###" class="lv2_link">条条有理</a></li>
+                     </ul>
+                  </li>
+                  <li class="fl">
+                     <a href="about.html" class="index_tab_btn">
+                        <span class="tab_for_english">ABOUT</span>
+                        <span class="tab_for_chinese">关于</span>
+                     </a>
+                     <ul class="index_tab_lv2">
+                        <li class="tab_lv2_li"><a href="about.html" class="lv2_link">平台介绍</a></li>
+                        <li class="tab_lv2_li"><a href="about.html" class="lv2_link">公司介绍</a></li>
+                     </ul>
+                  </li>
+                  <li class="fl">
+                     <a href="join.html" class="index_tab_btn">
+                        <span class="tab_for_english">JOIN</span>
+                        <span class="tab_for_chinese">加盟</span>
+                     </a>
+                     <ul class="index_tab_lv2">
+                        <li class="tab_lv2_li"><a href="join.html" class="lv2_link">线上加盟</a></li>
+                        <li class="tab_lv2_li"><a href="join.html" class="lv2_link">线下加盟</a></li>
+                     </ul>
+                  </li>
+                  <li class="fl">
+                     <a href="contact.html" class="index_tab_btn">
+                        <span class="tab_for_english">CONTACT</span>
+                        <span class="tab_for_chinese">联系</span>
+                     </a>
+                  </li>
+               </ul>
+           </div>
+       </div> 
+      <div class="gogagoga_id_box">
+          <div class="login_pic_box">
+             <img src="../images/login_pic.jpg" width="1200" height="745" />
+          </div>
+          <div class="ten_bg"></div>
+          <div class="center_bar"> </div>
+          <div class="account_inpu_big_box">
+             <div class="account_tit_box">
+                <div class="fl account_tit">用户登录</div>
+                <div class="fr account_link_box">
+                   <span class="txt_yellow">不是会员？</span>
+                   <a href="mall_register.html">免费注册</a>
+                </div>
+             </div>
+             
+             <div class="account_input_box">
+                <div class="account_padding_box" id="focus">
+                   <label for="input_txt" class="account_label">
+                      <span class="account_tips">用户名/邮箱地址/手机号</span>
+                      <input type="text" class="input_txt" />
+                   </label>
+                   
+                   <label for="input_txt" class="account_label">
+                      <span class="account_tips">填写密码</span>
+                      <input type="password" class="input_txt" />
+                   </label>
+                   
+                   <label for="input_txt" class="account_label">
+                      <span class="account_tips">填写验证码</span>
+                      <input type="text" class="input_txt capcha_small_input" />
+                      <span class="capchadiv">
+                      <img src="../images/safe_code.png" height="30" /> </span>
+                   </label>
+                  <div class="checkbox_box">
+                       <label class="checkbox_label">
+                          <input type="checkbox" name="is_remember" class="icheck_radio" value="1">
+                          <span>自动登录</span>
+                       </label>
+                    <label class="checkbox_label">
+                          <input type="checkbox" name="store_username" class="icheck_radio" value="2">
+                          <span>记住用户名</span>
+                      </label>
+                      <a href="mall_forgot.html" class="forgot_link">忘记密码</a>
+                   </div>
+                   <div style="clear:both"></div> 
+                </div> 
+                
+             </div>
+             
+             <div class="login_btn_box">
+                <button class="login_btn" type="button">登录<span>Login</span></button>
+             </div>
+             
+            <div class="otherlogin_box">
+                <div class="otherlogin_tit">合作账号登录</div> 
+                <div class="otherlogin_link_tit">
+                   <a href="#">
+                      <img src="../images/qq.png" width="30" height="30" /> 
+                   </a>
+                   <a href="#">
+                      <img src="../images/weixin.png" width="30" height="30" />
+                   </a>
+               </div>
+            </div>
+             
+          </div>
+      </div>
+      
+    </div>
+    <div class="mall_foot_box">
+          <div class="foot_box">
+             <span>Copyright ©2016 GOGAGOGA All Rights Reserved.杭州果加果加网络科技有限公司 版权所有 浙ICP备15028803号</span>
+         </div>
+       </div>
+</div>
+<script>
+$('.ten_bg').mouseenter(function() { 
+   $(this).hide();
+});
+$('.login_pic_box').mouseleave(function() { 
+   $('.ten_bg').show();
+});
+</script>
+<script>
+$(document).ready(function(){
+  $('.icheck_radio').iCheck({
+    checkboxClass: 'icheckbox_minimal-yellow',
+    radioClass: 'iradio_minimal-yellow',
+    increaseArea: '20%' // optional
+  });
+});
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+            $('.account_tips').click(function(){
+				$(this).parent().find(".input_txt").focus();
+			})
+            $("#focus .input_txt").each(function(){
+                    var thisVal=$(this).val();
+                    //判断文本框的值是否为空，有值的情况就隐藏提示语，没有值就显示
+                    if(thisVal!=""){
+                            $(this).siblings(".account_tips").hide();
+                        }else{
+                            $(this).siblings(".account_tips").show();
+                        }
+                    //聚焦型输入框验证  
+                    $(this).focus(function(){
+                            $(this).siblings(".account_tips").hide();
+                        }).blur(function(){
+                                var val=$(this).val();
+                                if(val!=""){
+                                    $(this).siblings(".account_tips").hide();
+                                }else{
+                                    $(this).siblings(".account_tips").show();
+                                }   
+                        });
+                })
+        })
+</script>
+<script>
+$(document).ready(function () {
+	
+	
+	$('.index_tab_btn').mouseenter(function() { 
+	    $(this).addClass('tab_btn_hover');
+		$(this).find('.tab_for_english').hide();
+		$(this).find('.tab_for_chinese').show();
+    });
+	$('.index_tab_btn').mouseleave(function() { 
+	    $(this).removeClass('tab_btn_hover');
+		$(this).find('.tab_for_english').show();
+		$(this).find('.tab_for_chinese').hide();
+    });
+	
+	$('.tab_list_ul .index_tab_btn').mouseenter(function() { 
+	    $(this).next().show();
+    });
+	$('.tab_list_ul .index_tab_btn').mouseleave(function() { 
+	    $(this).next().hide();
+    });
+	
+	
+	$('.tab_list_ul .index_tab_lv2').mouseenter(function() { 
+	    $(this).show().prev().addClass('tab_btn_hover');
+		$(this).prev().find('.tab_for_english').hide();
+		$(this).prev().find('.tab_for_chinese').show();
+    });
+	$('.tab_list_ul .index_tab_lv2').mouseleave(function() { 
+	    $(this).hide().prev().removeClass('tab_btn_hover');
+		$(this).prev().find('.tab_for_english').show();
+		$(this).prev().find('.tab_for_chinese').hide();
+    });
+	
+	
+	$('.index_tab_btn').last().css('margin-right','0')
+	$(".index_tab_lv2 .tab_lv2_li:last-child").find('.lv2_link').addClass("noborder")
+	
+	var winw = $(window).width()
+	var winh = $(window).height()
+	
+	var emleft = (winw-300)/2
+	var emtop = (winh-300)/2
+	$('.weixin_qr_box').css('left',emleft).css('top',emtop)
+	
+	$(window).resize(function(){
+     	var winw = $(window).width()
+	    var winh = $(window).height()
+	
+	    var emleft = (winw-300)/2
+	    var emtop = (winh-300)/2
+	    $('.weixin_qr_box').css('left',emleft).css('top',emtop)
+    });
+	
+	$('#winxin_open').click(function() { 
+	    $('.weixin_qr_box').show();
+	});
+	$('#qr_close').click(function() { 
+	    $('.weixin_qr_box').hide();
+	});
+});
+</script>
+
+</body>
+</html>

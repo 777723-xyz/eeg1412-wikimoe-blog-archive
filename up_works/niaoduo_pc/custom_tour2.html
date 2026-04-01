@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="keywords" content="鸟多旅游" />
+<meta name="description" content="鸟多旅游" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>定制游问题二</title>
+<!--通用脚本和样式表-->
+<link href="css/niaoduo_common.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/niaoduo_common.js"></script>
+<script src="js/niaoduo_scroll.js"></script>
+
+<!--非通用脚本和样式表-->
+<link href="css/niaoduo_custom_tour.css" rel="stylesheet" type="text/css" />
+<script src="js/custom_tour.js"></script>
+</head>
+
+<body>
+<div class="niaoduo_common_header">
+  <div class="niaoduo_layout">
+      <div class="fl niaoduo_header_logo">
+         <a href="#" class="niaoduo_header_logo_link"></a>
+     </div>
+      <div class="fl">
+         <ul class="niaoduo_header_meanu_ul">
+            <li class="niaoduo_header_meanu_li">
+               <a href="#" class="niaoduo_header_meanu_link">目的地</a>
+               <i class="niaoduo_header_meanu_bar">/</i>
+            </li>
+            <li class="niaoduo_header_meanu_li">
+               <a href="#" class="niaoduo_header_meanu_link">主题游</a>
+               <i class="niaoduo_header_meanu_bar">/</i>
+            </li>
+            <li class="niaoduo_header_meanu_li active">
+               <a href="#" class="niaoduo_header_meanu_link">定制游</a>
+               <i class="niaoduo_header_meanu_bar">/</i>
+            </li>
+            <li class="niaoduo_header_meanu_li">
+               <a href="#" class="niaoduo_header_meanu_link">自由行</a>
+               <i class="niaoduo_header_meanu_bar">/</i>
+            </li>
+            <li class="niaoduo_header_meanu_li">
+               <a href="#" class="niaoduo_header_meanu_link">白菜价</a>
+               <i class="niaoduo_header_meanu_bar">/</i>
+            </li>
+         </ul>
+      </div>
+      
+    <div class="fr niaoduo_header_buy_cart">
+         <a class="niaoduo_header_buy_cart_link" href="#">
+            <span class="niaoduo_header_buy_cart_span">购物车：<span class="niaoduo_header_buy_cart_num">6</span>件</span>
+         </a>
+      </div>
+      <!--登录前-->
+      <!--<div class="fr niaoduo_header_account_body">
+         <a href="#">登录</a>
+         <i>|</i>
+         <a href="#">注册</a>
+      </div>-->
+      <!--登录后-->
+      <div class="fr niaoduo_header_account_body">
+         <a href="#">1235454545454</a>
+      </div>
+       
+    <div class="fr niaoduo_header_search_body">
+         <input class="niaoduo_header_input_search" type="text" name="search[name]" id="search_keywords" placeholder="">
+         <button type="button" class="niaoduo_header_btn_search" id="btn_search"></button>
+      </div>   
+  </div>
+</div>
+
+
+<div class="niaoduo_layout">
+   <div class="niaoduo_list_webmap">
+      <span>当前位置：</span><a href="#">首页</a> <i>></i>  <span class="webmap_now">定制游</span>
+   </div>
+   
+   <div class="niaoduo_cut_body">
+      <div class="fl niaoduo_cut_left_box">
+         <div class="niaoduo_cut_yellow_tips_box">
+            <div class="niaoduo_cut_yellow_tips_sj"></div>
+            <p class="niaoduo_cut_yellow_tips_txt">2.您想去什么地方玩？</p>
+         </div>
+         
+         <div class="niaoduo_cut_left_down_body">
+            <form>
+               <div class="niaoduo_go_city_body">
+                  <ul class="niaoduo_go_city_sel_ul">
+                     <li class="niaoduo_go_city_sel_li type_red">
+                        <span class="niaoduo_go_city_sel_text">欧洲</span>
+                        <div class="niaoduo_go_city_sel_sj"></div>
+                     </li>
+                     <li class="niaoduo_go_city_sel_li type_orange">
+                        <span class="niaoduo_go_city_sel_text">北美洲</span>
+                        <div class="niaoduo_go_city_sel_sj"></div>
+                     </li>
+                     <li class="niaoduo_go_city_sel_li type_green">
+                        <span class="niaoduo_go_city_sel_text">大洋洲</span>
+                        <div class="niaoduo_go_city_sel_sj"></div>
+                     </li>
+                     <li class="niaoduo_go_city_sel_li type_blue">
+                        <span class="niaoduo_go_city_sel_text">亚洲及<br />
+
+其它地区</span>
+                        <div class="niaoduo_go_city_sel_sj"></div>
+                     </li>
+                     <li class="niaoduo_go_city_sel_li type_purple">
+                        <span class="niaoduo_go_city_sel_text">海岛</span>
+                        <div class="niaoduo_go_city_sel_sj"></div>
+                     </li>
+                  </ul>
+                  <div class="niaoduo_go_city_sel_nr_box">
+                     <ul class="niaoduo_go_city_sel_nr_ul">
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利1</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                     </ul>
+                     <ul class="niaoduo_go_city_sel_nr_ul">
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利2</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                     </ul>
+                     <ul class="niaoduo_go_city_sel_nr_ul">
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利3</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                     </ul>
+                     <ul class="niaoduo_go_city_sel_nr_ul">
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利4</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                     </ul>
+                     <ul class="niaoduo_go_city_sel_nr_ul">
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利5</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                        <li class="niaoduo_go_city_sel_nr_li">匈牙利</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="niaoduo_cut_next_pre_body">
+                  <button type="button" class="niaoduo_cut_q_pre">上一问</button>
+                  <button type="button" class="niaoduo_cut_q_next">确定，进入下一题</button> 
+               </div>
+            </form>
+         </div>
+      </div>
+      
+      <div class="fr niaoduo_cut_right_box">
+         <h3 class="niaoduo_cut_right_tips_tit">
+            简单三部，免费旅行定制
+         </h3>
+         <ul class="niaoduo_cut_right_tips_ul">
+            <li class="niaoduo_cut_right_tips_li">
+               <div class="niaoduo_cut_right_tips_step_box">
+                  <div class="niaoduo_cut_right_tips_step_maru">1</div>
+                  <div class="niaoduo_cut_right_tips_step_txt">选择时间</div>
+               </div>
+               <div class="niaoduo_cut_right_tips_step_next_ico"></div>
+            </li>
+            <li class="niaoduo_cut_right_tips_li">
+               <div class="niaoduo_cut_right_tips_step_box">
+                  <div class="niaoduo_cut_right_tips_step_maru">2</div>
+                  <div class="niaoduo_cut_right_tips_step_txt">确认地点</div>
+               </div>
+               <div class="niaoduo_cut_right_tips_step_next_ico"></div>
+            </li>
+            <li class="niaoduo_cut_right_tips_li">
+               <div class="niaoduo_cut_right_tips_step_box">
+                  <div class="niaoduo_cut_right_tips_step_maru">3</div>
+                  <div class="niaoduo_cut_right_tips_step_txt">出行人数</div>
+               </div>
+               <div class="niaoduo_cut_right_tips_step_next_ico"></div>
+            </li>
+            <li class="niaoduo_cut_right_tips_li">
+               <div class="niaoduo_cut_right_tips_step_box">
+                  <div class="niaoduo_cut_right_tips_step_maru">4</div>
+                  <div class="niaoduo_cut_right_tips_step_txt">免费定制</div>
+               </div>
+
+            </li>
+         </ul>
+      </div>
+      
+      <div style="clear:both;*font-size:0px;"></div>
+      
+   </div>
+   
+</div>
+
+
+
+
+<div class="niaoduo_common_footer">
+   <div class="niaoduo_layout">
+      <div class="fl niaoduo_common_footer_left">
+         <p class="niaoduo_common_footer_link">
+            <a href="#">关于鸟多</a>
+            <i>|</i>
+            <a href="#">会员制度</a>
+            <i>|</i>
+            <a href="#">退款政策</a>
+            <i>|</i>
+            <a href="#">免责声明</a>
+         </p>
+         <p class="niaoduo_common_footer_txt">温州和平国际旅游有限公司  旗下电商品牌</p>
+      </div>
+      <div class="fr niaoduo_common_footer_right">
+         <p>版权所有 2016 © niaoduo.com 浙ICP备09067728号-3</p>
+      </div>
+   </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的收益</title>
+<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'/>
+<link href="../css/deyun_common.css" rel="stylesheet" type="text/css">
+<link href="../css/deyun_member_center.css" rel="stylesheet" type="text/css">
+<script src="../js/Zepto.min.js"></script>
+</head>
+
+<body>
+<div class="deyun_common_tit_top_box">
+   <div class="go_history_btn"><a href="javascript:history.go(-1)"></a></div>
+   <div class="deyun_common_tit_top">我的收益</div>
+</div>
+
+<div class="deyun_my_money_body"> 
+   <table cellspacing="0" cellpadding="0" class="deyun_my_money_table">
+  <tr>
+    <td onclick="window.location='#1'">
+       <div class="deyun_my_money_nums_cache">9009.91</div>
+       <div class="deyun_my_money_nums">
+          <span class="deyun_my_money_qian"></span>
+          <span>.</span>
+          <span class="deyun_my_money_hou"></span>
+       </div>
+       <div class="deyun_my_money_type">首充收益</div>
+    </td>
+    <td onclick="window.location='#2'">
+       <div class="deyun_my_money_nums_cache">99.91</div>
+       <div class="deyun_my_money_nums">
+          <span class="deyun_my_money_qian"></span>
+          <span>.</span>
+          <span class="deyun_my_money_hou"></span>
+       </div>
+       <div class="deyun_my_money_type">借款返点</div>
+    </td>
+  </tr>
+  <tr>
+    <td onclick="window.location='#3'">
+       <div class="deyun_my_money_nums_cache">99.11</div>
+       <div class="deyun_my_money_nums">
+          <span class="deyun_my_money_qian"></span>
+          <span>.</span>
+          <span class="deyun_my_money_hou"></span>
+       </div>
+       <div class="deyun_my_money_type">消费返利</div>
+    </td>
+    <td onclick="window.location='#4'">
+       <div class="deyun_my_money_nums_cache">99.01</div>
+       <div class="deyun_my_money_nums">
+          <span class="deyun_my_money_qian"></span>
+          <span>.</span>
+          <span class="deyun_my_money_hou"></span>
+       </div>
+       <div class="deyun_my_money_type">推荐收益</div>
+    </td>
+  </tr>
+</table>
+</div>
+<script>
+$(document).ready(function () {
+	for(var i=0;i<4;i++){
+		var nums_big = Number($('.deyun_my_money_body .deyun_my_money_table tr td').eq(i).find('.deyun_my_money_nums_cache').text()).toFixed(2).split(".");
+		$('.deyun_my_money_body .deyun_my_money_table tr td').eq(i).find('.deyun_my_money_qian').text(nums_big[0]);
+		$('.deyun_my_money_body .deyun_my_money_table tr td').eq(i).find('.deyun_my_money_hou').text(nums_big[1]);
+		
+	}
+});
+</script>
+<script>
+$(document).ready(function () {
+    $('.deyun_my_money_body .deyun_my_money_table tr td:nth-child(2n)').css('borderRight','0px');
+	function td_H(){
+		var tdW = $('.deyun_my_money_body .deyun_my_money_table tr td').first().width();
+		$('.deyun_my_money_body .deyun_my_money_table tr td').css('height',tdW*0.72);
+	}
+	td_H();
+	$(window).resize(function(){
+		td_H();
+	});
+});
+</script>
+
+
+</body>
+</html>

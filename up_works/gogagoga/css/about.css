@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+
+.about_box{
+	height:900px;
+	position:relative;
+}
+.about_box .about_bg {
+	background-image: url(../images/about_bg.png);
+	height: 551px;
+	width: 1200px;
+	position: absolute;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+}
+
+
+.about_box .about_txt_box {
+	position: absolute;
+	left: 0px;
+	top: 558px;
+	width: 100%;
+}
+.about_txt_box .about_yellow_box_box {
+	float: right;
+	margin-left: 9px;
+	height: 311px;
+	width: 101px;
+	background-color: #fab900;
+	overflow: hidden;
+	position:relative;
+	cursor:pointer;
+}
+.about_yellow_box_box .about_yellow_box {
+	height: 311px;
+	width: 540px;
+	position: relative;
+	background-color: #fab900;
+	display:none;
+    filter:alpha(opacity=0); 
+    -moz-opacity:0; 
+    opacity:0;
+}
+
+.about_yellow_box .about_txt_left {
+	background-image: url(../images/left_about.jpg);
+	height: 26px;
+	width: 26px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.about_yellow_box_box .about_txt_fruit {
+	background-image: url(../images/about_ico.png);
+	position: absolute;
+	top: 28px;
+	height: 47px;
+	width: 45px;
+	right: 28px;
+	z-index: 3;
+}
+
+.about_txt_fruit.guava{
+	background-position: 0px 0px!important;
+}
+.about_txt_fruit.banana{
+	background-position: 0px -62px!important;
+}
+.about_txt_fruit.pineapple{
+	background-position: 0px -127px!important;
+}
+.about_txt_fruit.grape{
+	background-position: 0px -191px!important;
+}
+.about_txt_fruit.durian{
+	background-position: 0px -252px!important;
+}
+.about_txt_fruit.watermelon{
+	background-position: 0px -310px!important;
+}
+
+.about_txt_fruit.cherry{
+	background-position: 0px -372px!important;
+}
+
+
+.about_yellow_box_box .ten_bg {
+	background-image: url(../images/bg_ten.png);
+	background-repeat: repeat;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index:3;
+}
+
+.hack_ten_bg{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left: 0px;
+	top: 0px;
+	z-index:7;	
+}
+.about_yellow_box .about_txt_box_b {
+	position: absolute;
+	top: 138px;
+	left: 40px;
+	width: 446px;
+
+}
+.about_txt_box_b .about_title {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.about_txt_box_b .about_nr_txt {
+	font-size: 12px;
+	color: #141414;
+	height: 90px;
+	overflow: auto;
+}
+.about_txt_box_b .about_nr_txt p{
+    text-indent:2em;
+}

@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>商品列表</title>
+<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'/>
+<link href="../css/deyun_common.css" rel="stylesheet" type="text/css">
+<link href="../css/deyun_goods_list.css" rel="stylesheet" type="text/css">
+<script src="../js/Zepto.min.js"></script>
+</head>
+
+<body>
+<!--没有搜索的状态-->
+<div class="deyun_common_tit_top_box type_normal">
+  <div class="go_history_btn blue"><a href="javascript:history.go(-1)"></a></div>
+  <div class="deyun_common_tit_top">生活用品</div>
+  <div class="deyun_list_lens_ico_box" id="open_search"></div>
+</div>
+<!--有搜索的状态-->
+<div class="deyun_common_tit_top_box type_search">
+  <div class="go_history_btn close" id="close_search"></div>
+  
+  <form method="post" id="Form2" name="searchbar_17" class="deyun_list_top_form">
+     <input type="text" name="search[name]" placeholder="智能手机开春降价" class="deyun_list_search_textfile_input">
+     <a id="searchbtn" href="javascript:void(0);" class="deyun_list_search_btn"></a>
+  </form>
+</div>
+<!--控制顶部的脚本-->
+<script>
+$(document).ready(function () {
+	$('#open_search').click(function(){
+		$('.deyun_common_tit_top_box.type_normal').hide();
+		$('.deyun_common_tit_top_box.type_search').show();
+	});
+	$('#close_search').click(function(){
+		$('.deyun_common_tit_top_box.type_normal').show();
+		$('.deyun_common_tit_top_box.type_search').hide();
+	});
+	function top_search(){
+	    var list_search_W = $(window).width()-(19+42+10);
+	    $('.deyun_list_search_textfile_input').css('width',list_search_W-8);
+	}
+	top_search();
+	$(window).resize(function(){
+        top_search();
+    });
+});
+</script>
+
+<div class="deyun_list_px_body type_market">
+  <ul class="deyun_list_px_ul clearfix">
+     <li class="deyun_list_px_li">
+        <a href="#"><i class="deyun_list_fenlei_ico"></i>分类</a>
+     </li>
+     <li class="deyun_list_px_li">
+        <a href="#">综合排序</a>
+     </li>
+     <!--选中加class 【active】-->
+     <li class="deyun_list_px_li active">
+        <!--上箭头的情况下加class 【up】-->
+        <a href="#">价格<i class="deyun_list_arr up"></i></a>
+     </li>
+     <li class="deyun_list_px_li">
+        <a href="#">销量<i class="deyun_list_arr"></i></a>
+     </li>
+     <li class="deyun_list_px_li">
+        <a href="#">时间<i class="deyun_list_arr"></i></a>
+     </li>
+  </ul>
+</div>
+
+<div class="deyun_list_content_body">
+   <div class="deyun_list_content_item_body clearfix">
+         <div class="deyun_list_content_item_box">
+            <div class="deyun_list_content_item_pic"><a href="#"><img src="../images/94970a07.jpg"></a></div>
+            <div class="deyun_list_content_item_name"><a href="#">香奈儿粉色邂逅柔情女士淡香水 50/100ML 持久女香</a></div>
+            <div class="deyun_list_content_item_price"><span>德币：</span><span>999.99</span></div>
+         </div>
+         
+         <div class="deyun_list_content_item_box">
+            <div class="deyun_list_content_item_pic"><a href="#"><img src="../images/94970a07.jpg"></a></div>
+            <div class="deyun_list_content_item_name"><a href="#">香奈儿粉色邂逅柔情女士淡香水 50/100ML 持久女香</a></div>
+            <div class="deyun_list_content_item_price"><span>德币：</span><span>999.99</span></div>
+         </div>
+         
+         <div class="deyun_list_content_item_box">
+            <div class="deyun_list_content_item_pic"><a href="#"><img src="../images/94970a07.jpg"></a></div>
+            <div class="deyun_list_content_item_name"><a href="#">香奈儿粉色邂逅柔情女士淡香水 50/100ML 持久女香</a></div>
+            <div class="deyun_list_content_item_price"><span>德币：</span><span>999.99</span></div>
+         </div>
+         
+         <div class="deyun_list_content_item_box">
+            <div class="deyun_list_content_item_pic"><a href="#"><img src="../images/94970a07.jpg"></a></div>
+            <div class="deyun_list_content_item_name"><a href="#">香奈儿粉色邂逅柔情女士淡香水 50/100ML 持久女香</a></div>
+            <div class="deyun_list_content_item_price"><span>德币：</span><span>999.99</span></div>
+         </div>
+         
+         <div class="deyun_list_content_item_box">
+            <div class="deyun_list_content_item_pic"><a href="#"><img src="../images/94970a07.jpg"></a></div>
+            <div class="deyun_list_content_item_name"><a href="#">香奈儿粉色邂逅柔情女士淡香水 50/100ML 持久女香</a></div>
+            <div class="deyun_list_content_item_price"><span>德币：</span><span>999.99</span></div>
+         </div>
+         
+         <div class="deyun_list_content_item_box">
+            <div class="deyun_list_content_item_pic"><a href="#"><img src="../images/94970a07.jpg"></a></div>
+            <div class="deyun_list_content_item_name"><a href="#">香奈儿粉色邂逅柔情女士淡香水 50/100ML 持久女香</a></div>
+            <div class="deyun_list_content_item_price"><span>德币：</span><span>999.99</span></div>
+         </div>
+      </div>
+</div>
+<!--商品列表-->
+<script>
+$(document).ready(function () {
+	function like_WH(){
+		var win_W = ($('body').width() -16 -9)*0.5;
+		$('.deyun_list_content_item_box').css('width',win_W);
+		$('.deyun_list_content_item_pic').css('width',win_W-2).css('height',win_W-2);
+	}
+	like_WH();
+	$(window).resize(function(){
+        like_WH();
+    });
+});
+</script>
+
+<div class="index_go_top" id="top"></div>
+<script>
+	$(window).scroll(function(){
+	var s=$(window).scrollTop();
+		if(s>0){
+		$("#top").css("display","block");
+		}
+		else{
+		$("#top").css("display","none");
+		}
+	});
+	 //当点击跳转链接后，回到页面顶部位置
+	$("#top").click(function() {
+        window.scrollTo(0,0);
+    });
+	
+</script>
+
+<!--底部刷新-->
+<script>
+$(function(){  
+        $(window).scroll(function() {  
+     
+          if ($(this).scrollTop() + $(window).height() + 20 >= $(document).height() && $(this).scrollTop() > 20) {  
+          /*预留的ajax*/
+          /*$.ajax({
+               type: "",
+               url: "",
+               data: "",
+               success: function(data){
+				   $('.deyun_list_content_item_body').append(data);
+				   
+               }
+            }); */
+			
+			/*↓测试用，集成时删除*/
+			var pl_mo = $('.deyun_list_content_item_body').html();
+			
+			   $('.deyun_list_content_item_body').append(pl_mo);
+			/*↑测试用，集成时删除*/
+          }  
+        }); 
+	 });  
+</script>
+</body>
+</html>

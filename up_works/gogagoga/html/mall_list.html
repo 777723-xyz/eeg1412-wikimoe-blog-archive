@@ -1,0 +1,1194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>列表第一种</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css" />
+<link href="../css/mall_goods_and_list.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.9.1.min.js"></script>
+</head>
+<body class="gogagoga_mall_body">
+<!-- 这里是添加的导航开始 --> 
+<table class="daohangdaohang">
+    <style>
+        .daohangdaohang{z-index:9999;position:fixed;top:400px;left:10px;background:#CCCCCC;}
+        .daohangdaohang td{border: 1px solid #141414;background: #FAB900;height:36px;width:75px;text-align: center}
+        .daohangdaohang td a{text-decoration: none;color:#333;font-size:14px;}
+        .daohangdaohang td a:hover{text-decoration:underline;}
+    </style>
+    <tbody>
+        <tr>
+            <td><a href="index.html">首页</a></td>
+            <td><a href="about.html">关于</a></td>
+        </tr>
+        <tr>
+            <td><a href="join.html">加盟</a></td>
+            <td><a href="contact.html">联系</a></td>
+        </tr>
+        <tr>
+            <td><a href="mall_list.html">商城列表</a></td>
+            <td><a href="mall_goods.html">商城详情</a></td>
+        </tr>
+        <tr>
+            <td><a href="mall_paycar.html">购物车</a></td>
+            <td><a href="mall_login.html">登录</a></td>
+        </tr>
+        <tr>
+            <td><a href="mall_register.html">注册</a></td>
+            <td><a href="mall_find_password.html">找回密码</a></td>
+        </tr>
+        <tr>
+            <td><a href="mall_place_an_order.html">下单</a></td>
+            <td><a href="mall_pay.html">支付</a></td>
+        </tr>
+        <tr>
+            <td><a href="mall_pay_ok.html">支付成功</a></td>
+            <td></td>
+        </tr>
+       
+    </tbody>
+</table> 
+<div class="gogagoga_layout">
+    <div class="mall_big_box">
+       <div class="index_tab_box black_tab">
+           <div class="fl">
+             <ul class="share_link_box">
+                  <li class="fl">
+                     <a href="###" class="weixin" id="winxin_open"></a>
+                     <div class="weixin_qr_box">
+                        <div id="qr_close" class="qr_close">×</div>
+                        <img src="../images/gogagogaqr.jpg" width="260" height="260" />
+                     </div>
+                  </li>
+                  <li class="fl">
+                     <a href="###" class="sina"></a>
+                  </li>
+                  <li class="fl">
+                     <a href="###" class="baidu"></a>
+                  </li>                  
+              </ul>
+        </div>  
+           <div class="fl">
+              <a href="###" class="index_logo_link"></a>
+          </div>
+           <div class="fl">
+               <ul class="tab_list_ul">
+                  <li class="fl">
+                     <a href="index.html" class="index_tab_btn">
+                        <span class="tab_for_english">HOME</span>
+                        <span class="tab_for_chinese">首页</span>
+                     </a>
+                  </li>
+                  <li class="fl">
+                     <a href="mall_list.html" class="index_tab_btn">
+                        <span class="tab_for_english">MALL</span>
+                        <span class="tab_for_chinese">商城</span>
+                     </a>
+                     <ul class="index_tab_lv2">
+                        <li class="tab_lv2_li"><a href="mall_list.html" class="lv2_link">水果小蜜</a></li>
+                        <li class="tab_lv2_li"><a href="mall_list.html" class="lv2_link">因果关系</a></li>
+                        <li class="tab_lv2_li"><a href="mall_list.html" class="lv2_link">条条有理</a></li>
+                     </ul>
+                  </li>
+                  <li class="fl">
+                     <a href="about.html" class="index_tab_btn">
+                        <span class="tab_for_english">ABOUT</span>
+                        <span class="tab_for_chinese">关于</span>
+                     </a>
+                     <ul class="index_tab_lv2">
+                        <li class="tab_lv2_li"><a href="about.html" class="lv2_link">平台介绍</a></li>
+                        <li class="tab_lv2_li"><a href="about.html" class="lv2_link">公司介绍</a></li>
+                     </ul>
+                  </li>
+                  <li class="fl">
+                     <a href="join.html" class="index_tab_btn">
+                        <span class="tab_for_english">JOIN</span>
+                        <span class="tab_for_chinese">加盟</span>
+                     </a>
+                     <ul class="index_tab_lv2">
+                        <li class="tab_lv2_li"><a href="join.html" class="lv2_link">线上加盟</a></li>
+                        <li class="tab_lv2_li"><a href="join.html" class="lv2_link">线下加盟</a></li>
+                     </ul>
+                  </li>
+                  <li class="fl">
+                     <a href="contact.html" class="index_tab_btn">
+                        <span class="tab_for_english">CONTACT</span>
+                        <span class="tab_for_chinese">联系</span>
+                     </a>
+                  </li>
+               </ul>
+           </div>
+       </div> 
+       <div style="clear:both;"></div>
+      <div class="mall_list_box">
+        <div class="fl mall_menu_big_box">
+            <div class="small_logo_box">
+           <img src="../images/shuiguoxiaomi.jpg" width="151" height="151" /> </div>
+            <div class="mall_menu_box">
+               <div class="mall_menu_tit_box">
+                  <h4>分类</h4>
+                  <h5>SORT</h5>
+                  
+                  <div class="menu_dott"></div>                 
+               </div>
+               <ul class="mall_menu_ul">
+                  <li class="mall_menu_ul_lv1">
+                     <a href="###">
+                        <h4 class="chinese_tit">畅享系列</h4>
+                        <h5 class="english_tit">ENJOY</h5>
+                     </a>
+                        <div class="menu_dott"></div>
+                        <div class="plus_minus_btn mall_menu_plus"></div>
+                     <ul class="mall_menu_ul_lv2">
+                        <li class="mall_menu_li_lv2">
+                           <a href="###">鲜花礼盒</a>
+                           <div class="menu_dott"></div>
+                        </li>
+                        <li class="mall_menu_li_lv2">
+                           <a href="###">粗茶淡饭</a>
+                           <div class="menu_dott"></div>
+                        </li>
+                     </ul>
+                  </li>
+                  
+                  <li class="mall_menu_ul_lv1">
+                     <a href="###">
+                        <h4 class="chinese_tit">首发系列</h4>
+                        <h5 class="english_tit">FIRST</h5>
+                     </a>
+                        <div class="menu_dott"></div>
+                        <div class="plus_minus_btn mall_menu_plus"></div>
+                     <ul class="mall_menu_ul_lv2">
+                        <li class="mall_menu_li_lv2">
+                           <a href="###">出暖花开</a>
+                           <div class="menu_dott"></div>
+                        </li>
+                        <li class="mall_menu_li_lv2">
+                           <a href="###">洋洋得意</a>
+                           <div class="menu_dott"></div>
+                        </li>
+                     </ul>
+                  </li>
+                  
+                  
+                  <li class="mall_menu_ul_lv1">
+                     <a href="###">
+                        <h4 class="chinese_tit">送礼系列</h4>
+                        <h5 class="english_tit">GIFT</h5>
+                     </a>
+                        <div class="menu_dott"></div>
+                        <div class="plus_minus_btn mall_menu_plus"></div>
+                     <ul class="mall_menu_ul_lv2">
+                        <li class="mall_menu_li_lv2">
+                           <a href="###">多肉礼盒</a>
+                           <div class="menu_dott"></div>
+                        </li>
+                        <li class="mall_menu_li_lv2">
+                           <a href="###">干果礼盒</a>
+                           <div class="menu_dott"></div>
+                        </li>
+                        <li class="mall_menu_li_lv2">
+                           <a href="###">水果礼盒</a>
+                           <div class="menu_dott"></div>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+               <div class="menu_bottom"></div>
+            </div>
+         </div>
+         <div class="fr mall_right_item_box">
+            <div class="mall_common_top_big_box">
+               <div class="mall_common_top_banner">
+                  <img src="../images/sgxm.png" width="676" height="26" /> 
+               </div>
+               <div style="display:none;" class="login_or_register_big_box fl">
+                  <a href="#">登录</a>
+                  <i class="or_bar"></i>
+                  <a href="#">注册</a>
+               </div>
+               <div class="login_or_register_big_box fl">
+                  <a href="#">eeg1412</a>
+               </div>
+               <div class="buy_car_big_box fl">
+                  <a href="#"></a>
+               </div>
+               <div class="search_big_box fl">
+                  <button class="btn_search"></button>
+                  <input class="search_input" type="text" name="search[name]" id="search_keywords" placeholder="搜索SEARCH">
+               </div>
+            </div>
+            <div style="clear:both;"></div>
+            
+            <div class="shop_list_big_box type1">
+              <div class="shop_list_item_box">
+                  <div class="item_pic_box">
+                     <div class="item_pic_box_b">
+                        <a href="#" class="item_pic_link">
+                           <img src="../images/09fa513d269759eeab41c80ab2fb43166c22dfda.jpg"  alt="水果" title="水果" /> 
+                        </a>
+                     </div>
+                  </div>
+                  <div class="item_tit_pri_box fl">
+                     <div class="item_tit_box">
+                        <a href="#" class="item_chinese_tit">畅享礼盒A</a>
+                        <a href="#" class="item_english_tit">Enjoy share box A</a>
+                     </div>
+                     <div class="item_price_box">
+                        <div class="fl china_money">￥</div>
+                        <div class="fl item_price">69<i class="item_price_toku">96</i></div>
+                     </div>
+                  </div>
+                  <div class="item_info_big_box fl">
+                     <div class="item_top_info_box">
+                        <ul class="item_top_info_ul">
+                           <li>
+                              <span class="item_info_tit">剩余：20</span>
+                              <i class="item_info_english_i inventory"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">运费：满99包邮</span>
+                              <i class="item_info_english_i freight"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">销量：999</span>
+                              <i class="item_info_english_i sales"></i>
+                           </li>
+                        </ul>
+                        
+                     </div>
+                     
+                     
+                     
+                     <div class="item_mid_info_box">
+                        <div class="item_mid_info_tit_box fl">
+                           <div class="item_mid_info_chinese_tit">产品信息：</div>
+                           <div class="item_mid_info_english_tit">Product<br />
+information</div>
+                        </div>
+                        <div class="item_mid_info_nr fl">
+                           <p>
+                              美国华盛顿蛇果4个/越南火龙果2个/国产红提500g/桂林金桔500g/新疆库尔勒香梨4个/澳大利亚进口脐橙4个
+                           </p>
+                        </div>
+                     </div>
+                     <div class="item_bottom_info_box">
+                        <div class="item_bottom_info_tit">
+                        </div>
+                        <p class="item_bottom_info_nr">
+                              注：因季节原因，水果可能会稍有变动，平台会以同等价值的水果代替。
+                        </p>
+                     </div>
+                  </div>
+                  <div style="clear:both"></div>
+              </div>
+              
+              
+              <div class="shop_list_item_box">
+                  <div class="item_pic_box">
+                     <div class="item_pic_box_b">
+                        <a href="#" class="item_pic_link">
+                           <img src="../images/item_pic.jpg" alt="水果" title="水果" /> 
+                        </a>
+                     </div>
+                  </div>
+                  <div class="item_tit_pri_box fl">
+                     <div class="item_tit_box">
+                        <a href="#" class="item_chinese_tit">畅享礼盒A</a>
+                        <a href="#" class="item_english_tit">Enjoy share box A</a>
+                     </div>
+                     <div class="item_price_box">
+                        <div class="fl china_money">￥</div>
+                        <div class="fl item_price">69<i class="item_price_toku">96</i></div>
+                     </div>
+                  </div>
+                  <div class="item_info_big_box fl">
+                     <div class="item_top_info_box">
+                        <ul class="item_top_info_ul">
+                           <li>
+                              <span class="item_info_tit">剩余：20</span>
+                              <i class="item_info_english_i inventory"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">运费：满99包邮</span>
+                              <i class="item_info_english_i freight"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">销量：999</span>
+                              <i class="item_info_english_i sales"></i>
+                           </li>
+                        </ul>
+                        
+                     </div>
+                     
+                     
+                     
+                     <div class="item_mid_info_box">
+                        <div class="item_mid_info_tit_box fl">
+                           <div class="item_mid_info_chinese_tit">产品信息：</div>
+                           <div class="item_mid_info_english_tit">Product<br />
+information</div>
+                        </div>
+                        <div class="item_mid_info_nr fl">
+                           <p>
+                              美国华盛顿蛇果4个/越南火龙果2个/国产红提500g/桂林金桔500g/新疆库尔勒香梨4个/澳大利亚进口脐橙4个
+                           </p>
+                        </div>
+                     </div>
+                     <div class="item_bottom_info_box">
+                        <div class="item_bottom_info_tit">
+                        </div>
+                        <p class="item_bottom_info_nr">
+                              注：因季节原因，水果可能会稍有变动，平台会以同等价值的水果代替。
+                        </p>
+                     </div>
+                  </div>
+                  <div style="clear:both"></div>
+              </div>
+              
+              
+              
+              <div class="shop_list_item_box">
+                  <div class="item_pic_box">
+                     <div class="item_pic_box_b">
+                        <a href="#" class="item_pic_link">
+                           <img src="../images/item_pic.jpg" alt="水果" title="水果" /> 
+                        </a>
+                     </div>
+                  </div>
+                  <div class="item_tit_pri_box fl">
+                     <div class="item_tit_box">
+                        <a href="#" class="item_chinese_tit">畅享礼盒A</a>
+                        <a href="#" class="item_english_tit">Enjoy share box A</a>
+                     </div>
+                     <div class="item_price_box">
+                        <div class="fl china_money">￥</div>
+                        <div class="fl item_price">69<i class="item_price_toku">96</i></div>
+                     </div>
+                  </div>
+                  <div class="item_info_big_box fl">
+                     <div class="item_top_info_box">
+                        <ul class="item_top_info_ul">
+                           <li>
+                              <span class="item_info_tit">剩余：20</span>
+                              <i class="item_info_english_i inventory"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">运费：满99包邮</span>
+                              <i class="item_info_english_i freight"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">销量：999</span>
+                              <i class="item_info_english_i sales"></i>
+                           </li>
+                        </ul>
+                        
+                     </div>
+                     
+                     
+                     
+                     <div class="item_mid_info_box">
+                        <div class="item_mid_info_tit_box fl">
+                           <div class="item_mid_info_chinese_tit">产品信息：</div>
+                           <div class="item_mid_info_english_tit">Product<br />
+information</div>
+                        </div>
+                        <div class="item_mid_info_nr fl">
+                           <p>
+                              美国华盛顿蛇果4个/越南火龙果2个/国产红提500g/桂林金桔500g/新疆库尔勒香梨4个/澳大利亚进口脐橙4个
+                           </p>
+                        </div>
+                     </div>
+                     <div class="item_bottom_info_box">
+                        <div class="item_bottom_info_tit">
+                        </div>
+                        <p class="item_bottom_info_nr">
+                              注：因季节原因，水果可能会稍有变动，平台会以同等价值的水果代替。
+                        </p>
+                     </div>
+                  </div>
+                  <div style="clear:both"></div>
+              </div>
+              
+              <div class="shop_list_item_box">
+                  <div class="item_pic_box">
+                     <div class="item_pic_box_b">
+                        <a href="#" class="item_pic_link">
+                           <img src="../images/09fa513d269759eeab41c80ab2fb43166c22dfda.jpg" alt="水果" title="水果" /> 
+                        </a>
+                     </div>
+                  </div>
+                  <div class="item_tit_pri_box fl">
+                     <div class="item_tit_box">
+                        <a href="#" class="item_chinese_tit">畅享礼盒A</a>
+                        <a href="#" class="item_english_tit">Enjoy share box A</a>
+                     </div>
+                     <div class="item_price_box">
+                        <div class="fl china_money">￥</div>
+                        <div class="fl item_price">69<i class="item_price_toku">96</i></div>
+                     </div>
+                  </div>
+                  <div class="item_info_big_box fl">
+                     <div class="item_top_info_box">
+                        <ul class="item_top_info_ul">
+                           <li>
+                              <span class="item_info_tit">剩余：20</span>
+                              <i class="item_info_english_i inventory"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">运费：满99包邮</span>
+                              <i class="item_info_english_i freight"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">销量：999</span>
+                              <i class="item_info_english_i sales"></i>
+                           </li>
+                        </ul>
+                        
+                     </div>
+                     
+                     
+                     
+                     <div class="item_mid_info_box">
+                        <div class="item_mid_info_tit_box fl">
+                           <div class="item_mid_info_chinese_tit">产品信息：</div>
+                           <div class="item_mid_info_english_tit">Product<br />
+information</div>
+                        </div>
+                        <div class="item_mid_info_nr fl">
+                           <p>
+                              美国华盛顿蛇果4个/越南火龙果2个/国产红提500g/桂林金桔500g/新疆库尔勒香梨4个/澳大利亚进口脐橙4个
+                           </p>
+                        </div>
+                     </div>
+                     <div class="item_bottom_info_box">
+                        <div class="item_bottom_info_tit">
+                        </div>
+                        <p class="item_bottom_info_nr">
+                              注：因季节原因，水果可能会稍有变动，平台会以同等价值的水果代替。
+                        </p>
+                     </div>
+                  </div>
+                  <div style="clear:both"></div>
+              </div>
+              
+              <div class="shop_list_item_box">
+                  <div class="item_pic_box">
+                     <div class="item_pic_box_b">
+                        <a href="#" class="item_pic_link">
+                           <img src="../images/item_pic.jpg" alt="水果" title="水果" /> 
+                        </a>
+                     </div>
+                  </div>
+                  <div class="item_tit_pri_box fl">
+                     <div class="item_tit_box">
+                        <a href="#" class="item_chinese_tit">畅享礼盒A</a>
+                        <a href="#" class="item_english_tit">Enjoy share box A</a>
+                     </div>
+                     <div class="item_price_box">
+                        <div class="fl china_money">￥</div>
+                        <div class="fl item_price">69<i class="item_price_toku">96</i></div>
+                     </div>
+                  </div>
+                  <div class="item_info_big_box fl">
+                     <div class="item_top_info_box">
+                        <ul class="item_top_info_ul">
+                           <li>
+                              <span class="item_info_tit">剩余：20</span>
+                              <i class="item_info_english_i inventory"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">运费：满99包邮</span>
+                              <i class="item_info_english_i freight"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">销量：999</span>
+                              <i class="item_info_english_i sales"></i>
+                           </li>
+                        </ul>
+                        
+                     </div>
+                     
+                     
+                     
+                     <div class="item_mid_info_box">
+                        <div class="item_mid_info_tit_box fl">
+                           <div class="item_mid_info_chinese_tit">产品信息：</div>
+                           <div class="item_mid_info_english_tit">Product<br />
+information</div>
+                        </div>
+                        <div class="item_mid_info_nr fl">
+                           <p>
+                              美国华盛顿蛇果4个/越南火龙果2个/国产红提500g/桂林金桔500g/新疆库尔勒香梨4个/澳大利亚进口脐橙4个
+                           </p>
+                        </div>
+                     </div>
+                     <div class="item_bottom_info_box">
+                        <div class="item_bottom_info_tit">
+                        </div>
+                        <p class="item_bottom_info_nr">
+                              注：因季节原因，水果可能会稍有变动，平台会以同等价值的水果代替。
+                        </p>
+                     </div>
+                  </div>
+                  <div style="clear:both"></div>
+              </div>
+              
+              <div class="shop_list_item_box">
+                  <div class="item_pic_box">
+                     <div class="item_pic_box_b">
+                        <a href="#" class="item_pic_link">
+                           <img src="../images/item_pic.jpg" alt="水果" title="水果" /> 
+                        </a>
+                     </div>
+                  </div>
+                  <div class="item_tit_pri_box fl">
+                     <div class="item_tit_box">
+                        <a href="#" class="item_chinese_tit">畅享礼盒A</a>
+                        <a href="#" class="item_english_tit">Enjoy share box A</a>
+                     </div>
+                     <div class="item_price_box">
+                        <div class="fl china_money">￥</div>
+                        <div class="fl item_price">69<i class="item_price_toku">96</i></div>
+                     </div>
+                  </div>
+                  <div class="item_info_big_box fl">
+                     <div class="item_top_info_box">
+                        <ul class="item_top_info_ul">
+                           <li>
+                              <span class="item_info_tit">剩余：20</span>
+                              <i class="item_info_english_i inventory"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">运费：满99包邮</span>
+                              <i class="item_info_english_i freight"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">销量：999</span>
+                              <i class="item_info_english_i sales"></i>
+                           </li>
+                        </ul>
+                        
+                     </div>
+                     
+                     
+                     
+                     <div class="item_mid_info_box">
+                        <div class="item_mid_info_tit_box fl">
+                           <div class="item_mid_info_chinese_tit">产品信息：</div>
+                           <div class="item_mid_info_english_tit">Product<br />
+information</div>
+                        </div>
+                        <div class="item_mid_info_nr fl">
+                           <p>
+                              美国华盛顿蛇果4个/越南火龙果2个/国产红提500g/桂林金桔500g/新疆库尔勒香梨4个/澳大利亚进口脐橙4个
+                           </p>
+                        </div>
+                     </div>
+                     <div class="item_bottom_info_box">
+                        <div class="item_bottom_info_tit">
+                        </div>
+                        <p class="item_bottom_info_nr">
+                              注：因季节原因，水果可能会稍有变动，平台会以同等价值的水果代替。
+                        </p>
+                     </div>
+                  </div>
+                  <div style="clear:both"></div>
+              </div>
+              
+              <div class="shop_list_item_box">
+                  <div class="item_pic_box">
+                     <div class="item_pic_box_b">
+                        <a href="#" class="item_pic_link">
+                           <img src="../images/item_pic.jpg" alt="水果" title="水果" /> 
+                        </a>
+                     </div>
+                  </div>
+                  <div class="item_tit_pri_box fl">
+                     <div class="item_tit_box">
+                        <a href="#" class="item_chinese_tit">畅享礼盒A</a>
+                        <a href="#" class="item_english_tit">Enjoy share box A</a>
+                     </div>
+                     <div class="item_price_box">
+                        <div class="fl china_money">￥</div>
+                        <div class="fl item_price">69<i class="item_price_toku">96</i></div>
+                     </div>
+                  </div>
+                  <div class="item_info_big_box fl">
+                     <div class="item_top_info_box">
+                        <ul class="item_top_info_ul">
+                           <li>
+                              <span class="item_info_tit">剩余：20</span>
+                              <i class="item_info_english_i inventory"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">运费：满99包邮</span>
+                              <i class="item_info_english_i freight"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">销量：999</span>
+                              <i class="item_info_english_i sales"></i>
+                           </li>
+                        </ul>
+                        
+                     </div>
+                     
+                     
+                     
+                     <div class="item_mid_info_box">
+                        <div class="item_mid_info_tit_box fl">
+                           <div class="item_mid_info_chinese_tit">产品信息：</div>
+                           <div class="item_mid_info_english_tit">Product<br />
+information</div>
+                        </div>
+                        <div class="item_mid_info_nr fl">
+                           <p>
+                              美国华盛顿蛇果4个/越南火龙果2个/国产红提500g/桂林金桔500g/新疆库尔勒香梨4个/澳大利亚进口脐橙4个
+                           </p>
+                        </div>
+                     </div>
+                     <div class="item_bottom_info_box">
+                        <div class="item_bottom_info_tit">
+                        </div>
+                        <p class="item_bottom_info_nr">
+                              注：因季节原因，水果可能会稍有变动，平台会以同等价值的水果代替。
+                        </p>
+                     </div>
+                  </div>
+                  <div style="clear:both"></div>
+              </div>
+              
+              <div class="shop_list_item_box">
+                  <div class="item_pic_box">
+                     <div class="item_pic_box_b">
+                        <a href="#" class="item_pic_link">
+                           <img src="../images/item_pic.jpg" alt="水果" title="水果" /> 
+                        </a>
+                     </div>
+                  </div>
+                  <div class="item_tit_pri_box fl">
+                     <div class="item_tit_box">
+                        <a href="#" class="item_chinese_tit">畅享礼盒A</a>
+                        <a href="#" class="item_english_tit">Enjoy share box A</a>
+                     </div>
+                     <div class="item_price_box">
+                        <div class="fl china_money">￥</div>
+                        <div class="fl item_price">69<i class="item_price_toku">96</i></div>
+                     </div>
+                  </div>
+                  <div class="item_info_big_box fl">
+                     <div class="item_top_info_box">
+                        <ul class="item_top_info_ul">
+                           <li>
+                              <span class="item_info_tit">剩余：20</span>
+                              <i class="item_info_english_i inventory"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">运费：满99包邮</span>
+                              <i class="item_info_english_i freight"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">销量：999</span>
+                              <i class="item_info_english_i sales"></i>
+                           </li>
+                        </ul>
+                        
+                     </div>
+                     
+                     
+                     
+                     <div class="item_mid_info_box">
+                        <div class="item_mid_info_tit_box fl">
+                           <div class="item_mid_info_chinese_tit">产品信息：</div>
+                           <div class="item_mid_info_english_tit">Product<br />
+information</div>
+                        </div>
+                        <div class="item_mid_info_nr fl">
+                           <p>
+                              美国华盛顿蛇果4个/越南火龙果2个/国产红提500g/桂林金桔500g/新疆库尔勒香梨4个/澳大利亚进口脐橙4个
+                           </p>
+                        </div>
+                     </div>
+                     <div class="item_bottom_info_box">
+                        <div class="item_bottom_info_tit">
+                        </div>
+                        <p class="item_bottom_info_nr">
+                              注：因季节原因，水果可能会稍有变动，平台会以同等价值的水果代替。
+                        </p>
+                     </div>
+                  </div>
+                  <div style="clear:both"></div>
+              </div>
+              
+              <div class="shop_list_item_box">
+                  <div class="item_pic_box">
+                     <div class="item_pic_box_b">
+                        <a href="#" class="item_pic_link">
+                           <img src="../images/item_pic.jpg" alt="水果" title="水果" /> 
+                        </a>
+                     </div>
+                  </div>
+                  <div class="item_tit_pri_box fl">
+                     <div class="item_tit_box">
+                        <a href="#" class="item_chinese_tit">畅享礼盒A</a>
+                        <a href="#" class="item_english_tit">Enjoy share box A</a>
+                     </div>
+                     <div class="item_price_box">
+                        <div class="fl china_money">￥</div>
+                        <div class="fl item_price">69<i class="item_price_toku">96</i></div>
+                     </div>
+                  </div>
+                  <div class="item_info_big_box fl">
+                     <div class="item_top_info_box">
+                        <ul class="item_top_info_ul">
+                           <li>
+                              <span class="item_info_tit">剩余：20</span>
+                              <i class="item_info_english_i inventory"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">运费：满99包邮</span>
+                              <i class="item_info_english_i freight"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">销量：999</span>
+                              <i class="item_info_english_i sales"></i>
+                           </li>
+                        </ul>
+                        
+                     </div>
+                     
+                     
+                     
+                     <div class="item_mid_info_box">
+                        <div class="item_mid_info_tit_box fl">
+                           <div class="item_mid_info_chinese_tit">产品信息：</div>
+                           <div class="item_mid_info_english_tit">Product<br />
+information</div>
+                        </div>
+                        <div class="item_mid_info_nr fl">
+                           <p>
+                              美国华盛顿蛇果4个/越南火龙果2个/国产红提500g/桂林金桔500g/新疆库尔勒香梨4个/澳大利亚进口脐橙4个
+                           </p>
+                        </div>
+                     </div>
+                     <div class="item_bottom_info_box">
+                        <div class="item_bottom_info_tit">
+                        </div>
+                        <p class="item_bottom_info_nr">
+                              注：因季节原因，水果可能会稍有变动，平台会以同等价值的水果代替。
+                        </p>
+                     </div>
+                  </div>
+                  <div style="clear:both"></div>
+              </div>
+              
+              <div class="shop_list_item_box">
+                  <div class="item_pic_box">
+                     <div class="item_pic_box_b">
+                        <a href="#" class="item_pic_link">
+                           <img src="../images/item_pic.jpg" alt="水果" title="水果" /> 
+                        </a>
+                     </div>
+                  </div>
+                  <div class="item_tit_pri_box fl">
+                     <div class="item_tit_box">
+                        <a href="#" class="item_chinese_tit">畅享礼盒A</a>
+                        <a href="#" class="item_english_tit">Enjoy share box A</a>
+                     </div>
+                     <div class="item_price_box">
+                        <div class="fl china_money">￥</div>
+                        <div class="fl item_price">69<i class="item_price_toku">96</i></div>
+                     </div>
+                  </div>
+                  <div class="item_info_big_box fl">
+                     <div class="item_top_info_box">
+                        <ul class="item_top_info_ul">
+                           <li>
+                              <span class="item_info_tit">剩余：20</span>
+                              <i class="item_info_english_i inventory"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">运费：满99包邮</span>
+                              <i class="item_info_english_i freight"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">销量：999</span>
+                              <i class="item_info_english_i sales"></i>
+                           </li>
+                        </ul>
+                        
+                     </div>
+                     
+                     
+                     
+                     <div class="item_mid_info_box">
+                        <div class="item_mid_info_tit_box fl">
+                           <div class="item_mid_info_chinese_tit">产品信息：</div>
+                           <div class="item_mid_info_english_tit">Product<br />
+information</div>
+                        </div>
+                        <div class="item_mid_info_nr fl">
+                           <p>
+                              美国华盛顿蛇果4个/越南火龙果2个/国产红提500g/桂林金桔500g/新疆库尔勒香梨4个/澳大利亚进口脐橙4个
+                           </p>
+                        </div>
+                     </div>
+                     <div class="item_bottom_info_box">
+                        <div class="item_bottom_info_tit">
+                        </div>
+                        <p class="item_bottom_info_nr">
+                              注：因季节原因，水果可能会稍有变动，平台会以同等价值的水果代替。
+                        </p>
+                     </div>
+                  </div>
+                  <div style="clear:both"></div>
+              </div>
+              
+              <div class="shop_list_item_box">
+                  <div class="item_pic_box">
+                     <div class="item_pic_box_b">
+                        <a href="#" class="item_pic_link">
+                           <img src="../images/item_pic.jpg" alt="水果" title="水果" /> 
+                        </a>
+                     </div>
+                  </div>
+                  <div class="item_tit_pri_box fl">
+                     <div class="item_tit_box">
+                        <a href="#" class="item_chinese_tit">畅享礼盒A</a>
+                        <a href="#" class="item_english_tit">Enjoy share box A</a>
+                     </div>
+                     <div class="item_price_box">
+                        <div class="fl china_money">￥</div>
+                        <div class="fl item_price">69<i class="item_price_toku">96</i></div>
+                     </div>
+                  </div>
+                  <div class="item_info_big_box fl">
+                     <div class="item_top_info_box">
+                        <ul class="item_top_info_ul">
+                           <li>
+                              <span class="item_info_tit">剩余：20</span>
+                              <i class="item_info_english_i inventory"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">运费：满99包邮</span>
+                              <i class="item_info_english_i freight"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">销量：999</span>
+                              <i class="item_info_english_i sales"></i>
+                           </li>
+                        </ul>
+                        
+                     </div>
+                     
+                     
+                     
+                     <div class="item_mid_info_box">
+                        <div class="item_mid_info_tit_box fl">
+                           <div class="item_mid_info_chinese_tit">产品信息：</div>
+                           <div class="item_mid_info_english_tit">Product<br />
+information</div>
+                        </div>
+                        <div class="item_mid_info_nr fl">
+                           <p>
+                              美国华盛顿蛇果4个/越南火龙果2个/国产红提500g/桂林金桔500g/新疆库尔勒香梨4个/澳大利亚进口脐橙4个
+                           </p>
+                        </div>
+                     </div>
+                     <div class="item_bottom_info_box">
+                        <div class="item_bottom_info_tit">
+                        </div>
+                        <p class="item_bottom_info_nr">
+                              注：因季节原因，水果可能会稍有变动，平台会以同等价值的水果代替。
+                        </p>
+                     </div>
+                  </div>
+                  <div style="clear:both"></div>
+              </div>
+              
+              <div class="shop_list_item_box">
+                  <div class="item_pic_box">
+                     <div class="item_pic_box_b">
+                        <a href="#" class="item_pic_link">
+                           <img src="../images/item_pic.jpg" alt="水果" title="水果" /> 
+                        </a>
+                     </div>
+                  </div>
+                  <div class="item_tit_pri_box fl">
+                     <div class="item_tit_box">
+                        <a href="#" class="item_chinese_tit">畅享礼盒A</a>
+                        <a href="#" class="item_english_tit">Enjoy share box A</a>
+                     </div>
+                     <div class="item_price_box">
+                        <div class="fl china_money">￥</div>
+                        <div class="fl item_price">69<i class="item_price_toku">96</i></div>
+                     </div>
+                  </div>
+                  <div class="item_info_big_box fl">
+                     <div class="item_top_info_box">
+                        <ul class="item_top_info_ul">
+                           <li>
+                              <span class="item_info_tit">剩余：20</span>
+                              <i class="item_info_english_i inventory"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">运费：满99包邮</span>
+                              <i class="item_info_english_i freight"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">销量：999</span>
+                              <i class="item_info_english_i sales"></i>
+                           </li>
+                        </ul>
+                        
+                     </div>
+                     
+                     
+                     
+                     <div class="item_mid_info_box">
+                        <div class="item_mid_info_tit_box fl">
+                           <div class="item_mid_info_chinese_tit">产品信息：</div>
+                           <div class="item_mid_info_english_tit">Product<br />
+information</div>
+                        </div>
+                        <div class="item_mid_info_nr fl">
+                           <p>
+                              美国华盛顿蛇果4个/越南火龙果2个/国产红提500g/桂林金桔500g/新疆库尔勒香梨4个/澳大利亚进口脐橙4个
+                           </p>
+                        </div>
+                     </div>
+                     <div class="item_bottom_info_box">
+                        <div class="item_bottom_info_tit">
+                        </div>
+                        <p class="item_bottom_info_nr">
+                              注：因季节原因，水果可能会稍有变动，平台会以同等价值的水果代替。
+                        </p>
+                     </div>
+                  </div>
+                  <div style="clear:both"></div>
+              </div>
+              
+              <div class="shop_list_item_box">
+                  <div class="item_pic_box">
+                     <div class="item_pic_box_b">
+                        <a href="#" class="item_pic_link">
+                           <img src="../images/item_pic.jpg" alt="水果" title="水果" /> 
+                        </a>
+                     </div>
+                  </div>
+                  <div class="item_tit_pri_box fl">
+                     <div class="item_tit_box">
+                        <a href="#" class="item_chinese_tit">畅享礼盒A</a>
+                        <a href="#" class="item_english_tit">Enjoy share box A</a>
+                     </div>
+                     <div class="item_price_box">
+                        <div class="fl china_money">￥</div>
+                        <div class="fl item_price">69<i class="item_price_toku">96</i></div>
+                     </div>
+                  </div>
+                  <div class="item_info_big_box fl">
+                     <div class="item_top_info_box">
+                        <ul class="item_top_info_ul">
+                           <li>
+                              <span class="item_info_tit">剩余：20</span>
+                              <i class="item_info_english_i inventory"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">运费：满99包邮</span>
+                              <i class="item_info_english_i freight"></i>
+                           </li>
+                           <li>
+                              <span class="item_info_tit">销量：999</span>
+                              <i class="item_info_english_i sales"></i>
+                           </li>
+                        </ul>
+                        
+                     </div>
+                     
+                     
+                     
+                     <div class="item_mid_info_box">
+                        <div class="item_mid_info_tit_box fl">
+                           <div class="item_mid_info_chinese_tit">产品信息：</div>
+                           <div class="item_mid_info_english_tit">Product<br />
+information</div>
+                        </div>
+                        <div class="item_mid_info_nr fl">
+                           <p>
+                              美国华盛顿蛇果4个/越南火龙果2个/国产红提500g/桂林金桔500g/新疆库尔勒香梨4个/澳大利亚进口脐橙4个
+                           </p>
+                        </div>
+                     </div>
+                     <div class="item_bottom_info_box">
+                        <div class="item_bottom_info_tit">
+                        </div>
+                        <p class="item_bottom_info_nr">
+                              注：因季节原因，水果可能会稍有变动，平台会以同等价值的水果代替。
+                        </p>
+                     </div>
+                  </div>
+                  <div style="clear:both"></div>
+              </div>  
+            </div>
+            <div style="clear:both"></div>
+            
+            <div class="right_page_type_change_big_box">
+               <div class="fl list_type_change_box">
+                  <div class="list_type1_change active fl"></div>
+                  <div class="list_type2_change fl"></div>
+               </div>
+               <div class="fr page_change_big_box">
+                  <ul class="page_change_ul">
+                     <li class="pre_page"><a href="#"></a></li>
+                     <li><a href="#">1</a></li>
+                     <li><a href="#">2</a></li>
+                     <li><a href="#">3</a></li>
+                     <li><a href="#">4</a></li>
+                     <li><a href="#">5</a></li>
+                     <li><a href="#">6</a></li>
+                     <li><a href="#">7</a></li>
+                     <li class="next_page"><a href="#"></a></li>
+                  </ul>
+               </div>
+               <div style="clear:both"></div>
+            </div>
+            
+         </div>
+         <div style="clear:both"></div>
+      </div>
+      
+    </div>
+    <div style="clear:both"></div>
+    <div class="mall_foot_box">
+          <div class="foot_box">
+             <span>Copyright ©2016 GOGAGOGA All Rights Reserved.杭州果加果加网络科技有限公司 版权所有 浙ICP备15028803号</span>
+         </div>
+       </div>
+</div>
+<script>
+$(document).ready(function () {
+	$('.list_type1_change').click(function(){
+		var is_active = $(this).hasClass('active')
+		if(is_active){
+			return false;
+		}
+		else{
+		$('.shop_list_big_box').animate({opacity:0},200)
+		
+		setTimeout(
+		function() {
+		$('.shop_list_big_box').removeClass('type2');
+		$('.shop_list_big_box').addClass('type1')
+		$('.shop_list_big_box').animate({opacity:1},200)
+		},200)
+		$('.list_type2_change').removeClass('active')
+		$(this).addClass('active')
+		$('body,html').animate({scrollTop: 0},300);
+		}
+	});
+	
+	$('.list_type2_change').click(function(){
+		var is_active_b = $(this).hasClass('active')
+		if(is_active_b){
+		}
+		else{
+		$('.shop_list_big_box').animate({opacity:0},200)
+		setTimeout(
+		function() {
+		$('.shop_list_big_box').removeClass('type1')
+		$('.shop_list_big_box').addClass('type2')
+		$('.shop_list_big_box').animate({opacity:1},200)
+		},200)
+		$('.list_type1_change').removeClass('active')
+		$(this).addClass('active')
+		$('body,html').animate({scrollTop: 0},300);
+		}
+	});
+});
+</script>
+<script>
+$(document).ready(function () {
+   $('.plus_minus_btn').click(function(){
+	   if($(this).hasClass('mall_menu_minus')){
+		   $(this).removeClass('mall_menu_minus').addClass('mall_menu_plus')
+		   $('.mall_menu_ul_lv2.active').animate({height:0},300)
+	   }
+	   else{
+	   $('.mall_menu_minus').removeClass('mall_menu_minus').addClass('mall_menu_plus')
+	   $(this).removeClass('mall_menu_plus').addClass('mall_menu_minus')
+	   $('.mall_menu_ul_lv2.active').animate({height:0},300)
+	   var nums = $(this).parent().find('.mall_menu_ul_lv2').find('.mall_menu_li_lv2').length
+	   var hei = $(this).parent().find('.mall_menu_ul_lv2').find('.mall_menu_li_lv2').first().height();
+	   var allhei = nums*hei
+	   $(this).parent().find('.mall_menu_ul_lv2').stop(true,false).addClass('active').animate({height:allhei},500)
+	   $('.mall_menu_minus')
+	   }
+   });
+     
+});   
+</script> 
+<script>
+$(document).ready(function () {
+	
+	
+	$('.index_tab_btn').mouseenter(function() { 
+	    $(this).addClass('tab_btn_hover');
+		$(this).find('.tab_for_english').hide();
+		$(this).find('.tab_for_chinese').show();
+    });
+	$('.index_tab_btn').mouseleave(function() { 
+	    $(this).removeClass('tab_btn_hover');
+		$(this).find('.tab_for_english').show();
+		$(this).find('.tab_for_chinese').hide();
+    });
+	
+	$('.tab_list_ul .index_tab_btn').mouseenter(function() { 
+	    $(this).next().show();
+    });
+	$('.tab_list_ul .index_tab_btn').mouseleave(function() { 
+	    $(this).next().hide();
+    });
+	
+	
+	$('.tab_list_ul .index_tab_lv2').mouseenter(function() { 
+	    $(this).show().prev().addClass('tab_btn_hover');
+		$(this).prev().find('.tab_for_english').hide();
+		$(this).prev().find('.tab_for_chinese').show();
+    });
+	$('.tab_list_ul .index_tab_lv2').mouseleave(function() { 
+	    $(this).hide().prev().removeClass('tab_btn_hover');
+		$(this).prev().find('.tab_for_english').show();
+		$(this).prev().find('.tab_for_chinese').hide();
+    });
+	
+	
+	$('.index_tab_btn').last().css('margin-right','0')
+	$(".index_tab_lv2 .tab_lv2_li:last-child").find('.lv2_link').addClass("noborder")
+	
+	var winw = $(window).width()
+	var winh = $(window).height()
+	
+	var emleft = (winw-300)/2
+	var emtop = (winh-300)/2
+	$('.weixin_qr_box').css('left',emleft).css('top',emtop)
+	
+	$(window).resize(function(){
+     	var winw = $(window).width()
+	    var winh = $(window).height()
+	
+	    var emleft = (winw-300)/2
+	    var emtop = (winh-300)/2
+	    $('.weixin_qr_box').css('left',emleft).css('top',emtop)
+    });
+	
+	$('#winxin_open').click(function() { 
+	    $('.weixin_qr_box').show();
+	});
+	$('#qr_close').click(function() { 
+	    $('.weixin_qr_box').hide();
+	});
+});
+</script>
+
+</body>
+</html>

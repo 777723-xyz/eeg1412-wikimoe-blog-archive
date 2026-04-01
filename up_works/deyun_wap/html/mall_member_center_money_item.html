@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首充收益/借款返点/消费返利</title>
+<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'/>
+<link href="../css/deyun_common.css" rel="stylesheet" type="text/css">
+<link href="../css/deyun_member_center.css" rel="stylesheet" type="text/css">
+<script src="../js/Zepto.min.js"></script>
+</head>
+
+<body>
+<div class="deyun_common_tit_top_box">
+   <div class="go_history_btn"><a href="javascript:history.go(-1)"></a></div>
+   <div class="deyun_common_tit_top">首充收益/借款返点/消费返利</div>
+</div>
+
+<div class="deyun_tjsy_info_body">
+   <div class="deyun_tjsy_hdsy_body">
+      <span>获得收益：</span>
+      <em id="sy_money_b" style="display:none;">1550505.99</em>
+      <em class="type_qian"></em>
+      <em>.</em>
+      <em class="type_hou"></em>
+      <span>德币</span>
+   </div>
+   
+</div>
+<!--拆分收益小数点前后的脚本-->
+<script>
+$(document).ready(function () {
+		var nums_big = Number($('#sy_money_b').text()).toFixed(2).split(".");
+		$('.deyun_tjsy_hdsy_body .type_qian').text(nums_big[0]);
+		$('.deyun_tjsy_hdsy_body .type_hou').text(nums_big[1]);
+		
+	
+});
+</script>
+
+<div class="deyun_money_instructions">
+   <div class="deyun_money_instructions_tit">首充收益/借款返点/消费返利说明：</div>
+   <div class="deyun_money_instructions_text_body">
+      <h4>1、消费返利说明</h4>
+      <p>消费返利说明消费返利说明消费返利说明消费返利说明消费返利说明消费返利说明消费返利说明消费返利说明消费返利说明消费返利说明消费返利说明消费返利说明</p>
+      <h4>2、消费返利说明</h4>
+      <p>消费返利说明消费返利说明消费返利说明消费返利说明消费返利说明消费返利说明消费返利说明消费返利说明消费返利说明消费返利说明消费返利说明消费返利说明</p>
+   </div>
+</div>
+
+</body>
+</html>

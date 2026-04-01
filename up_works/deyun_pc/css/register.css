@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+input,button{
+	outline:none;
+}
+
+.deyun_register_big_box{
+	padding:18px 18px 23px 53px;
+	border:1px solid #c9c9c9;
+	margin-top:18px;
+	margin-bottom:23px;
+	width:720px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.deyun_register_big_box .deyun_register_tit{
+	font-size:18px;
+	color:#4e4e4e;
+}
+.deyun_register_big_box .deyun_register_body {
+	margin-top:37px;
+}
+.register_input_box{
+	margin-bottom:12px;
+}
+.register_input_box label{
+	width:150px;
+	text-align:right;
+	margin-right:32px;
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+}
+.register_input_box .register_input.type_one{
+	width:275px;
+	height:25px;
+	padding-left:5px;
+	line-height:25px;
+	color:#000;
+}
+.register_input_box .register_radio_label{
+	width:auto;
+	margin-left:11px;
+	margin-right:22px;
+}
+.register_radio_label input{
+	vertical-align: middle;
+}
+.register_input_box .register_select{
+	width:90px;
+	height:20px;
+	outline:none;
+}
+.register_input_box .register_input.type_two{
+	width:113px;
+	height:25px;
+	padding-left:5px;
+	line-height:25px;
+	color:#000;
+}
+.register_input_box .register_send_code{
+	width:115px;
+	height:27px;
+	text-align:27px;
+	text-align:center;
+	background:#e62400;
+	cursor:pointer;
+	border:0;
+	color:#fff;
+	margin-left:18px;
+}
+.register_input_box.type_three{
+	margin-left:187px;
+}
+.register_input_box .register_igress{
+	vertical-align:middle;
+}
+.register_input_box .register_input_box.type_three a{
+	color:#1c4592;
+}
+.register_input_box .register_btn{
+	width:115px;
+	height:34px;
+	color:#fff;
+	background:#e62400;
+	cursor:pointer;
+	border:0px;
+	margin-top:5px;
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="keywords" content="鸟多旅游" />
+<meta name="description" content="鸟多旅游" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>酒店订单</title>
+<!--通用脚本和样式表-->
+<link href="css/niaoduo_common.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/niaoduo_common.js"></script>
+<script src="js/niaoduo_scroll.js"></script>
+
+<!--非通用脚本和样式表-->
+<link href="css/niaoduo_order.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="niaoduo_common_header">
+  <div class="niaoduo_layout">
+      <div class="fl niaoduo_header_logo">
+         <a href="#" class="niaoduo_header_logo_link"></a>
+     </div>
+      <div class="fl">
+         <ul class="niaoduo_header_meanu_ul">
+            <li class="niaoduo_header_meanu_li">
+               <a href="#" class="niaoduo_header_meanu_link">目的地</a>
+               <i class="niaoduo_header_meanu_bar">/</i>
+            </li>
+            <li class="niaoduo_header_meanu_li">
+               <a href="#" class="niaoduo_header_meanu_link">主题游</a>
+               <i class="niaoduo_header_meanu_bar">/</i>
+            </li>
+            <li class="niaoduo_header_meanu_li">
+               <a href="#" class="niaoduo_header_meanu_link">定制游</a>
+               <i class="niaoduo_header_meanu_bar">/</i>
+            </li>
+            <li class="niaoduo_header_meanu_li">
+               <a href="#" class="niaoduo_header_meanu_link">自由行</a>
+               <i class="niaoduo_header_meanu_bar">/</i>
+            </li>
+            <li class="niaoduo_header_meanu_li">
+               <a href="#" class="niaoduo_header_meanu_link">白菜价</a>
+               <i class="niaoduo_header_meanu_bar">/</i>
+            </li>
+         </ul>
+      </div>
+      
+    <div class="fr niaoduo_header_buy_cart">
+         <a class="niaoduo_header_buy_cart_link" href="#">
+            <span class="niaoduo_header_buy_cart_span">购物车：<span class="niaoduo_header_buy_cart_num">6</span>件</span>
+         </a>
+      </div>
+      <!--登录前-->
+      <!--<div class="fr niaoduo_header_account_body">
+         <a href="#">登录</a>
+         <i>|</i>
+         <a href="#">注册</a>
+      </div>-->
+      <!--登录后-->
+      <div class="fr niaoduo_header_account_body">
+         <a href="#">1235454545454</a>
+      </div>
+       
+    <div class="fr niaoduo_header_search_body">
+         <input class="niaoduo_header_input_search" type="text" name="search[name]" id="search_keywords" placeholder="">
+         <button type="button" class="niaoduo_header_btn_search" id="btn_search"></button>
+      </div>   
+  </div>
+</div>
+
+
+<div class="niaoduo_layout">
+   <div class="niaoduo_order_step_box">
+      <ul class="niaoduo_order_step_ul">
+         <li class="niaoduo_order_step_li active">
+            <div class="niaoduo_order_step_bg_box">
+               <div class="niaoduo_order_step_ten">1</div>
+               <span class="niaoduo_order_step_text">选择产品</span>
+               <div class="niaoduo_order_step_next_ico"></div>
+            </div>
+            
+         </li>
+         <li class="niaoduo_order_step_li active">
+            <div class="niaoduo_order_step_bg_box">
+               <div class="niaoduo_order_step_ten">2</div>
+               <span class="niaoduo_order_step_text">提交订单</span>
+               <div class="niaoduo_order_step_next_ico"></div>
+            </div>
+            
+         </li>
+         <li class="niaoduo_order_step_li">
+            <div class="niaoduo_order_step_bg_box">
+               <div class="niaoduo_order_step_ten">3</div>
+               <span class="niaoduo_order_step_text">支付订单</span>
+               <div class="niaoduo_order_step_next_ico"></div>
+            </div>
+            
+         </li>
+         <li class="niaoduo_order_step_li">
+            <div class="niaoduo_order_step_bg_box">
+               <div class="niaoduo_order_step_ten">4</div>
+               <span class="niaoduo_order_step_text">完成支付</span>
+            </div>
+            
+         </li>
+      </ul>
+   </div>
+   
+   <div class="niaoduo_order_down_body">
+      <div class="niaoduo_order_down_left_body fl">
+         <div class="niaoduo_order_down_left_sku_info">
+            <h3 class="niaoduo_order_down_left_sku_title">全国各地出发协和酒店入住  时间任选（赠送泰国攻略）</h3>
+            <div class="niaoduo_order_down_left_sku_p_box">
+               <p class="niaoduo_order_down_left_sku_p"><span class="niaoduo_order_down_left_p_title">房间类型：</span><span class="niaoduo_order_down_left_p_text">标准单人间</span></p>
+               <p class="niaoduo_order_down_left_sku_p"><span class="niaoduo_order_down_left_p_title">入住时间：</span><span class="niaoduo_order_down_left_p_text">2016-07-20</span></p>
+               <p class="niaoduo_order_down_left_sku_p"><span class="niaoduo_order_down_left_p_title">房间数量：</span><span class="niaoduo_order_down_left_p_text">1间</span></p>
+            </div>
+         </div>
+         
+         <div class="niaoduo_order_down_left_input_item_box type_1">
+            <h3 class="niaoduo_order_down_left_input_title">旅客信息</h3>
+            <p class="niaoduo_order_down_left_input_tips"><i class="niaoduo_input_tips_ico"></i><span class="niaoduo_order_down_left_input_tips_text">请确保您填写的信息真实无误，否则将会影响您的出行。</span></p>
+            <div class="niaoduo_order_down_left_input_body">
+               <div class="niaoduo_order_down_left_input_left fl">
+                  <label class="niaoduo_down_left_input_label">联系人<i>*</i></label>
+                  <input type="text" placeholder="(请填写联系人姓名)" class="niaoduo_down_left_input_type1" />
+               </div>
+               <div class="niaoduo_order_down_left_input_left fl" style="margin-left: -1px;">
+                  <label class="niaoduo_down_left_input_label">手机号码<i>*</i></label>
+                  <input type="text" placeholder="(用于接受重要信息)" class="niaoduo_down_left_input_type1" />
+               </div>
+               <div style="clear:both;*font-size:0px;"></div>
+            </div>
+         </div>
+         
+         <div class="niaoduo_order_down_left_input_item_box type_2">
+            <h3 class="niaoduo_order_down_left_input_title">备注</h3>
+            <p class="niaoduo_order_down_left_input_tips"><i class="niaoduo_input_tips_ico"></i><span class="niaoduo_order_down_left_input_tips_text">如有其它需求，请在此处说明。</span></p>
+            <div class="niaoduo_order_down_left_input_body">
+               <textarea class="niaoduo_order_down_left_textarea"></textarea>
+            </div>
+         </div>
+         
+         <div class="niaoduo_order_down_left_check_box">
+            <div class="fl niaoduo_order_down_left_check_price"><span><i>￥</i>1379999</span></div>
+            <button type="button" class="fr niaoduo_order_down_left_check_price_btn">确认订单</button>
+         </div>
+         
+      </div>
+      <div class="niaoduo_order_down_right_body fr">
+         <div class="niaoduo_order_down_right_box">
+            <div class="niaoduo_order_down_right_jgmx_tit">价格明细</div>
+            <div class="niaoduo_order_down_right_jgmx_nr_box">
+               <div class="niaoduo_order_down_right_jgmx_nr_item_box">
+                  <div class="niaoduo_order_down_right_jgmx_nr_item">
+                     <div class="niaoduo_order_down_right_jgmx_nr_item_left fl">
+                     标准单人间
+                     </div>
+                     <div class="niaoduo_order_down_right_jgmx_nr_item_right fr">
+                        <span>￥7699 × 1</span>
+                     </div>
+                     <div style="clear:both;*font-size:0px;"></div>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="niaoduo_order_down_right_jgmx_all_price">
+               <div class="fl niaoduo_order_down_right_jgmx_all_price_text">总价</div>
+               <div class="fr niaoduo_order_down_right_jgmx_all_price_text">￥13799</div>
+            </div>
+            
+         </div>
+      </div>
+      <div style="clear:both;*font-size:0px;"></div>
+   </div>
+   
+</div>
+
+<script>
+$(document).ready(function() {
+    $('.niaoduo_order_step_li').last().css('marginRight','0px')
+});
+</script>
+
+
+<div class="niaoduo_common_footer">
+   <div class="niaoduo_layout">
+      <div class="fl niaoduo_common_footer_left">
+         <p class="niaoduo_common_footer_link">
+            <a href="#">关于鸟多</a>
+            <i>|</i>
+            <a href="#">会员制度</a>
+            <i>|</i>
+            <a href="#">退款政策</a>
+            <i>|</i>
+            <a href="#">免责声明</a>
+         </p>
+         <p class="niaoduo_common_footer_txt">温州和平国际旅游有限公司  旗下电商品牌</p>
+      </div>
+      <div class="fr niaoduo_common_footer_right">
+         <p>版权所有 2016 © niaoduo.com 浙ICP备09067728号-3</p>
+      </div>
+   </div>
+</div>
+</body>
+</html>

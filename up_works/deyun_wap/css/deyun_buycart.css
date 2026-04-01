@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+.deyun_buycart_item_pic img{
+	max-width:108px;
+	max-height:108px;
+}
+.deyun_buycart_item_pic{
+	width:108px;
+	height:108px;
+	border:1px solid #d2d2d2;
+}
+.deyun_buycart_body .deyun_buycart_item_box{
+	height:168px;
+	background:#fff;
+	margin-top:5px;
+}
+.deyun_buycart_body .deyun_buycart_chek_box{
+	margin:42px 0px 0 0px;
+}
+.deyun_buycart_body .deyun_buycart_item_tit_price_box{
+	margin-left:5px;
+	position:relative;
+	z-index:6;
+	height:110px;
+	overflow:hidden;
+}
+.deyun_buycart_body .deyun_buycart_item_tit{
+	max-height:65px;
+	overflow:hidden;
+}
+.deyun_buycart_body .deyun_buycart_item_tit a{
+	color:#585858;
+	line-height:14px;
+	font-size:12px;
+	word-break:break-all;
+}
+.deyun_buycart_body .deyun_buycart_item_sku{
+	color:#a3a3a3;
+	font-size:12px;
+	margin-top:5px;
+}
+.deyun_buycart_body .deyun_buycart_top_box{
+	padding-top:10px;
+}
+.deyun_buycart_body .deyun_buycart_item_price{
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	color:#54ddff;
+}
+.deyun_buycart_body .deyun_buycart_bottom_box{
+	border-top:1px solid #d2d2d2;
+	margin-top:10px;
+	padding-top:12px;
+}
+.deyun_buycart_love_box{
+	padding-left:24px;
+	width: 57px;
+}
+.deyun_buycart_love_box a{
+	display:block;
+	padding-left:18px;
+	color:#a3a3a3;
+	font-size:13px;
+	line-height:13px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.deyun_buycart_love_box .deyun_addfav{
+	background-image: url(../images/love.png);
+	
+}
+.deyun_buycart_love_box .deyun_faved{
+	background-image: url(../images/loved.png);
+	
+}
+.deyun_buycart_body .deyun_buycart_gomi_box{
+	padding-left:24px;
+}
+.deyun_buycart_gomi_box .deyun_gomi{
+	display: block;
+	padding-left: 18px;
+	color: #a3a3a3;
+	font-size: 13px;
+	line-height: 13px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url(../images/gomi.png);
+}
+.deyun_buycart_body .deyun_buycart_buy_nums_box{
+	padding-right:12px;
+	margin-top:-6px;
+}
+.deyun_buycart_body .deyun_buycart_buy_nums_input{
+	width:39px;
+	height:23px;
+	border:1px solid #d2d2d2;
+	text-align:center;
+	color:#54ddff;
+	line-height:23px;
+}
+.deyun_buycart_body .deyun_buycart_buy_minus{
+	width:28px;
+	height:23px;
+	display:block;
+	border-top:1px solid #d2d2d2;
+	border-bottom:1px solid #d2d2d2;
+	border-left:1px solid #d2d2d2;
+	text-align:center;
+	line-height:23px;
+	color:#a3a3a3;
+	font-size:14px;
+}
+.deyun_buycart_body .deyun_buycart_buy_plus{
+	width:28px;
+	height:23px;
+	display:block;
+	border-top:1px solid #d2d2d2;
+	border-bottom:1px solid #d2d2d2;
+	border-right:1px solid #d2d2d2;
+	text-align:center;
+	line-height:23px;
+	color:#a3a3a3;
+	font-size:14px;
+}
+.deyun_buycart_go_order_box{
+	border-top:1px solid #d2d2d2;
+	position:fixed;
+	z-index:999;
+	bottom:51px;
+	left:0px;
+	background:#fff;
+	height:45px;
+	width:100%;
+}
+.deyun_buycart_go_order_box .all_check_span{
+	line-height:22px;
+	vertical-align: middle;
+}
+.deyun_buycart_go_order_box .all_check_box{
+	margin-top: 12px;
+}
+.deyun_buycart_go_order_box .go_order_btn{
+	height:45px;
+	width:90px;
+	background:#54ddff;
+	display:block;
+	text-align:center;
+	line-height:45px;
+	font-size:15px;
+	color:#fff;
+}
+.deyun_buycart_go_order_box .all_price_box{
+	text-align:right;
+	margin-right:5px;
+}
+.deyun_buycart_go_order_box .all_price_box .no_send_money{
+	color:#b8b8b8;
+}
+.deyun_buycart_go_order_box .all_price_p span{
+	color:#54ddff;
+}
+.deyun_buycart_go_order_box .all_price_box {
+	margin-top: 7px;
+}

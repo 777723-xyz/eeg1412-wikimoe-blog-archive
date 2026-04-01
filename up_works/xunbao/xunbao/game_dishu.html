@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" type="text/css" href="js/weui/lib/weui.min.css">
+        <link rel="stylesheet" type="text/css" href="js/weui/css/jquery-weui.min.css">
+        <link rel="stylesheet" type="text/css" href="css/H-ui.reset.css">
+		<title>我的宝藏</title>
+	</head>
+
+<body class="body_grey">
+<link rel="stylesheet" type="text/css" href="css/cj_games.css">
+<link rel="stylesheet" type="text/css" href="css/games/cj_game_dishu.css">
+<link rel="stylesheet" type="text/css" href="css/cj_gg_window.css">
+<link rel="stylesheet" type="text/css" href="css/cj_share_window.css">
+<img id="temp" class="dishu_img_temp" src="images/games/dishu/dishu.png">
+<img id="temp2" class="dishu_img_temp" src="images/games/dishu/dishu_down.png">
+<img id="temp3" class="dishu_img_temp" src="images/games/dishu/dishu_boom.png">
+<img id="temp4" class="dishu_img_temp" src="images/games/dishu/dishu_boom_active.png">
+<div class="cj_game_common_bg cj_min750">
+</div>
+<div id="dishu_game_body">
+<div class="cj_dishu_point_body">
+   <h2 class="cj_dishu_point" id="point">得分:0</h2>
+   <h2 class="cj_dishu_point" id="life">剩余机会:3</h2>
+</div>
+<div id="dishu_ico"></div>
+<div class="cj_dishu_canvas_bg"><canvas id="game_dishu">您的浏览器并不支持小游戏，请更换新的浏览器再试。</canvas></div>
+</div>
+<div class="cj_black_bg"></div>
+<div class="cj_gg_window_body" id="my_goods_window">
+  <div class="cj_gg_window_title"></div>
+  <div class="cj_gg_window_goods_body">
+     <div class="cj_gg_window_goods_box">
+        <div class="cj_gg_window_goods_img_box"><img src="images/Details_Props01_icon@3x.png" alt=""/></div> 
+        <div class="cj_gg_window_goods_name">道具名称</div>
+     </div>
+     <div class="cj_wgf_item">
+        <a href="javascript:;" class="fj_wgf_get_btn type_2" id="goto_set_phone_window">获取奖励</a>
+     </div>
+     <div class="cj_wgf_item">
+        <a href="javascript:;" class="fj_wgf_get_btn type_share type_2" onClick="go_share();">分享</a>
+     </div>
+  </div>
+  <!--<div class="cj_game_window_close" id="cj_gg_windows_back"></div>-->
+</div>
+<div class="cj_gg_window_body" id="input_phone_window">
+   <div class="cj_gg_window_get_body">
+     <p class="cj_gg_window_get_title">您将获得10元话费的额外奖励</p>
+     <div class="cj_window_get_form">
+        <div class="cj_wgf_item"><input type="text" class="cj_wgf_input" placeholder="请输入手机号码获得奖励"></div>
+        <div class="cj_wgf_item cl">
+           <input type="text" class="cj_wgf_input type_small fl" placeholder="请输入验证码">
+           <a href="javascript:;"  class="cj_wgf_sendcode fr">获取验证码</a>
+        </div>
+        <div class="cj_wgf_item">
+           <a href="#" class="fj_wgf_get_btn">获取奖励</a>
+        </div>
+        <div class="cj_wgf_bt_btn_box cl">
+           <a href="#" class="fl cj_wgf_bb_btn1">查看道具</a>
+           <a href="#" class="fl cj_wgf_bb_btn2" onClick="go_share();">分享</a>
+        </div>
+     </div>
+  </div>
+</div>
+<script src="js/weui/lib/jquery-2.1.4.js"></script>
+<script src="js/cj_games_common.js"></script>
+<script src="js/games/cj_game_dishu.js"></script>
+<script src="js/cj_gg_window.js"></script>
+<script src="js/cj_share_window.js"></script>
+</body>
+</html>

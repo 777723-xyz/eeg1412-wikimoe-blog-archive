@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人中心</title>
+<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'/>
+<link href="../css/deyun_common.css" rel="stylesheet" type="text/css">
+<link href="../css/deyun_member_center.css" rel="stylesheet" type="text/css">
+<script src="../js/Zepto.min.js"></script>
+</head>
+
+<body>
+<div class="deyun_common_tit_top_box">
+   <div class="deyun_common_tit_top">个人中心</div>
+   <a class="deyun_change_password" href="#"></a>
+</div>
+
+<div class="deyun_member_info_big_box">
+   <div class="deyun_member_info_top_box clearfix">
+      <div class="deyun_member_info_tx fl"><img src="../images/94970a07.jpg"></div>
+   <div class="deyun_member_info_lv_and_name_box fl">
+      <div class="deyun_member_info_name_box">德云用户123</div>
+      <!--等级分6级 分别对应在class="deyun_member_info_lv_box"中增加【lv_等级】-->
+      <div class="deyun_member_info_lv_box lv_1">
+         <div class="deyun_member_info_lv_ico fl"></div>
+         <div class="deyun_member_info_lv_name fl">普通会员</div>
+      </div>
+      
+      <div class="deyun_member_info_lv_box lv_2" style="display:none;">
+         <div class="deyun_member_info_lv_ico fl"></div>
+         <div class="deyun_member_info_lv_name fl">珍珠会员</div>
+      </div>
+      
+      <div class="deyun_member_info_lv_box lv_3" style="display:none;">
+         <div class="deyun_member_info_lv_ico fl"></div>
+         <div class="deyun_member_info_lv_name fl">银卡会员</div>
+      </div>
+      
+      <div class="deyun_member_info_lv_box lv_4" style="display:none;">
+         <div class="deyun_member_info_lv_ico fl"></div>
+         <div class="deyun_member_info_lv_name fl">金卡会员</div>
+      </div>
+      
+      <div class="deyun_member_info_lv_box lv_5" style="display:none;">
+         <div class="deyun_member_info_lv_ico fl"></div>
+         <div class="deyun_member_info_lv_name fl">钻石会员</div>
+      </div>
+      
+      <div class="deyun_member_info_lv_box lv_6" style="display:none;">
+         <div class="deyun_member_info_lv_ico fl"></div>
+         <div class="deyun_member_info_lv_name fl">皇冠会员</div>
+      </div>
+   </div>
+   </div>
+   
+   <div class="deyun_member_info_bottom_box">
+      <div class="deyun_member_money_box">
+         <div class="deyun_member_money_ico type_1"></div>
+         <p>100.50 </p>
+         <p>首充德币</p>
+      </div>
+      <div class="deyun_member_money_box">
+         <div class="deyun_member_money_ico type_2"></div>
+         <p>1090.50 </p>
+         <p>普通德币</p>
+      </div>
+      <div class="deyun_member_money_box">
+         <div class="deyun_member_money_ico type_3"></div>
+         <p>1300.50 </p>
+         <p>消费云币</p>
+      </div>
+      <div class="deyun_member_money_box">
+         <div class="deyun_member_money_ico type_4"></div>
+         <p>99999999.99 </p>
+         <p>赠送云币</p>
+      </div>
+   </div>
+   
+</div>
+
+<div class="change_and_give_big_box">
+   <a class="deyun_change_btn deyun_change_and_give_btn fl" href="#">充值</a>
+   <a class="deyun_give_btn deyun_change_and_give_btn fr" id="tixian" href="###">提现</a>
+</div>
+<!--给充值提现按钮定义宽度的脚本-->
+<script>
+$(document).ready(function () {
+	function change_and_give_btn(){
+	   var win_H = $('body').width();
+	   $('.deyun_change_and_give_btn').css('width',win_H/2-1);
+	};
+	change_and_give_btn();
+	$(window).resize(function(){
+		change_and_give_btn();
+	});
+});
+</script>
+
+<div class="deyun_my_order_box">
+   <div class="deyun_my_order_top_box">
+      <h3 class="deyun_my_order_tit fl">我的订单 </h3>
+      <a class="deyun_my_order_all fr" href="#">查看全部订单></a>
+   </div>
+   <div class="deyun_my_order_bottom_box">
+      <div class="deyun_my_order_ico_box">
+         <div class="deyun_my_order_ico_nums_cache" style="display:none;">100</div>
+         <div class="deyun_my_order_ico_nums"></div>
+         <a class="deyun_my_order_ico_link" href="#">
+            <img class="deyun_my_order_ico" src="../images/member_order_ico1.png">
+            <span class="deyun_my_order_ico_span">待付款</span>
+         </a>
+      </div>
+      
+      <div class="deyun_my_order_ico_box">
+         <div class="deyun_my_order_ico_nums_cache" style="display:none;">10</div>
+         <div class="deyun_my_order_ico_nums"></div>
+         <a class="deyun_my_order_ico_link" href="#">
+            <img class="deyun_my_order_ico" src="../images/member_order_ico2.png">
+            <span class="deyun_my_order_ico_span">待发货</span>
+         </a>
+      </div>
+      
+      <div class="deyun_my_order_ico_box">
+         <div class="deyun_my_order_ico_nums_cache" style="display:none;">1</div>
+         <div class="deyun_my_order_ico_nums"></div>
+         <a class="deyun_my_order_ico_link" href="#">
+            <img class="deyun_my_order_ico" src="../images/member_order_ico3.png">
+            <span class="deyun_my_order_ico_span">待收货</span>
+         </a>
+      </div>
+      
+      <div class="deyun_my_order_ico_box">
+         <div class="deyun_my_order_ico_nums_cache" style="display:none;">0</div>
+         <div class="deyun_my_order_ico_nums"></div>
+         <a class="deyun_my_order_ico_link" href="#">
+            <img class="deyun_my_order_ico" src="../images/member_order_ico4.png">
+            <span class="deyun_my_order_ico_span">待评价</span>
+         </a>
+      </div>
+      
+      <div class="deyun_my_order_ico_box">
+         <div class="deyun_my_order_ico_nums_cache" style="display:none;">9999999</div>
+         <div class="deyun_my_order_ico_nums"></div>
+         <a class="deyun_my_order_ico_link" href="#">
+            <img class="deyun_my_order_ico" src="../images/member_order_ico5.png">
+            <span class="deyun_my_order_ico_span">已关闭</span>
+         </a>
+      </div>
+  </div>  
+</div>
+<!--订单数为0的时候隐藏，超过数值的时候显示加号-->
+<script>
+$(document).ready(function () {
+	for (var i=0;i<5;i++){
+        var nums = $.trim($('.deyun_my_order_ico_box').eq(i).find('.deyun_my_order_ico_nums_cache').text());
+		if(nums==0){
+			$('.deyun_my_order_ico_box').eq(i).find('.deyun_my_order_ico_nums').hide();
+		}
+		else{
+			$('.deyun_my_order_ico_box').eq(i).find('.deyun_my_order_ico_nums').text(nums);
+		}
+    }
+	
+	function deyun_my_order(){
+		for (var i=0;i<5;i++){
+        var nums = $.trim($('.deyun_my_order_ico_box').eq(i).find('.deyun_my_order_ico_nums_cache').text());
+		var nums_win_W = $('body').width();
+		if(nums_win_W<=320){
+		    if(nums>99){
+			    $('.deyun_my_order_ico_box').eq(i).find('.deyun_my_order_ico_nums').text("9+");
+		        }
+				else{
+					$('.deyun_my_order_ico_box').eq(i).find('.deyun_my_order_ico_nums').text(nums);
+		        }
+		    }
+	    else if(nums_win_W<=425){
+		    if(nums>999){
+			    $('.deyun_my_order_ico_box').eq(i).find('.deyun_my_order_ico_nums').text("99+");
+		        }
+			else{
+					$('.deyun_my_order_ico_box').eq(i).find('.deyun_my_order_ico_nums').text(nums);
+		        }
+		    }
+		else if(nums_win_W>425){
+			if(nums>999){
+			    $('.deyun_my_order_ico_box').eq(i).find('.deyun_my_order_ico_nums').text("999+");
+		        }
+			else{
+					$('.deyun_my_order_ico_box').eq(i).find('.deyun_my_order_ico_nums').text(nums);
+		        }
+		   }		
+        }		
+	}
+	
+	deyun_my_order();
+	$(window).resize(function(){
+		deyun_my_order();
+	});
+});
+</script>
+
+
+<div class="deyun_member_center_nav_item_big_box">
+  <div class="deyun_member_center_nav_item_box">
+      <div class="deyun_member_center_nav_item_ico fl"><img src="../images/member_nav_ico_5.png"></div>
+      <div class="deyun_member_center_nav_item_name fl"><a href="#">收货地址</a></div>
+   </div>
+   <div class="deyun_member_center_nav_item_box">
+      <div class="deyun_member_center_nav_item_ico fl"><img src="../images/member_nav_ico_4.png"></div>
+      <div class="deyun_member_center_nav_item_name fl"><a href="#">我的收藏</a></div>
+   </div>
+   <div class="deyun_member_center_nav_item_box">
+      <div class="deyun_member_center_nav_item_ico fl"><img src="../images/member_nav_ico_3.png"></div>
+      <div class="deyun_member_center_nav_item_name fl"><a href="#">我的足迹</a></div>
+   </div>
+   <div class="deyun_member_center_nav_item_box">
+      <div class="deyun_member_center_nav_item_ico fl"><img src="../images/member_nav_ico_2.png"></div>
+      <div class="deyun_member_center_nav_item_name fl"><a href="#">我的收益</a></div>
+   </div>
+   <div class="deyun_member_center_nav_item_box">
+      <div class="deyun_member_center_nav_item_ico fl"><img src="../images/member_nav_ico_1.png"></div>
+      <div class="deyun_member_center_nav_item_name fl"><a href="#">我的申请</a></div>
+   </div>
+</div>
+<!--控制菜单宽高度-->
+<script>
+$(document).ready(function () {
+	$('.deyun_member_center_nav_item_name').last().css('borderBottom',0)
+	function nav_item_name(){
+		var name_win_W = $('body').width();
+		$('.deyun_member_center_nav_item_name').css('width',name_win_W-53);
+		
+		var item_big_box_H = $(window).height();
+		var item_nums = $('.deyun_member_center_nav_item_box').length;
+		var item_HH = item_nums*50;
+		if((item_big_box_H-314-51)>item_HH){
+		   $('.deyun_member_center_nav_item_big_box').css('height',item_big_box_H-314-51);
+		}
+		else{
+			$('.deyun_member_center_nav_item_big_box').css('height','auto');
+		}
+		
+	}
+	nav_item_name();
+	$(window).resize(function(){
+		nav_item_name();
+	});
+});
+</script>
+
+
+<div class="bi_to_money_and_change_window_box" id="tixian_window">
+   <div class="bi_to_money_and_change_window_tit">提现德币</div>
+   <div class="bi_to_money_and_change_window_body">
+      <p>这里主要填写德币的提现基数，一天提现次数以及最大提现额度。这里主要填写德币的提现基数，一天提现次数以及最大提现额度。这里主要填写德币的提现基数，一天提现次数以及最大提现额度。</p>
+      <div class="bi_to_money_and_change_window_input_box">
+         <label>提现德币金额：</label>
+         <input type="text" placeholder="在此输入提现金额">
+      </div>
+   </div>
+   <div class="bi_to_money_and_change_window_btn_box">
+      <a href="###" class="window_btn_is_ok">确定</a>
+      <a href="###" class="window_btn_is_no">取消</a>
+      <div style="clear:both;"></div>
+   </div>
+</div>
+<script>
+$(document).ready(function () {
+	$('.bi_to_money_and_change_window_box').hide();
+	$('#tixian').click(function(){
+		$('.bi_to_money_and_change_window_box').show();
+		$('body').css('overflow','hidden');
+		$('body').append("<div class='deyun_black_bg'></div>");
+		$("body").on('touchmove',function(event) { event.preventDefault(); }, false);
+	});
+	$('.window_btn_is_no').click(function(){
+		$('.bi_to_money_and_change_window_box').hide();
+		$('body').css('overflow','auto');
+		$('.deyun_black_bg').remove();
+		/*记得点击确定的时候也要加上这个解除绑定*/
+		$("body").unbind('touchmove');
+	});
+	function change_window_box(){
+		var change_window_W = $(window).width();
+		$('.bi_to_money_and_change_window_box').css('left',(change_window_W-300)/2);
+		var show_hide = $('.bi_to_money_and_change_window_box').css('display');
+		var chang_window_H = $(window).height();
+		var chang_window_HH = $('.bi_to_money_and_change_window_box').height();
+		if(show_hide=="none"){
+			$('.bi_to_money_and_change_window_box').show();
+		
+		
+		var chang_window_H = $(window).height();
+		var chang_window_HH = $('.bi_to_money_and_change_window_box').height();
+
+		$('.bi_to_money_and_change_window_box').hide();
+		};
+		
+		
+		
+		
+		
+		$('.bi_to_money_and_change_window_box').css('top',(chang_window_H-chang_window_HH)/2);
+	}
+	   change_window_box();
+	   $(window).resize(function(){
+		change_window_box();
+	});
+});
+</script>
+
+
+<!--底部导航开始-->
+<div class="deyun_bottom_nav_box">
+   <!--选中状态class加上nav_active-->
+   <a class="deyun_bottom_nav_link" href="#">
+      <span class="deyun_bottom_nav_ico_box nav_type_index"></span>
+      <span class="deyun_bottom_nav_txt">主页</span>
+   </a>
+   <a class="deyun_bottom_nav_link" href="#">
+      <span class="deyun_bottom_nav_ico_box nav_type_class"></span>
+      <span class="deyun_bottom_nav_txt">分类</span>
+   </a>
+   <a class="deyun_bottom_nav_link" href="#">
+      <span class="deyun_bottom_nav_ico_box nav_type_buycart"></span>
+      <span class="deyun_bottom_nav_txt">购物车</span>
+   </a>
+   <a class="deyun_bottom_nav_link nav_active" href="#">
+      <span class="deyun_bottom_nav_ico_box nav_type_me"></span>
+      <span class="deyun_bottom_nav_txt">我</span>
+   </a>
+</div>
+<script>
+$(document).ready(function () {
+	$('body').css('paddingBottom','51px');
+});
+</script>
+<!--底部导航结束-->
+
+</body>
+</html>

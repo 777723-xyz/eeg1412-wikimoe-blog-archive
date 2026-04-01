@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+<title>测试</title>
+<style>
+.canvas{
+	border:1px solid #333;
+	cursor:pointer;
+	display:block;
+	margin:0 auto;
+	margin-bottom:10px;
+}
+.btnbox{
+	position:relative;
+	z-index:1;
+	width:100%;
+	height:160px;
+	margin-top:10px;
+}
+.btn{
+	width:75px;
+	height:75px;
+	border:1px solid #525252;
+	background:none;
+	position:absolute;
+	z-index:1;
+}
+.btn.up{
+	top:0;
+	left:50%;
+	margin-left:-37px;
+}
+.btn.down{
+	top:85px;
+	left:50%;
+	margin-left:-37px;
+}
+.btn.left{
+	top:42px;
+	left:0;
+}
+.btn.right{
+	top:42px;
+	right:0;
+}
+</style>
+</head>
+
+<body>
+<div class="canvasbox">
+    <canvas id="myCanvas" class="canvas"></canvas>
+    <div>分数：<span id="score"></span></div>
+    <div>HP：<span id="HP"></span></div>
+</div>
+<p style="margin-top:10px;">操作说明：方向键可以控制方向。或点击下方按钮。</p>
+<div class="btnbox">
+	<button type="button" class="up btn" id="up">上</button>
+    <button type="button" class="down btn" id="down">下</button>
+    <button type="button" class="left btn" id="left">左</button>
+    <button type="button" class="right btn" id="right">右</button>
+</div>
+<script>
+var canvas=document.getElementById('myCanvas');//获取画布
+var scoreSpan = document.getElementById('score');//获取得分span
+var HPSpan = document.getElementById('HP');//获取HP的span
+var ctx=canvas.getContext('2d');//用于在画布上绘图的环境
+var devicePixelRatio = window.devicePixelRatio || 1;//获取屏幕的ppi
+var blockSize = 20*devicePixelRatio;//每格像素
+var ctxW = 12;//宽多少格
+var ctxH = 6;//高多少格
+canvas.width=ctxW*blockSize;//设定画布宽度，就是格子*每格像素
+canvas.height=ctxH*blockSize;//设定画布高度，就是格子*每格像素
+canvas.style.width = ctxW*blockSize/devicePixelRatio + "px";
+canvas.style.height = ctxH*blockSize/devicePixelRatio +"px";
+
+var imgSrc = [
+	"img/bg.png",
+	"img/mycar.png",
+	"img/emcar.png",
+	"img/boom.png"
+]
+var images = [];
+
+ctx.font = String(14*devicePixelRatio)+"px Courier New";//设定字体
+ctx.fillStyle = "#333";//设定字颜色
+ctx.textAlign="center";//设定字居中
+ctx.fillText("读取中...", Math.round(ctxW*blockSize/2), 50*devicePixelRatio);
+var emt = null;//用于存放定时器，用于更新敌车坐标
+var creatEm = null;//用于存放定时器，用于增加敌车
+var flush = null;//用于存放定时器，用于刷新画布
+var addscoreT = null;
+
+var myShipY=0;//我方的Y初始位置
+var myShipX=0;//我方X初始位置
+var emShip = [];//存放敌方数据
+var boom = [];//存放爆炸效果数据
+var hard = 0;//难度（刷新速度，越小刷新越快单位毫秒）
+var score = 0;//得分
+var HP = 0;//HP
+
+var BGx = 0;
+
+function loading(){
+	var imgLength = imgSrc.length;
+	var loadingNum = 0;
+	for(var i=0;i<imgLength;i++){
+		images[i] = new Image();
+		images[i].src = imgSrc[i];
+		images[i].onload = function(){
+			loadingNum++;
+			if(loadingNum===imgLength){
+				loadingOK();
+			}
+		}
+	}
+}
+
+function loadingOK(){
+	ctx.clearRect(0,0,canvas.width,canvas.height);//清空画布
+	ctx.font = String(14*devicePixelRatio)+"px Courier New";//设定字体
+	ctx.fillStyle = "#333";//设定字颜色
+	ctx.textAlign="center";//设定字居中
+	ctx.fillText("点击开始游戏", Math.round(ctxW*blockSize/2), 50*devicePixelRatio);
+	canvas.onclick=function(event){
+		init();
+	};
+}
+
+function init(){//初始化
+
+	myShipY=1;//设定我方的Y初始位置
+	myShipX=1;//设定我方的X初始位置
+	emShip = [];//清空敌车数据
+	boom = [];//清空爆炸效果数据
+	hard = 3000;//初始化难度
+	score = 0;//初始化分数
+	HP = 3;//初始化HP
+	
+	ctx.clearRect(0,0,canvas.width,canvas.height);//清空画布
+	
+	creatEmShip();//创建敌车
+	paintMyShip();//绘制我方
+	paintEmship();//绘制敌车
+	scoreSpan.innerHTML = String(score);//初始化计分板
+	HPSpan.innerHTML = String(HP);//初始化HP剩余量
+	
+	clearInterval(emt);//清除更新敌车坐标定时器器
+	clearInterval(creatEm);//清除创建敌车定时器
+	clearInterval(flush);//清除刷新画布定时器
+	clearInterval(addscoreT);
+	
+	emt = setInterval(function(){//每400毫秒敌车向左移动一次
+		emShipMove();
+	},140);
+	
+	creatEm = setInterval(function(){//根据难度创建敌车
+		creatEmShip();
+	},hard);
+	
+	flush = setInterval(function(){//100毫秒刷新画布
+		ctx.clearRect(0,0,canvas.width,canvas.height);//清空画布
+		paintBG();
+		paintEmship();//绘制敌车
+		paintMyShip();//绘制我方
+		boomEmship();//判断是否炸中敌车
+	},20);
+	
+	addscoreT = setInterval(function(){
+		addScore();
+	},3000);
+	
+}
+function paintBG(){
+	ctx.drawImage(images[0],BGx,0,canvas.width*2,canvas.height);
+	paintBGMove();
+}
+function paintBGMove(){
+	BGx = BGx-5*devicePixelRatio;
+	if(BGx <= -canvas.width){
+		BGx = 0;
+	}
+}
+function paintMyShip(){//绘制我方
+	var shipX = (myShipX-1)*blockSize;//设定我方船只的X坐标，因为左边是从（0，0）开始，格子定为1开始所以-1
+	var shipY = (myShipY-1)*blockSize;//设定我方船只的X坐标，因为左边是从（0，0）开始，格子定为1开始所以-1
+	ctx.drawImage(images[1],shipX,shipY,blockSize,blockSize);
+}
+function creatEmShip(){//随机出现敌车
+	var Y = Math.floor(Math.random()*(ctxH) + 1);//高度一共有6个格子，出去丢雷的格子和我方的格子就是6-2，然后就随机从1-4中生成随机数
+	emShip.push([blockSize*ctxW,Y,false]);//给敌车数据添加敌车坐标
+}
+function paintEmship(){//绘制敌车
+	for(var i=0;i<emShip.length;i++){//循环敌车数据
+		var emShipX = emShip[i][0];//保存敌车X坐标
+		var emShipY = (emShip[i][1]-1)*blockSize;//保存敌车Y坐标，因为Y是1-4的所在格子，所以要*每格像素来计算出像素坐标
+		if(emShip[i][2]){
+			ctx.drawImage(images[3],emShipX,emShipY,blockSize,blockSize);
+		}else{
+			ctx.drawImage(images[2],emShipX,emShipY,blockSize,blockSize);
+		}
+	}
+}
+function emShipMove(){//移动敌车
+	for(var i=0;i<emShip.length;i++){//循环敌车数据
+		var X = emShip[i][0]-blockSize;//敌车X坐标向左移动一个格子
+		emShip[i][0] = X;//重新写入X坐标
+		
+	}
+	removeEmShip();//清除多余的敌车（画布外）
+}
+function removeEmShip(){//超出范围删除敌车并且HP-1
+	for(var i=0;i<emShip.length;i++){//循环敌车数据
+		var X = emShip[i][0];//储存敌车X坐标
+		if(X<0){//如果已经在画布外
+			emShip.splice(i,1);//删除敌车
+		}
+	}
+}
+function boomEmship(){//判定炸了
+		var boom_X = (myShipX-1)*blockSize;//保存X坐标
+		var boom_Y = (myShipY-1)*blockSize;//保存Y坐标
+		for(var j=0;j<emShip.length;j++){//循环敌车数据
+			var emShip_X = emShip[j][0];//保存敌车X坐标
+			var emShip_Y = emShip[j][1]-1;//保存敌车Y坐标
+			var emShipIsBoom = emShip[j][2];
+			if(boom_X===emShip_X){//判断是否X坐标相同
+				if(boom_Y===emShip_Y*blockSize){//如果Y坐标也相同
+					if(!emShipIsBoom){
+						minusHP();//扣血
+						emShip[j][2] = true;
+					}
+				}
+			}
+		}
+}
+function gameOver(){//游戏结束
+	ctx.clearRect(0,0,canvas.width,canvas.height);//清空画布
+	clearInterval(emt);
+	clearInterval(creatEm);
+	clearInterval(flush);//清空所有定时器
+	clearInterval(addscoreT);
+	ctx.font = String(14*devicePixelRatio)+"px Courier New";//设定字体
+	ctx.fillStyle = "#333";//设定字颜色
+	ctx.textAlign="center";//设定字居中
+	ctx.fillText("游戏结束，你得了"+score+"分", Math.round(ctxW*blockSize/2), 50*devicePixelRatio);
+	//显示游戏结束，你得了x分在画布中间
+}
+function addScore(){//加分
+	score ++;//加分
+	scoreSpan.innerHTML = String(score);//更新计分板
+	hard = hard-100;//难度增加20
+	if(hard<=300){
+		hard=300;//如果难度已经是800了则保持800
+	}
+	creatEmShip();//立刻创建一个敌车
+	clearInterval(creatEm);
+	creatEm = setInterval(function(){//根据难度创建敌车
+		creatEmShip();
+	},hard);
+}
+function minusHP(){//减HP
+	HP --;//减HP
+	if(HP<=0){
+		HPSpan.innerHTML = String(HP);//更新HP剩余量
+		setTimeout("gameOver()",0);//如果HP为0则游戏结束
+	}else{
+		HPSpan.innerHTML = String(HP);//更新HP剩余量
+	}
+}
+
+document.onkeydown=function(event){//绑定键盘事件
+	var e = event || window.event || arguments.callee.caller.arguments[0];
+	if(e && e.keyCode==37){//左
+		if(myShipX===1){//防止我方移动到画布外面
+			return
+		}
+		myShipX= myShipX-1;
+	}
+	if(e && e.keyCode==39){//右
+		if(myShipX===ctxW){//防止我方移动到画布外面
+			return
+		}
+		myShipX= myShipX+1;
+	}
+	
+	if(e && e.keyCode==38){//上
+		if(myShipY===1){//防止我方移动到画布外面
+			return
+		}
+		myShipY= myShipY-1;
+	}
+	
+	if(e && e.keyCode==40){//下
+		if(myShipY===ctxH){//防止我方移动到画布外面
+			return
+		}
+		myShipY= myShipY+1;
+	}
+	
+	
+}
+document.getElementById('up').onclick=function(event){
+	if(myShipY===1){//防止我方移动到画布外面
+		return
+	}
+	myShipY= myShipY-1;
+}
+document.getElementById('down').onclick=function(event){
+	if(myShipY===ctxH){//防止我方移动到画布外面
+		return
+	}
+	myShipY= myShipY+1;
+}
+document.getElementById('left').onclick=function(event){
+	if(myShipX===1){//防止我方移动到画布外面
+		return
+	}
+	myShipX= myShipX-1;
+}
+document.getElementById('right').onclick=function(event){
+	if(myShipX===ctxW){//防止我方移动到画布外面
+		return
+	}
+	myShipX= myShipX+1;
+}
+
+loading();
+</script>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan style='display:none;' id='cnzz_stat_icon_1254498600'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D1254498600' type='text/javascript'%3E%3C/script%3E"));</script>
+
+</body>
+</html>

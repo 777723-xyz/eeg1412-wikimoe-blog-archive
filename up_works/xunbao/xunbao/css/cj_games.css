@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+.cj_game_common_bg{
+	background-image:url(../images/TreasureHuntGame@3x.jpg);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.cj_game_common_start_btn{
+	background-image:url(../images/TreasureMap@3x.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:contain;
+	width:350px;
+	height:260px;
+	display:block;
+	-webkit-animation:tf1 1.5s 1,tf2 2s 1.5s infinite;
+	animation:tf1 1.5s 1,tf2 2s 1.5s infinite;
+	position:fixed;
+	z-index:6;
+	top:50%;
+	left:50%;
+	margin-top:-130px;
+	margin-left:-175px;
+}
+@keyframes tf1 {
+0% { transform:scale(0, 0); }
+50% { transform:scale(1.1, 1.1); }
+100% { transform:scale(1, 1); }
+}
+@keyframes tf2 {
+	0%,100%{ transform:scale(1, 1); }
+    50% { transform:scale(1.04, 1.04); }
+}
+.cj_game_noplay_body{
+	width:325px;
+	height:431px;
+	position:fixed;
+	top:50%;
+	left:50%;
+	z-index:6;
+	margin-top:-215px;
+	margin-left:-162px;
+	background-image:url(../images/pop_rewardEnd_icon@3x.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+.cj_game_noplay_btn_box{
+	padding-top:300px;
+	text-align:center;
+}
+.cj_game_noplay_btn{
+	display:inline-block;
+	text-align:center;
+	width:220px;
+	height:40px;
+	font-size:14px;
+	line-height:40px;
+	border-radius:5px;
+	margin-bottom:10px;
+}
+.cj_game_noplay_btn.type_back{
+	background:#fff2d7;
+	color:#eaa515;
+}
+.cj_game_noplay_btn.type_share{
+	background:#ffd57f;
+	color:#fff;
+}
+.cj_gameclear_noplay_body{
+	position: fixed;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.cj_game_noplay_close{
+	width: 28px;
+    height: 53px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+	z-index:7;
+    margin-top: -89px;
+    margin-left: 82px;
+    background-image:url(../images/pop_close_icon@3x.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

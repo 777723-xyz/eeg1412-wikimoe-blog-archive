@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>爱心区</title>
+<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'/>
+<link href="../css/deyun_common.css" rel="stylesheet" type="text/css">
+<link href="../css/donate.css" rel="stylesheet" type="text/css">
+<script src="../js/Zepto.min.js"></script>
+</head>
+
+<body class="deyun_white_bg_body deyun_mhome">
+<!--JQ库引用在zepto下面，如果zepto不是全局引用的话推荐这个页面不要引用-->
+<script src="../js/jquery-1.9.1.min.js"></script>
+<!--数字动画脚本库必须要在JQ库下面-->
+<script src="../js/num_animate.js"></script>
+<div class="deyun_common_tit_top_box">
+   <div class="go_history_btn"><a href="javascript:history.go(-1)"></a></div>
+   <div class="deyun_common_tit_top">爱心区</div>
+</div>
+
+<div class="deyun_donate_top_banner">
+   <div class="donate_money_big_box">
+         <div class="now_use_money_box">
+            <div class="donate_money_tit_box">目前可使用金额：</div>
+            <div class="donate_money_box">
+               <div class="donate_money_rmb">￥</div>
+               <div class="donate_money_nums now"></div>
+               <span class="donate_money_nums_cache now">15058290</span>
+            </div>
+         </div>
+         <div class="history_money_box">
+            <div class="donate_money_tit_box">历史总金额：</div>
+            <div class="donate_money_box">
+               <div class="donate_money_rmb">￥</div>
+               <div class="donate_money_nums history"></div>
+               <span class="donate_money_nums_cache history">158058490015</span>
+            </div>
+         </div>
+      </div>
+</div>
+<!--数字动画脚本-->
+<script>
+$(document).ready(function () {
+
+  var all_donate_num = $('.donate_money_nums_cache.now').html()
+  var numRun2 = $(".donate_money_nums.now").numberAnimate({num:all_donate_num, speed:2000, symbol:","});
+  
+  var all_donate_num = $('.donate_money_nums_cache.history').html()
+  var numRun2 = $(".donate_money_nums.history").numberAnimate({num:all_donate_num, speed:2000, symbol:","});
+
+});
+</script>
+
+<div class="deyun_donate_content_tit">
+   <h3>爱心足迹</h3>
+</div>
+
+<div class="deyun_donate_content_body">
+
+  <div class="deyun_donate_content_item_box">
+      <div class="deyun_donate_content_item_time">
+         <span class="deyun_donate_content_item_bar"></span><span class="deyun_donate_content_item_nums">2016-02-02</span>
+      </div>
+      <div class="deyun_donate_content_item_big_pic"><img src=""></div>
+      <h4 class="deyun_donate_content_item_tit_h4">三大鼎立全球，中兴偏安本土</h4>
+      <div class="deyun_donate_content_item_txt_sm"></div>
+      <!--↓文章输出到这里-->
+      <div class="deyun_donate_content_item_txt_full">
+         <p>一方面4G业务在全球范围内获得迅猛发展，据GSMA统计到2015年底全球LTE用户已经突破10亿用户，2015年一年时间就增加了5.5亿4G用户。4G用户的迅猛发展带来的就是LTE网络建设需求的大幅增长，这为通信设备厂商在2015年的业务增长提供了市场机会。</p>
+         <p>另一方面，随着诺基亚和阿尔卡特-朗讯这两家公司合并的推进， 2015年是阿尔卡特-朗讯以独立公司名义发布财报的最后一年，进入2016年之后在通信设备市场将只剩下华为、爱立信、新诺基亚和中兴这四家通信厂商，行业的集中度进一步提升并将导致现有厂商格局发生变化。</p>
+         <p><img src="../images/deyun_m_banner_1.jpg"></p>
+         
+         <!--↓每个文章的末尾要保留这个按钮-->
+         <div class="close_more_box">
+            <em class="close_more">[收起]</em>
+         </div>
+      </div>
+  
+  </div>
+  
+  <div class="deyun_donate_content_item_box">
+      <div class="deyun_donate_content_item_time">
+         <span class="deyun_donate_content_item_bar"></span><span class="deyun_donate_content_item_nums">2016-02-02</span>
+      </div>
+      <div class="deyun_donate_content_item_big_pic"><img src=""></div>
+      <h4 class="deyun_donate_content_item_tit_h4">三大鼎立全球，中兴偏安本土</h4>
+      <div class="deyun_donate_content_item_txt_sm"></div>
+      <!--↓文章输出到这里-->
+      <div class="deyun_donate_content_item_txt_full">
+         <p>一方面4G业务在全球范围内获得迅猛发展，据GSMA统计到2015年底全球LTE用户已经突破10亿用户，2015年一年时间就增加了5.5亿4G用户。4G用户的迅猛发展带来的就是LTE网络建设需求的大幅增长，这为通信设备厂商在2015年的业务增长提供了市场机会。</p>
+         <p>另一方面，随着诺基亚和阿尔卡特-朗讯这两家公司合并的推进， 2015年是阿尔卡特-朗讯以独立公司名义发布财报的最后一年，进入2016年之后在通信设备市场将只剩下华为、爱立信、新诺基亚和中兴这四家通信厂商，行业的集中度进一步提升并将导致现有厂商格局发生变化。</p>
+         <p><img src="../images/buy_goods_ico1.png"></p>
+         
+         <!--↓每个文章的末尾要保留这个按钮-->
+         <div class="close_more_box">
+            <em class="close_more">[收起]</em>
+         </div>
+      </div>
+  
+  </div>
+  
+  <div class="deyun_donate_content_item_box">
+      <div class="deyun_donate_content_item_time">
+         <span class="deyun_donate_content_item_bar"></span><span class="deyun_donate_content_item_nums">2016-02-02</span>
+      </div>
+      <div class="deyun_donate_content_item_big_pic"><img src=""></div>
+      <h4 class="deyun_donate_content_item_tit_h4">三大鼎立全球，中兴偏安本土</h4>
+      <div class="deyun_donate_content_item_txt_sm"></div>
+      <div class="deyun_donate_content_item_txt_full">
+         <p>一方面4G业务在全球范围内获得迅猛发展，据GSMA统计到2015年底全球LTE用户已经突破10亿用户，2015年一年时间就增加了5.5亿4G用户。4G用户的迅猛发展带来的就是LTE网络建设需求的大幅增长，这为通信设备厂商在2015年的业务增长提供了市场机会。</p>
+         <p>另一方面，随着诺基亚和阿尔卡特-朗讯这两家公司合并的推进， 2015年是阿尔卡特-朗讯以独立公司名义发布财报的最后一年，进入2016年之后在通信设备市场将只剩下华为、爱立信、新诺基亚和中兴这四家通信厂商，行业的集中度进一步提升并将导致现有厂商格局发生变化。</p>
+         <p><img src="../images/deyun_m_banner_2.jpg"></p>
+         <p><img src="../images/deyun_m_banner_3.jpg"></p>
+         
+      <!--↓每个文章的末尾要保留这个按钮-->
+         <div class="close_more_box">
+            <em class="close_more">[收起]</em>
+         </div>
+      </div>
+  </div> 
+  
+  <div class="deyun_donate_content_item_box">
+      <div class="deyun_donate_content_item_time">
+         <span class="deyun_donate_content_item_bar"></span><span class="deyun_donate_content_item_nums">2016-02-02</span>
+      </div>
+      <div class="deyun_donate_content_item_big_pic"><img src=""></div>
+      <h4 class="deyun_donate_content_item_tit_h4">三大鼎立全球，中兴偏安本土</h4>
+      <div class="deyun_donate_content_item_txt_sm"></div>
+      <!--↓文章输出到这里-->
+      <div class="deyun_donate_content_item_txt_full">
+         <p>一方面4G业务在全球范围内获得迅猛发展，据GSMA统计到2015年底全球LTE用户已经突破10亿用户，2015年一年时间就增加了5.5亿4G用户。4G用户的迅猛发展带来的就是LTE网络建设需求的大幅增长，这为通信设备厂商在2015年的业务增长提供了市场机会。</p>
+         <p>另一方面，随着诺基亚和阿尔卡特-朗讯这两家公司合并的推进， 2015年是阿尔卡特-朗讯以独立公司名义发布财报的最后一年，进入2016年之后在通信设备市场将只剩下华为、爱立信、新诺基亚和中兴这四家通信厂商，行业的集中度进一步提升并将导致现有厂商格局发生变化。</p>
+         
+         
+         <!--↓每个文章的末尾要保留这个按钮-->
+         <div class="close_more_box">
+            <em class="close_more">[收起]</em>
+         </div>
+      </div>
+  
+  </div>
+  
+</div>
+<div class="deyun_no_txt"><img src="../images/ajax_load.png"></div>  
+<script>
+	function sm_txt(i){
+        var str=$.trim($('.deyun_donate_content_item_txt_full').eq(i).text());//原始字符串
+        var s = str;//要展示的字符串
+        if(str.length>10){
+            s=str.substring(0,156)+"...";
+        }
+        $('.deyun_donate_content_item_txt_sm').eq(i).html(s)
+		$('.deyun_donate_content_item_txt_sm').eq(i).append("<em class='txt_more'>[展开]</em>");
+		$(".txt_more").unbind( "click" );
+		$(".txt_more").click(function(){
+			$(this).parent().fadeOut(300);
+			$(this).parent().parent().find('.deyun_donate_content_item_tit_h4').fadeOut(300);
+			$(this).parent().parent().find('.deyun_donate_content_item_big_pic').fadeOut(300,function(){
+               $(this).parent().find('.deyun_donate_content_item_txt_full').fadeIn(300);
+			    $(this).parent().find('.deyun_donate_content_item_tit_h4').fadeIn(300);
+            });	
+		});
+		
+		$(".close_more").unbind( "click" );
+		$(".close_more").click(function(){
+			$(this).parent().parent().parent().find('.deyun_donate_content_item_tit_h4').fadeOut(300);
+			$(this).parent().parent().fadeOut(300,function(){
+               $(this).parent().find('.deyun_donate_content_item_txt_sm').fadeIn(300);
+			   $(this).parent().find('.deyun_donate_content_item_big_pic').fadeIn(300);
+			   $(this).parent().find('.deyun_donate_content_item_tit_h4').fadeIn(300);
+			  
+            });	
+		});
+
+        var img=new Image();
+        var img_Is = $('.deyun_donate_content_item_txt_full').eq(i).find('img').first().attr('src');
+		if(img_Is==undefined){
+			var width=0,height=0;
+		}
+		else{
+		var img_Is = $('.deyun_donate_content_item_txt_full').eq(i).find('img').first().attr('src');
+		img.src= img_Is
+        var width=img.width,height=img.height;
+		}
+	
+	
+        var first_img = $('.deyun_donate_content_item_txt_full').eq(i).find('img').first().attr('src');
+        if(width>320){
+	        $('.deyun_donate_content_item_big_pic').eq(i).find('img').attr('src',first_img);
+        }
+		else{
+			$('.deyun_donate_content_item_big_pic').eq(i).find('img').remove();
+		}
+	}
+$(window).load(function() {
+	var item_nums = $('.deyun_donate_content_item_txt_full').length;
+	for(var i=0;i<item_nums;i++){
+	   sm_txt(i);
+	   $('.deyun_donate_content_item_box').last().addClass('txt_last');
+	};
+});
+$(document).ready(function () {
+	$(function(){  
+        $(window).scroll(function() {  
+     
+          if ($(this).scrollTop() + $(window).height() + 20 >= $(document).height() && $(this).scrollTop() > 20) {  
+          /*预留的ajax*/
+          /*$.ajax({
+               type: "",
+               url: "",
+               data: "",
+               success: function(data){
+				   $('.deyun_donate_content_body').append(data);
+                   var item_nums = $('.deyun_donate_content_item_txt_full').length;
+	               for(var i=0;i<item_nums;i++){
+	               sm_txt(i);
+				   $('.deyun_donate_content_item_box.txt_last').removeClass('txt_last');
+				   $('.deyun_donate_content_item_box').last().addClass('txt_last');
+	               };
+               }
+            }); */
+			
+			/*↓测试用，集成时删除*/
+			/*$('.deyun_donate_content_body').append("<div class='deyun_donate_content_item_box'><div class='deyun_donate_content_item_time'><span class='deyun_donate_content_item_bar'></span><span class='deyun_donate_content_item_nums'>2016-02-02</span></div><div class='deyun_donate_content_item_big_pic'><img src=''></div><h4 class='deyun_donate_content_item_tit_h4'>三大鼎立全球，中兴偏安本土2</h4><div class='deyun_donate_content_item_txt_sm'></div><div class='deyun_donate_content_item_txt_full'><p>一方面4G业务在全球范围内获得迅猛发展，据GSMA统计到2015年底全球LTE用户已经突破10亿用户，2015年一年时间就增加了5.5亿4G用户。4G用户的迅猛发展带来的就是LTE网络建设需求的大幅增长，这为通信设备厂商在2015年的业务增长提供了市场机会。</p><p>另一方面，随着诺基亚和阿尔卡特-朗讯这两家公司合并的推进， 2015年是阿尔卡特-朗讯以独立公司名义发布财报的最后一年，进入2016年之后在通信设备市场将只剩下华为、爱立信、新诺基亚和中兴这四家通信厂商，行业的集中度进一步提升并将导致现有厂商格局发生变化。</p><p><img src='../images/deyun_m_banner_2.jpg'></p><p><img src='../images/deyun_m_banner_3.jpg'></p><div class='close_more_box'><em class='close_more'>[收起]</em></div></div></div>");
+			var item_nums = $('.deyun_donate_content_item_txt_full').length;
+	        for(var i=0;i<item_nums;i++){
+	            sm_txt(i);
+				$('.deyun_donate_content_item_box.txt_last').removeClass('txt_last');
+				$('.deyun_donate_content_item_box').last().addClass('txt_last');
+	        };*/
+			/*↑测试用，集成时删除*/
+          }  
+        });  
+    });  
+	
+    
+	
+	
+});
+</script>
+
+
+</body>
+</html>

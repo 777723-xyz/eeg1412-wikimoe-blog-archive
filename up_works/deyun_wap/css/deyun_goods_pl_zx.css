@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document */
+/*评价*/
+.deyun_goods_body{
+	background:#fff;
+	overflow: hidden;
+}
+.deyun_goods_body .deyun_goods_type_s_box{
+	margin-bottom:8px;
+}
+.deyun_goods_body .deyun_goods_pl_all_point_box {
+	height:40px;
+	line-height:40px;
+	border-bottom:1px solid #f6f6f6;
+}
+.deyun_goods_body .deyun_goods_pl_all_point_box .deyun_goods_pl_all_span{
+	padding-left:17px;
+	color:#585858;
+}
+.deyun_goods_pl_all_point_box .deyun_goods_pl_all_span em{
+	color:#54ddff;
+}
+.deyun_goods_body .deyun_goods_pl_item_box{
+	margin-top:10px;
+	position:relative;
+	z-index:5;
+	padding-bottom:5px;
+}
+.deyun_goods_body .deyun_goods_pl_tx_box{
+	width:45px;
+	position:absolute;
+	left:21px;
+}
+.deyun_goods_body .deyun_goods_pl_tx img{
+	width:45px;
+	height:45px;
+}
+.deyun_goods_body .deyun_goods_pl_tx{
+	width:45px;
+	height:45px;
+	border-radius:25px;
+	overflow:hidden;
+}
+.deyun_goods_body .deyun_goods_pl_name{
+	text-align:center;
+	width:100%;
+	white-space:nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	line-height:18px;
+	color:#797979;
+}
+.deyun_goods_body .deyun_goods_pl_lv{
+	background-repeat: no-repeat;
+	background-position: center center;	
+	width:25px;
+	height:20px;
+	background-size:contain;
+	margin:0 auto;
+}
+.deyun_goods_body .deyun_goods_pl_lv.lv_01{
+	background-image: url(../images/member_lv1_ico.png);
+	margin-top:-5px;
+}
+.deyun_goods_body .deyun_goods_pl_lv.lv_02{
+	background-image: url(../images/member_lv2_ico.png);
+	margin-top:3px;
+}
+.deyun_goods_body .deyun_goods_pl_lv.lv_03{
+	background-image: url(../images/member_lv3_ico.png);
+	margin-top:3px;
+	
+}
+.deyun_goods_body .deyun_goods_pl_lv.lv_04{
+	background-image: url(../images/member_lv4_ico.png);
+	margin-top:3px;
+	
+}
+.deyun_goods_body .deyun_goods_pl_lv.lv_05{
+	background-image: url(../images/member_lv5_ico.png);
+	
+}
+.deyun_goods_body .deyun_goods_pl_lv.lv_06{
+	background-image: url(../images/member_lv6_ico.png);
+	
+}
+.deyun_goods_body .deyun_goods_pl_a{
+	margin-left:82px;
+	min-height:78px;
+}
+.deyun_goods_pl_a .deyun_goods_pl_a_content,.deyun_goods_pl_a .deyun_goods_pl_info{
+	margin-bottom:5px;
+	margin-right:14px;
+}
+.deyun_goods_pl_a .deyun_goods_pl_a_content p{
+	color:#585858;
+	word-break:break-all;
+}
+.deyun_goods_pl_a .deyun_goods_pl_info{
+	color:#a3a3a3;
+}
+/*评论的晒图开始*/
+.content-img-box{
+	padding-bottom:5px;
+}
+.content-img-box ul li{
+	float:left;
+	width:38px;
+	height:38px;
+	margin-right:6px;
+	border:1px solid #dddddd;
+}
+.content-img-box ul li img{
+	width:38px;
+	height:38px;
+}
+/*评论的晒图结束*/
+.deyun_goods_body .deyun_goods_pl_q{
+	padding:9px;
+	background:#f5f5f5;
+	margin:20px 14px 2px 21px;
+	position:relative;
+	z-index:5;
+}
+.deyun_goods_pl_q .triangle_up{
+	width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #f5f5f5;
+	position:absolute;
+	top:-10px;
+	right:17px;
+}
+.deyun_goods_pl_item_body{
+	border-bottom:1px solid #f6f6f6;
+}
+.deyun_goods_pl_q p{
+	color:#a3a3a3;
+	word-break:break-all;
+}
+.deyun_see_all_pl_link{
+	padding-top:8px;
+	padding-left:14px;
+}
+.deyun_see_all_pl_link a{
+	color:#585858;
+}
+/*咨询*/
+.deyun_goods_type_y_box{
+	background:#fff;
+	padding-bottom:12px;
+}
+.deyun_goods_type_y_item_box{
+	position:relative;
+	z-index:5;
+	padding-top:12px;
+	border-bottom:1px solid #f6f6f6;
+}
+.deyun_goods_type_y_item_box .deyun_goods_type_y_Q_ico{
+	background:#54ddff;
+	color:#fff;
+	width:17px;
+	height:17px;
+	position:absolute;
+	text-align:center;
+	line-height:17px;
+	left:8px;
+}
+.deyun_goods_type_y_item_box .deyun_goods_type_y_Q_content_box{
+	margin-left:35px;
+	margin-right:15px;
+	min-height:20px;
+}
+.deyun_goods_type_y_Q_content_box p{
+	color:#2d2d2d;
+	font-size:12px;
+	line-height:16px;
+}
+.deyun_goods_type_y_time_name_box{
+	padding-top:8px;
+	padding-bottom:12px;
+}
+.deyun_goods_type_y_time_name_box .deyun_goods_type_y_name,.deyun_goods_type_y_time_name_box .deyun_goods_type_y_time{
+	color:#8c8c8c;
+}
+.deyun_goods_type_y_item_box .deyun_goods_type_y_A_ico{
+	background:#fff100;
+	color:#fff;
+	width:17px;
+	height:17px;
+	position:absolute;
+	text-align:center;
+	line-height:17px;
+	left:8px;
+}
+.deyun_goods_y_all_zx{
+	padding-top: 8px;
+    padding-left: 14px;
+	padding-right: 14px;
+}
+.deyun_goods_y_all_zx .deyun_goods_y_all_zx_btn{
+	color: #585858;
+	float:left;
+	line-height: 24px;
+}
+.deyun_goods_y_all_zx .deyun_goods_y_send_zx{
+	float:right;
+	display:block;
+	padding:5px 10px;
+	font-size:12px;
+	line-height:16px;
+	background:#54ddff;
+	color:#fff;
+	border-radius:3px;
+}
+

@@ -1,0 +1,596 @@
+@charset "utf-8";
+/* CSS Document */
+.niaoduo_order_step_box{
+	margin-top:65px;
+	margin-bottom:125px;
+	margin-left:56px;
+	height:32px;
+}
+.niaoduo_order_step_li.active .niaoduo_order_step_bg_box{
+	background-image: url(../images/order_step_bg.png);
+}
+.niaoduo_order_step_li .niaoduo_order_step_bg_box{
+	background-image: url(../images/order_step_bg_grey.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width:219px;
+	height:32px;
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	position:relative;
+	z-index:2;
+}
+.niaoduo_order_step_li .niaoduo_order_step_next_ico{
+	background-image: url(../images/order_step_next_ico.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width:20px;
+	height:22px;
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	position:absolute;
+	z-index:2;
+	right: -45px;
+    top: 5px;
+}
+.niaoduo_order_step_li.active .niaoduo_order_step_ten{
+	background-image: url(../images/niaoduo_step_maru.png);
+	color:#ffdb01;
+}
+.niaoduo_order_step_li .niaoduo_order_step_ten{
+	background-image: url(../images/niaoduo_step_maru_grey.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width:21px;
+	height:21px;
+	position:absolute;
+	z-index:2;
+	left:14px;
+	top:6px;
+	color:#666;
+	text-align:center;
+	line-height:21px;
+}
+
+.niaoduo_order_step_li.active .niaoduo_order_step_text{
+	color:#000;
+}
+.niaoduo_order_step_li .niaoduo_order_step_text{
+	line-height:32px;
+	font-size:16px;
+	color:#666;
+	padding-left:44px;
+}
+.niaoduo_order_step_ul .niaoduo_order_step_li{
+	float:left;
+	margin-right: 71px;
+}
+.niaoduo_order_down_left_body .niaoduo_order_down_left_sku_info{
+	border:3px solid #ffdb01;
+	padding: 14px 23px 14px 23px;
+	background:#fff;
+	width:774px;
+}
+.niaoduo_order_type2_body{
+	width:1088px;
+	margin-left: 58px;
+}
+.niaoduo_order_type2_body .niaoduo_order_down_left_sku_info{
+	border:3px solid #ffdb01;
+	padding: 14px 23px 14px 23px;
+	background:#fff;
+	margin-bottom:44px;
+}
+.niaoduo_order_down_body{
+	margin-bottom:200px;
+}
+.niaoduo_order_down_left_sku_info .niaoduo_order_down_left_sku_title{
+	font-size:22px;
+	color:#000;
+	line-height:36px;
+	border-bottom:1px solid #dddddd;
+	padding-bottom:10px;
+}
+.niaoduo_order_down_left_sku_p_box{
+	margin-top:10px;
+}
+.niaoduo_order_down_left_sku_info .niaoduo_order_down_left_sku_p{
+	margin:5px 0; 
+}
+.niaoduo_order_down_left_sku_p .niaoduo_order_down_left_p_title{
+	color:#666666;
+}
+.niaoduo_order_down_left_sku_p .niaoduo_order_down_left_p_text{
+	color:#000;
+}
+.niaoduo_order_down_left_input_item_box{
+	margin-top:50px;
+}
+.niaoduo_order_down_left_input_item_box.type_1{
+	margin-bottom:35px;
+	border-bottom:1px solid #eeeeee;
+}
+.niaoduo_order_down_left_input_item_box.type_2{
+	margin-bottom:35px;
+}
+.niaoduo_order_down_left_input_item_box .niaoduo_order_down_left_input_title{
+	font-size:22px;
+	color:#000;
+}
+.niaoduo_order_down_left_input_tips .niaoduo_input_tips_ico{
+	background-image: url(../images/important_ico.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width:12px;
+	height:12px;
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	margin-right:5px;
+	vertical-align:middle;
+}
+.niaoduo_order_down_left_input_item_box .niaoduo_order_down_left_input_tips_text{
+	vertical-align:middle;
+	color:#c4c2c2;
+}
+.niaoduo_order_down_left_body{
+	margin-left:56px;
+	width:826px;
+}
+.niaoduo_order_down_left_body .niaoduo_order_down_left_input_left{
+	width: 411px;
+	height:41px;
+	border:1px solid #dddddd;
+	background:#fff;
+}
+.niaoduo_order_down_left_body .niaoduo_order_down_left_input_left.type_nor{
+	width: 274px;
+}
+.niaoduo_order_down_left_body .niaoduo_order_down_left_input_body{
+	margin-top:26px;
+	padding-bottom:26px;
+}
+.niaoduo_order_down_left_body .niaoduo_down_left_input_label{
+	color:#666666;
+	font-size:14px;
+	line-height:41px;
+	padding-left:25px;
+	vertical-align:middle;
+}
+.niaoduo_order_down_left_body .niaoduo_down_left_input_label i{
+	color:#de1515;
+}
+.niaoduo_order_down_left_body .niaoduo_down_left_input_type1{
+	border:0px;
+	height:35px;
+	line-height:35px;
+	width: 300px;
+	vertical-align:middle;
+	font-size:14px;
+}
+.niaoduo_order_down_left_input_left.type_nor .niaoduo_down_left_input_type1{
+	width: 162px;
+}
+.niaoduo_order_down_left_body .niaoduo_order_down_left_input_tips{
+	margin-top:8px;
+}
+.niaoduo_order_down_left_body .niaoduo_order_down_left_textarea{
+	width:813px;
+	height:188px;
+	border:1px solid #dddddd;
+	outline:none;
+	padding:5px;
+}
+.niaoduo_order_down_left_check_box{
+	width:1088px;
+	height:55px;
+	background:#363636;
+	
+}
+.niaoduo_order_down_left_check_box .niaoduo_order_down_left_check_price{
+	font-size:30px;
+	color:#fff;
+	line-height:55px;
+	padding-left:32px;
+}
+.niaoduo_order_down_left_check_box .niaoduo_order_down_left_check_price i{
+	font-size:18px;
+}
+.niaoduo_order_down_left_check_box .niaoduo_order_down_left_check_price_btn{
+	background:#e5493a;
+	border:0px;
+	width:280px;
+	line-height:55px;
+	height:55px;
+	text-align:center;
+	color:#fff;
+	font-size:24px;
+	cursor:pointer;
+}
+.niaoduo_order_down_right_box{
+	border: 3px solid #ffdb01;
+    padding: 12px 8px 13px 8px;
+    background: #fff;
+    width: 211px;
+	margin-right: 56px;
+}
+.niaoduo_order_down_right_box .niaoduo_order_down_right_jgmx_tit{
+	font-size:14px;
+	color:#666666;
+}
+.niaoduo_order_down_right_box .niaoduo_order_down_right_jgmx_nr_box{
+	margin-top: 20px;
+    margin-bottom: 23px;
+    padding-bottom: 10px;
+	border-bottom:1px solid #eaeaea;
+}
+.niaoduo_order_down_right_box .niaoduo_order_down_right_jgmx_nr_item_left,.niaoduo_order_down_right_jgmx_nr_item_right{
+	font-size:12px;
+	color:#000000;
+}
+.niaoduo_order_down_right_box .niaoduo_order_down_right_jgmx_nr_item{
+	min-height:25px;
+	line-height:25px;
+}
+.niaoduo_order_down_right_jgmx_all_price{
+	height:22px;
+	line-height:22px;
+	    margin-bottom: 10px;
+}
+.niaoduo_order_down_right_jgmx_all_price .niaoduo_order_down_right_jgmx_all_price_text{
+	color:#de1515;
+	font-size:14px;
+}
+.niaoduo_order_down_right_jgmx_nr_item_tit{
+	color:#555555;
+	font-size:12px;
+	padding:10px 0;
+}
+.niaoduo_master_info_body .niaoduo_master_info_tit{
+	font-size:16px;
+	color:#000;
+	height:45px;
+	line-height:45px;
+	margin-top:10px;
+}
+.niaoduo_master_info_body .niaoduo_master_info_tit i{
+	color:#de1515;
+}
+.niaoduo_master_info_ul .niaoduo_master_info_li{
+	padding: 10px 19px 10px 19px;
+	border:3px solid #dedede;
+	float:left;
+	background:#fff;
+	width:219px;
+	cursor:pointer;
+	height:80px;
+	overflow:hidden;
+	margin-right:17px;
+	margin-bottom:17px;
+	position:relative;
+	z-index:2;
+}
+.niaoduo_master_info_ul .niaoduo_master_info_li.active{
+	border:3px solid #ffdb01;
+}
+.niaoduo_master_info_ul .niaoduo_master_info_li.active .niaoduo_master_info_ico{
+	background-image: url(../images/niaoduo_order_right.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width:41px;
+	height:37px;
+	position:absolute;
+	bottom: -3px;
+    right: -3px;
+}
+.niaoduo_master_info_ul .niaoduo_master_info_li p{
+	line-height:20px;
+}
+.niaoduo_master_info_body .niaoduo_master_info_f2{
+	margin-top:14px;
+	margin-bottom:10px;
+	height:16px;
+}
+.niaoduo_master_info_body .niaoduo_master_info_plus_ico{
+	background-image: url(../images/niaoduo_master_plus_ico.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height:8px;
+	width:8px;
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	vertical-align:middle;
+	margin:0 4px 0 8px;
+}
+.niaoduo_master_info_body .niaoduo_master_info_f2_txt{
+	vertical-align:middle;
+	color:#cc9977;
+	font-size:12px;
+}
+.niaoduo_master_info_body .niaoduo_master_info_f2_box{
+	cursor:pointer;
+}
+.niaoduo_master_info_f3{
+	height:33px;
+	margin-bottom:14px;
+}
+.niaoduo_master_info_f3 .niaoduo_in_bl{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	vertical-align:middle;
+}
+.niaoduo_master_info_f3 .niaoduo_in_bl.type_tit{
+	font-size:16px;
+	color:#000;
+	margin-left:8px;
+	margin-right:14px;
+}
+.niaoduo_master_info_f3 .niaoduo_in_bl.type_label{
+	font-size: 16px;
+	color: #000;
+	text-decoration: underline;
+	margin-right:20px;
+}
+.niaoduo_master_info_f3 .niaoduo_in_bl .niaoduo_master_info_f3_checkbox{
+	width:15px;
+	height:15px;
+	vertical-align:middle;
+	margin-right:7px;
+}
+.niaoduo_master_info_f3 .niaoduo_in_bl.type_grey_txt{
+	color:#666666;
+	font-size:12px;
+	margin-right:48px;
+}
+.niaoduo_master_info_f3 .niaoduo_in_bl.type_price{
+	color:#de1515;
+}
+.niaoduo_master_info_f3 .niaoduo_in_bl_type_price_ico{
+	color:#000;
+}
+
+.niaoduo_master_info_body .niaoduo_master_info_ul{
+	overflow: hidden;
+    height: 110px;
+	*position:relative;
+}
+.niaoduo_order_window_body{
+	position:fixed;
+	z-index:9999;
+	top:200px;
+	left:200px;
+	background:#fff;
+	width:633px;
+	padding:30px 46px;
+	-webkit-box-shadow:0px 0 6px rgba(0,0,0,0.22);  
+    -moz-box-shadow:0px 0 6px rgba(0,0,0,0.22);  
+    box-shadow:0px 0 6px rgba(0,0,0,0.22);
+	display:none;
+}
+.niaoduo_order_window_body .niaoduo_order_window_title{
+	font-size:14px;
+	color:#000;
+}
+.niaoduo_order_window_table{
+	margin-top:30px;
+}
+.niaoduo_order_window_table .niaoduo_order_window_item_tit{
+	width:90px;
+}
+.niaoduo_order_window_item_tit .niaoduo_order_window_item_tit_span{
+	font-size:14px;
+	color:#000;
+}
+.niaoduo_order_window_item_tit .niaoduo_order_window_item_tit_span i{
+	color:#de1515;
+}
+.niaoduo_order_window_table .niaoduo_order_window_tips{
+	color:#de1515;
+	padding-left:90px;
+}
+.niaoduo_order_window_table .niaoduo_order_window_item_input{
+	border:1px solid #dddddd;
+	color:#999999;
+}
+.niaoduo_order_window_table .niaoduo_order_window_item_input.type_1{
+	width:183px;
+	height:38px;
+	line-height:38px;
+	padding:0 10px;
+	margin-right:8px;
+}
+.niaoduo_order_window_table .niaoduo_order_window_item_input.type_2{
+	width:396px;
+	height:28px;
+	line-height:28px;
+	padding:0 10px;
+}
+.niaoduo_order_window_table .niaoduo_order_window_item_input.type_3{
+	width:112px;
+	height:28px;
+	margin-right:8px;
+	line-height:28px;
+	padding:0 10px;
+}
+.niaoduo_order_window_table td{
+	padding-bottom:13px;
+}
+.niaoduo_order_window_table .niaoduo_hav_tips td{
+	padding-bottom:0px;
+}
+.niaoduo_order_window_table .niaoduo_order_window_item_select{
+	width: 418px;
+	height:28px;
+	line-height:28px;
+	padding:0 10px;
+	border:1px solid #dddddd;
+	outline:none;
+}
+.niaoduo_order_window_btn_box .niaoduo_order_window_btn{
+	width:138px;
+	height:47px;
+	border:0px;
+	cursor:pointer;
+	color:#fff;
+}
+.niaoduo_order_window_btn_box .niaoduo_order_window_btn.type_save{
+	background:#c40d23;
+	margin-right:16px;
+}
+.niaoduo_order_window_btn_box .niaoduo_order_window_btn.type_close{
+	background:#7d7d7d;
+}
+.niaoduo_order_window_body .niaoduo_order_window_btn_box{
+	padding-left:90px;
+	margin-top:15px;
+}
+.naioduo_order_black_bg{
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/black_bg.png);
+	background-repeat: repeat;
+	background-position: left top;
+	position: fixed;
+	left: 0;
+    top: 0;
+	z-index:9998;
+	display:none;
+}
+.niaoduo_order_check_info_body{
+	border:1px solid #dddddd;
+	width:1086px;
+	margin-left: 58px;
+}
+.niaoduo_order_check_info_body .niaoduo_order_check_info_tit{
+	padding-left:10px;
+	height:29px;
+	line-height:29px;
+	border-bottom:1px solid #ddd;
+	background:#eeeeee;
+	color:#000;
+}
+.niaoduo_order_check_info_body .niaoduo_order_check_info_nr_box{
+	padding:20px;
+	background:#fff;
+}
+.niaoduo_order_down_left_check_box.type_2{
+	margin-top:99px;
+	margin-bottom:86px;
+	margin-left: 58px;
+}
+.niaoduo_order_check_info_nr_box p{
+	font-size:12px;
+	color:#000;
+}
+/* 支付 */
+.niaoduo_order_check_info_nr_box img{border:2px solid #FAC758;cursor:pointer;width:125px;height:40px;}
+.niaoduo_order_check_info_nr_box .action-change-payment{display:block;}
+.niaoduo_order_check_info_nr_box .payinput{display:block;margin-right:6px;margin-top:15px;float:left;}
+.niaoduo_order_check_info_nr_box .change-box{float:left;margin-right:58px;margin-bottom:28px;display:block;}
+.payment-info .topmathree{margin-top:4em;}
+.payment-center .payment-info .payment-name{font-size:12px;font-weight:normal;display:block;text-align:center;height:30px;width:125px;line-height:15px;margin-left:25px;overflow:hidden;}
+.payment-main .payment-center .payment-info .payment-name{+margin-left:32px;}
+
+.niaoduo_order_ok_box_1{
+	height:185px;
+	border:1px solid #e8e8e8;
+	background:#fff;
+}
+.niaoduo_order_ok_box_1 .niaoduo_ok_master_info_box{
+	width:198px;
+	height:135px;
+	background:#fafafa;
+	padding:25px;
+}
+.niaoduo_order_ok_box_1 .niaoduo_ok_master_info_p{
+	font-size:12px;
+	color:#333333;
+	line-height: 34px;
+}
+.niaoduo_order_ok_box_1 .niaoduo_ok_master_info_p i{
+	color:#000;
+	font-weight:bold;
+}
+.niaoduo_order_ok_box_1 .niaoduo_ok_master_info_right{
+	padding-top:75px;
+	padding-left:144px;
+}
+.niaoduo_order_ok_box_1 .niaoduo_ok_master_info_right_txt{
+	font-size:18px;
+	color:#000;
+	vertical-align:middle;
+}
+.niaoduo_ok_master_info_right_txt .niaoduo_ok_master_info_right_ico{
+	background-image: url(../images/order_OK_ico.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width:33px;
+	height:33px;
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	vertical-align:middle;
+	margin-right:20px;
+}
+.niaoduo_order_type3_body{
+	width:1088px;
+	margin-left: 58px;
+}
+.niaoduo_order_ok_goods_info_body{
+	margin-top:48px;
+}
+.niaoduo_order_ok_goods_info_body .niaoduo_order_ok_goods_info_sm_tit{
+	font-size:16px;
+	color:#000;
+	padding-left:28px;
+	padding-bottom:12px;
+}
+.niaoduo_order_ok_goods_info_body .niaoduo_order_ok_goods_info_big_tit{
+	font-size:22px;
+	color:#000;
+	background:#efefef;
+	padding-left:28px;
+	height:39px;
+	line-height:39px;
+	border-bottom:1px solid #dddddd;
+}
+.niaoduo_order_ok_goods_info_body .niaoduo_order_ok_info_down_box{
+	background:#fff;
+	padding:12px 28px;
+}
+.niaoduo_order_ok_goods_info_body .niaoduo_order_ok_info_down_box p{
+	line-height: 24px;
+	font-size:14px;
+	color:#555555;
+}
+.niaoduo_order_ok_goods_info_body .niaoduo_order_ok_info_down_box p i{
+	font-weight:bold;
+	color:#000;
+}
+.niaoduo_order_ok_goods_info_body .niaoduo_order_ok_info_down_price_box{
+	height:40px;
+	background:#efefef;
+	margin-bottom:256px;
+}
+.niaoduo_order_ok_goods_info_body .niaoduo_order_ok_massage_box{
+	line-height:40px;
+	color:#333333;
+	padding-left:27px;
+}
+.niaoduo_order_ok_goods_info_body .niaoduo_order_ok_price_box{
+	color:#666;
+	font-size:12px;
+	line-height:40px;
+	padding-right:40px;
+}
+.niaoduo_order_ok_goods_info_body .niaoduo_order_ok_price_box i{
+	font-size:24px;
+	color:#e5493a;
+}
+.niaoduo_order_ok_goods_info_body .niaoduo_order_ok_price_box i i{
+	font-size:18px;
+}

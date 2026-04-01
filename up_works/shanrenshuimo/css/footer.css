@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+.sr_footer{
+	background:#000;
+	position:absolute;
+	z-index:2;
+	left:0;
+	right:0;
+	height:50px;
+	bottom:0;
+	min-width:1320px;
+}
+.sr_footer_box{
+	width:1320px;
+	margin:0 auto;
+	height:50px;
+	position:relative;
+	z-index:2;
+}
+.sr_footer_logo{
+	height:35px;
+	width:190px;
+	position:absolute;
+	z-index:1;
+	left:0;
+	top: 8px;
+	bottom:16px;
+	background-image:url(../images/foot_logo.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:190px;
+}
+.sr_footer_cr{
+	text-align:center;
+	color:#fff;
+	line-height:50px;
+	position:relative;
+	z-index:2;
+}
+.sr_foot_sj_body{
+	position:absolute;
+	height:50px;
+	width:104px;
+	top:0;
+	right:3px;
+	z-index:3;
+}
+.sr_foot_sj_box{
+	position:relative;
+	z-index:3;
+	height:100%;
+	width:100%;
+}
+.sr_foot_sj_item_body{
+/*	position:relative;
+	z-index:3;*/
+	height:100%;
+	width:52px;
+	float:left;
+	cursor:pointer;
+}
+.sr_foot_sj_item_body.type_0{
+	background-image:url(../images/qq1.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:21px;
+}
+.sr_foot_sj_item_body.type_1{
+	background-image:url(../images/wechat1.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:28px;
+}
+.sr_foot_sj_item_body:hover{
+	background-color:#9e7a4a;
+}
+.sr_foot_sj_item{
+	position:absolute;
+	top:-280px;
+	z-index:3;
+	right:0;
+	display:none;
+}
+.sr_foot_sj_item_body:hover .sr_foot_sj_item{
+	display:block;
+}
+.sr_foot_sj_item_text{
+}

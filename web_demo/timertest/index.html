@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>web worker fibonacci</title>
+<style>
+.caipiao_p span{
+	padding-right:5px;
+}
+.item_box{
+	border-bottom:1px solid #ADADAD;
+	padding-bottom:10px;
+}
+.c_input{
+	width:210px;
+	font-size:12px;
+}
+</style>
+<div class="item_box">
+	<h2>类型1（35选中5个+12选中2个）</h2>
+	<p><span>模拟中奖号码：</span><input type="text" placeholder="输入5个1-35的数字，用英文逗号隔开" class="c_input" id="input_q">+<input type="text" placeholder="输入2个1-12的数字，用英文逗号隔开" class="c_input" id="input_h"></p>
+    <p class="caipiao_p"><span>当前</span><span class="caipiao35">*</span><span class="caipiao35">*</span><span class="caipiao35">*</span><span class="caipiao35">*</span><span class="caipiao35">*</span><span>+</span><span class="caipiao12">*</span><span class="caipiao12">*</span></p>
+    <p class="caipiao_p"><span>下一组</span><span class="caipiao35-2">*</span><span class="caipiao35-2">*</span><span class="caipiao35-2">*</span><span class="caipiao35-2">*</span><span class="caipiao35-2">*</span><span>+</span><span class="caipiao12-2">*</span><span class="caipiao12-2">*</span></p>
+    <p><span>运行次数</span><span id="cishu"></span></p>
+    <p><span>六等奖次数</span><span id="cishu6"></span></p>
+    <p><span>五等奖次数</span><span id="cishu5"></span></p>
+    <p><span>四等奖次数</span><span id="cishu4"></span></p>
+    <p><span>三等奖次数</span><span id="cishu3"></span></p>
+    <p><span>二等奖次数</span><span id="cishu2"></span></p>
+    <p><span>一等奖次数</span><span id="cishu1"></span></p>
+    <button type="button" onClick="creat_attack()">开始</button>
+</div>
+<script type="text/javascript">
+var worker =new Worker("fibonacci.js"); //创建一个Worker对象并向它传递将在新线程中执行的脚本的URL
+function creat_nums(caipiao_span,arr){
+	var caipiao_span = document.getElementsByClassName(caipiao_span);
+	for(var i = 0 ; i < caipiao_span.length; i++){
+		var arr_nums = arr[i];
+		if(arr_nums<10){
+			arr_nums = '0'+String(arr[i]);
+		}else{
+			arr_nums = String(arr[i])
+		}
+		caipiao_span[i].innerText = arr_nums;
+	}
+}
+ function creat_attack(){
+	 var input_q = document.getElementById("input_q").value.split(",");
+	 var input_h = document.getElementById("input_h").value.split(",");
+	 var arr = [input_q,input_h];
+	 worker.postMessage(arr);     //向worker发送数据
+	 worker.onmessage =function(evt){     //接收worker传过来的数据函数
+	   //console.log(evt.data);         //输出worker发送来的数据
+	   var dataArr = evt.data;
+	   creat_nums("caipiao35",evt.data[7]);
+	   creat_nums("caipiao12",evt.data[8]);
+	   document.getElementById("cishu").innerText=String(evt.data[0]);
+	   document.getElementById("cishu1").innerText=String(evt.data[1]);
+	   document.getElementById("cishu2").innerText=String(evt.data[2]);
+	   document.getElementById("cishu3").innerText=String(evt.data[3]);
+	   document.getElementById("cishu4").innerText=String(evt.data[4]);
+	   document.getElementById("cishu5").innerText=String(evt.data[5]);
+	   document.getElementById("cishu6").innerText=String(evt.data[6]);
+	   if(evt.data[9].length===5){
+		   creat_nums("caipiao35-2",evt.data[9]);
+		   creat_nums("caipiao12-2",evt.data[10]);
+	   }
+	 }
+ }
+  </script>
+</head>
+<body>
+</body>
+</html>

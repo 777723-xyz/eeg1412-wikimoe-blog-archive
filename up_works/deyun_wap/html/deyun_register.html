@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>推荐收益</title>
+<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'/>
+<link href="../css/deyun_common.css" rel="stylesheet" type="text/css">
+<link href="../css/deyun_register.css" rel="stylesheet" type="text/css">
+<link href="../css/square/blue.css" rel="stylesheet" type="text/css">
+<script src="../js/Zepto.min.js"></script>
+<script src="../js/icheck.min.js"></script>
+</head>
+
+<body class="deyun_white_bg_body">
+<div class="deyun_common_tit_top_box">
+   <div class="go_history_btn"><a href="javascript:history.go(-1)"></a></div>
+   <div class="deyun_common_tit_top">注册</div>
+   <div class="go_login_box"><a href="#">登录</a></div>
+</div>
+
+<div class="deyun_register_body">
+<form>
+                 <div class="register_input_box type_one">
+                    <label>用户名:</label>
+                    <input type="text" class="register_input type_one" name="txtusername" placeholder="请输入用户名" vtype="required">
+                 </div>
+                 <div class="register_input_box type_one">
+                    <label>性别:</label>
+                    <label class="register_radio_label">
+                       <input name="sex" type="radio" value="1" class="icheck_item">
+                       <span class="sex_name">男</span>
+                    </label>
+                    <label class="register_radio_label">
+                       <input name="sex" type="radio" value="2" class="icheck_item">
+                       <span class="sex_name">女</span>
+                    </label>
+                    
+                 </div>
+                 <div class="register_input_box type_one">
+                    <label>密码:</label>
+                    <input type="password" name="txtpassword" maxlength="20" oncontextmenu="return false;" onpaste="return false;" class="register_input type_one" placeholder="密码必须包含数字和小写字母" vtype="required">
+                    
+                 </div>
+                 <div class="register_input_box type_one">
+                    <label>确认密码:</label>
+                    <input type="password" name="txtpasswordag" maxlength="20" oncontextmenu="return false;" onpaste="return false;" class="register_input type_one" placeholder="密码必须包含数字和小写字母" vtype="required">
+                    
+                 </div>
+                 <div class="register_input_box type_one">
+                    <label>推荐人编号:</label>
+                    <input type="text" class="register_input type_two" name="referee_id" placeholder="填写推荐人编号" vtype="required"><span>（选填）</span>
+                 </div>
+                 <div class="register_input_box type_one">
+                    <label>证件类型:</label>
+                    <select class="register_select" id="zj_type">            
+                       <option value="-1">--请选择--</option>
+                       <option value="0">身份证</option><option value="1">军官证</option><option value="2">护照</option><option value="3">港澳台通行证</option>                    </select>
+                     
+                 </div>
+                 <div class="register_input_box type_one">
+                    <label>证件号码:</label>
+                    <input type="text" class="register_input type_one" name="lic_id" placeholder="建议尽量选择身份证认证." vtype="required">
+                    
+                 </div>
+                 <div class="register_input_box type_one">
+                    <label>真实姓名:</label>
+                    <input type="text" class="register_input type_one" name="name_truth" placeholder="填写您的真实姓名" vtype="required">
+                    
+                 </div>
+                 
+                 
+                 
+                 
+                 
+                 
+                 <div class="register_input_box type_one">
+                    <label>手机号:</label>
+                    <input type="text" class="register_input type_two" name="phone" placeholder="填写您的手机号" vtype="required">
+                    <button type="button" id="code" class="register_send_code">发送验证码</button>
+                 </div>
+                 
+                 <div class="register_input_box type_one" id="mobcode">
+                    <label>手机校验码:</label>
+                    <input type="text" class="register_input type_one" name="verif" placeholder="六位数字" vtype="required">
+                 </div>
+                 
+                 <div class="register_input_box type_three">
+                    <input type="checkbox" name="license" class="register_igress icheck_item" vtype="onerequired" data-caution="请选择同意">
+                    <span class="deyun_register_ty_txt">同意</span>
+                    <a class="deyun_register_xy_txt" href="#">注册协议</a>
+                 </div>
+                 <div class="register_input_box type_three">
+                    <button type="button" id="register" class="register_btn">免费注册</button>
+                 </div>
+              </form>
+</div>
+<script>
+$(document).ready(function(){
+  $('.icheck_item').iCheck({
+    checkboxClass: 'icheckbox_square-blue',
+    radioClass: 'iradio_square-blue',
+    increaseArea: '20%' // optional
+  });
+});
+</script>
+
+<script>
+function input_W(){
+	var input_w = $('body').width();
+	$('.register_input.type_one').css('width',input_w-69-40);
+	$('.register_input.type_two').css('width',input_w-69-40-100);
+}
+$(document).ready(function(){
+	input_W();
+});
+$(window).resize(function() { 
+   input_W();
+});
+</script>
+</body>
+</html>

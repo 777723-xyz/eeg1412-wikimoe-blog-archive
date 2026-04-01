@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="keywords" content="鸟多旅游" />
+<meta name="description" content="鸟多旅游" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页</title>
+<!--通用脚本和样式表-->
+<link href="css/niaoduo_common.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/niaoduo_common.js"></script>
+<script src="js/niaoduo_scroll.js"></script>
+
+<!--非通用脚本和样式表-->
+<script src="js/niaoduo_opcity_header.js"></script>
+<script src="js/niaoduo_banner.js"></script>
+<script src="js/niaoduo_index_area.js"></script>
+<script src="js/niaoduo_play_video.js"></script>
+<script src="js/niaoduo_right_tools.js"></script>
+<link href="css/niaoduo_index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="niaoduo_common_header">
+  <div class="niaoduo_layout">
+      <div class="fl niaoduo_header_logo">
+         <a href="#" class="niaoduo_header_logo_link"></a>
+     </div>
+      <div class="fl">
+         <ul class="niaoduo_header_meanu_ul">
+            <li class="niaoduo_header_meanu_li">
+               <a href="#" class="niaoduo_header_meanu_link">目的地</a>
+               <i class="niaoduo_header_meanu_bar">/</i>
+            </li>
+            <li class="niaoduo_header_meanu_li">
+               <a href="#" class="niaoduo_header_meanu_link">主题游</a>
+               <i class="niaoduo_header_meanu_bar">/</i>
+            </li>
+            <li class="niaoduo_header_meanu_li">
+               <a href="#" class="niaoduo_header_meanu_link">定制游</a>
+               <i class="niaoduo_header_meanu_bar">/</i>
+            </li>
+            <li class="niaoduo_header_meanu_li">
+               <a href="#" class="niaoduo_header_meanu_link">自由行</a>
+               <i class="niaoduo_header_meanu_bar">/</i>
+            </li>
+            <li class="niaoduo_header_meanu_li">
+               <a href="#" class="niaoduo_header_meanu_link">白菜价</a>
+               <i class="niaoduo_header_meanu_bar">/</i>
+            </li>
+         </ul>
+      </div>
+      
+    <div class="fr niaoduo_header_buy_cart">
+         <a class="niaoduo_header_buy_cart_link" href="#">
+            <span class="niaoduo_header_buy_cart_span">购物车：<span class="niaoduo_header_buy_cart_num">6</span>件</span>
+         </a>
+      </div>
+      <!--登录前-->
+      <!--<div class="fr niaoduo_header_account_body">
+         <a href="#">登录</a>
+         <i>|</i>
+         <a href="#">注册</a>
+      </div>-->
+      <!--登录后-->
+      <div class="fr niaoduo_header_account_body">
+         <a href="#">1235454545454</a>
+      </div>
+       
+    <div class="fr niaoduo_header_search_body">
+         <input class="niaoduo_header_input_search" type="text" name="search[name]" id="search_keywords" placeholder="">
+         <button type="button" class="niaoduo_header_btn_search" id="btn_search"></button>
+      </div>   
+  </div>
+</div>
+
+<div class="niaoduo_index_banner" id="niaoduo_index_banner_body">
+  <ul id="niaoduo_index_banner" class="niaoduo_index_banner_ul">
+     <li class="niaoduo_index_banner_li"><a style="background-image:url(images/banner1.jpg)" href="#"></a></li>
+     <li class="niaoduo_index_banner_li"><a style="background-image:url(images/banner2.jpg)" href="#"></a></li>
+     <li class="niaoduo_index_banner_li"><a style="background-image:url(images/banner3.jpg)" href="#"></a></li>
+     <li class="niaoduo_index_banner_li"><a style="background-image:url(images/banner4.jpg)" href="#"></a></li>
+  </ul>
+  <ul id="niaoduo_index_banner_point" class="niaoduo_index_banner_point"></ul>
+  <div class="niaoduo_banner_next_pre_body">
+     <div class="niaoduo_banner_pre fl" id="niaoduo_banner_pre"></div>
+     <div class="niaoduo_banner_next fr" id="niaoduo_banner_next"></div>
+  </div>
+</div>
+<script>
+$(document).ready(function () {
+	banner_slider('niaoduo_index_banner','niaoduo_index_banner_point','niaoduo_banner_pre','niaoduo_banner_next','niaoduo_index_banner_body');
+	var have_slider = $('.niaoduo_slide').length;
+	if(have_slider>0){
+		niaoduo_area_scroll_set();
+		$(window).resize(function(){
+	       re_area();
+        });
+	}
+	
+});
+</script>
+
+<div class="niaoduo_area_enter_body">
+   <div class="niaoduo_layout niaoduo_index_tit_box">
+      <h3 class="niaoduo_index_tit_h3">地区入口</h3>
+      <h4 class="niaoduo_index_tit_h4">大胆走出去，世界走进来</h4>
+   </div>
+   <div class="niaoduo_area_enter_scroll_body">
+      <ul class="niaoduo_area_enter_scroll_ul">
+         <li class="niaoduo_slide">
+            <a href="#">
+               <img src="images/s_banner1.jpg">
+               <span class="niaoduo_slide_txt">旧金山风情</span>
+            </a>
+         </li>
+         <li class="niaoduo_slide">
+            <a href="#">
+               <img src="images/s_banner2.jpg">
+               <span class="niaoduo_slide_txt">旧金山风情</span>
+            </a>
+         </li>
+         <li class="niaoduo_slide">
+            <a href="#">
+               <img src="images/s_banner3.jpg">
+               <span class="niaoduo_slide_txt">旧金山风情</span>
+            </a>
+         </li>
+        
+      </ul>
+      <div class="niaoduo_area_enter_scroll_pre" id="niaoduo_area_enter_scroll_pre"></div>
+      <div class="niaoduo_area_enter_scroll_next" id="niaoduo_area_enter_scroll_next"></div>
+   </div>
+</div>
+
+<div class="niaoduo_hot_susume_body">
+   <div class="niaoduo_layout niaoduo_index_tit_box">
+      <h3 class="niaoduo_index_tit_h3">热门推荐</h3>
+      <h4 class="niaoduo_index_tit_h4">游点不一样，玩法大不同</h4>
+   </div>
+   <div class="niaoduo_hot_susume_box niaoduo_layout">
+      <div class="niaoduo_hot_susume_item" onclick="window.open('链接地址');">
+         <img src="images/niaoduo_hot1.jpg" />
+         <div class="niaoduo_hot_susume_item_txt_box">
+            <div class="fl niaoduo_hot_susume_item_tit">北京出发  直飞法国蔚蓝海岸+普罗旺斯9天7晚主题游</div>
+            <div class="fr niaoduo_hot_susume_item_price_map_box">
+               <p class="niaoduo_hot_susume_item_price">￥<span class="niaoduo_hot_color_red">17899</span>元/人起</p>
+               <p class="niaoduo_hot_susume_item_map"><span class="niaoduo_hot_susume_item_map_ico"></span>法国, 东南部</p>
+            </div>
+         </div>
+      </div>
+      
+      <div class="niaoduo_hot_susume_item" onclick="window.open('链接地址');">
+         <img src="images/niaoduo_hot2.jpg" />
+         <div class="niaoduo_hot_susume_item_txt_box">
+            <div class="fl niaoduo_hot_susume_item_tit">北京出发  直飞法国蔚蓝海岸+普罗旺斯9天7晚主题游</div>
+            <div class="fr niaoduo_hot_susume_item_price_map_box">
+               <p class="niaoduo_hot_susume_item_price">￥<span class="niaoduo_hot_color_red">1780099</span>元/人起</p>
+               <p class="niaoduo_hot_susume_item_map"><span class="niaoduo_hot_susume_item_map_ico"></span>法国, 东南部</p>
+            </div>
+         </div>
+      </div>
+      
+      <div class="niaoduo_hot_susume_item" onclick="window.open('链接地址');">
+         <img src="images/niaoduo_hot3.jpg" />
+         <div class="niaoduo_hot_susume_item_txt_box">
+            <div class="fl niaoduo_hot_susume_item_tit">北京出发  直飞法国蔚蓝海岸+普罗旺斯9天7晚主题游北京出发  直飞法国蔚蓝海岸+普罗旺斯9天7晚主题游北京出发  直飞法国蔚蓝海岸+普罗旺斯9天7晚主题游</div>
+            <div class="fr niaoduo_hot_susume_item_price_map_box">
+               <p class="niaoduo_hot_susume_item_price">￥<span class="niaoduo_hot_color_red">17899</span>元/人起</p>
+               <p class="niaoduo_hot_susume_item_map"><span class="niaoduo_hot_susume_item_map_ico"></span>法国, 东南部</p>
+            </div>
+         </div>
+      </div>
+      
+      <div class="niaoduo_hot_susume_item" onclick="window.open('链接地址');">
+         <img src="images/niaoduo_hot4.jpg" />
+         <div class="niaoduo_hot_susume_item_txt_box">
+            <div class="fl niaoduo_hot_susume_item_tit">北京出发  直飞法国蔚蓝海岸+普罗旺斯9天7晚主题游</div>
+            <div class="fr niaoduo_hot_susume_item_price_map_box">
+               <p class="niaoduo_hot_susume_item_price">￥<span class="niaoduo_hot_color_red">17899</span>元/人起</p>
+               <p class="niaoduo_hot_susume_item_map"><span class="niaoduo_hot_susume_item_map_ico"></span>法国, 东南部</p>
+            </div>
+         </div>
+      </div>
+      
+      <div class="niaoduo_hot_susume_item" onclick="window.open('链接地址');">
+         <img src="images/niaoduo_hot5.jpg" />
+         <div class="niaoduo_hot_susume_item_txt_box">
+            <div class="fl niaoduo_hot_susume_item_tit">北京出发  直飞法国蔚蓝海岸+普罗旺斯9天7晚主题游</div>
+            <div class="fr niaoduo_hot_susume_item_price_map_box">
+               <p class="niaoduo_hot_susume_item_price">￥<span class="niaoduo_hot_color_red">17899</span>元/人起</p>
+               <p class="niaoduo_hot_susume_item_map"><span class="niaoduo_hot_susume_item_map_ico"></span>法国, 东南部</p>
+            </div>
+         </div>
+      </div>
+      
+      <div class="niaoduo_hot_susume_item" onclick="window.open('链接地址');">
+         <img src="images/niaoduo_hot6.jpg" />
+         <div class="niaoduo_hot_susume_item_txt_box">
+            <div class="fl niaoduo_hot_susume_item_tit">北京出发  直飞法国蔚蓝海岸+普罗旺斯9天7晚主题游</div>
+            <div class="fr niaoduo_hot_susume_item_price_map_box">
+               <p class="niaoduo_hot_susume_item_price">￥<span class="niaoduo_hot_color_red">17899</span>元/人起</p>
+               <p class="niaoduo_hot_susume_item_map"><span class="niaoduo_hot_susume_item_map_ico"></span>法国, 东南部</p>
+            </div>
+         </div>
+      </div>
+      
+      <div class="niaoduo_hot_susume_item" onclick="window.open('链接地址');">
+         <img src="images/niaoduo_hot7.jpg" />
+         <div class="niaoduo_hot_susume_item_txt_box">
+            <div class="fl niaoduo_hot_susume_item_tit">北京出发  直飞法国蔚蓝海岸+普罗旺斯9天7晚主题游</div>
+            <div class="fr niaoduo_hot_susume_item_price_map_box">
+               <p class="niaoduo_hot_susume_item_price">￥<span class="niaoduo_hot_color_red">17899</span>元/人起</p>
+               <p class="niaoduo_hot_susume_item_map"><span class="niaoduo_hot_susume_item_map_ico"></span>法国, 东南部</p>
+            </div>
+         </div>
+      </div>
+      
+      <div style="clear:both"></div>
+  </div>
+</div>
+<script>
+$(document).ready(function () {
+   $('.niaoduo_hot_susume_item').eq(1).css('marginRight','0px');
+   $('.niaoduo_hot_susume_item').eq(4).css('marginRight','0px');
+   $('.niaoduo_hot_susume_item').eq(6).css('marginRight','0px');
+   $('.niaoduo_hot_susume_item').eq(0).css('width','796px');
+   $('.niaoduo_hot_susume_item').eq(5).css('width','796px');
+});
+</script>
+<div class="niaoduo_video_body">
+   <div class="niaoduo_video_play_ico" id="niaoduo_play_video"></div>
+</div>
+
+<div class="niaoduo_video_black_play_body" id="niaoduo_play_video_body">
+   <div class="niaoduo_video_table">
+   <div class="niaoduo_video_box">
+		<video preload="none" controls="controls" class="niaoduo_video" id="niaoduo_video">
+			<source src="video/video.mp4" type="video/mp4">
+			<p>您的浏览器不支持HTML5  video  标签</p>
+		</video>
+	</div>
+    </div>
+    <div class="niaoduo_video_close" id="niaoduo_close_video"></div>
+</div>
+
+<div class="niaoduo_kj_enter_body">
+   <div class="niaoduo_layout niaoduo_index_tit_box">
+      <h3 class="niaoduo_index_tit_h3">快捷入口</h3>
+      <h4 class="niaoduo_index_tit_h4">简单你的旅行</h4>
+      <ul class="niaoduo_kj_enter_box">
+         <li class="niaoduo_kj_enter_item">
+            <a href="#"><img src="images/kj_jipiao.jpg" width="290" height="405" /></a>
+         </li>
+         <li class="niaoduo_kj_enter_item">
+            <a href="#"><img src="images/kj_jiudian.jpg" width="290" height="405" /></a>
+         </li>
+         <li class="niaoduo_kj_enter_item">
+            <a href="#"><img src="images/kj_qianzheng.jpg" width="290" height="405" /></a>
+         </li>
+         <li class="niaoduo_kj_enter_item">
+            <a href="#"><img src="images/kj_about.jpg" width="290" height="405" /></a>
+         </li>
+      </ul>
+      <div style="clear:both;"></div>
+   </div>
+</div>
+<script>
+$(document).ready(function () {
+   $('.niaoduo_kj_enter_body .niaoduo_kj_enter_item').last().css('marginRight','0px');
+});
+</script>
+
+<div class="niaoduo_right_fix_tools_body">
+   <div class="niaoduo_right_fix_tools_item type_go_order"><a href="#"></a></div>
+   <div class="niaoduo_right_fix_tools_item type_go_buycart"><a href="#"></a></div>
+   <div class="niaoduo_right_fix_tools_item type_go_top" id="niaoduo_go_top"></div>
+</div>
+<div class="niaoduo_common_footer">
+   <div class="niaoduo_layout">
+      <div class="fl niaoduo_common_footer_left">
+         <p class="niaoduo_common_footer_link">
+            <a href="#">关于鸟多</a>
+            <i>|</i>
+            <a href="#">会员制度</a>
+            <i>|</i>
+            <a href="#">退款政策</a>
+            <i>|</i>
+            <a href="#">免责声明</a>
+         </p>
+         <p class="niaoduo_common_footer_txt">温州和平国际旅游有限公司  旗下电商品牌</p>
+      </div>
+      <div class="fr niaoduo_common_footer_right">
+         <p>版权所有 2016 © niaoduo.com 浙ICP备09067728号-3</p>
+      </div>
+   </div>
+</div>
+</body>
+</html>

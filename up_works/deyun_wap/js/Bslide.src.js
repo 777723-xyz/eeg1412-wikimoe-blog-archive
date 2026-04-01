@@ -1,0 +1,832 @@
+/**
+ * shitinglu 2015-7-22
+ * 参数 options
+ *  小按钮参数                        smallBtn       true||false          可选
+ *  数字参数                          number         true||false          可选
+ *  滑动到最后一张图片的回调             moveFn         X参数  传出位移多少     可选
+ *  开始时候显示第几张图片               startIndex     number类型            可选
+ *  是否是循环展示图片                  loop           true||false          可选
+ *  最后一张图片的时候是否跳转链接        location      链接                    最后一张跳转链接
+ */
+var slide = (function() {
+
+    var slide = function(elem) {
+        return new Slide(elem);
+    }
+
+    // 创建一个对象
+    function Slide(elem) {
+        this.elem = elem;
+        this.oBox = document.querySelector(elem);
+        this.aLi = document.querySelectorAll(elem + ' [data-ul-child=child]');
+        this.oUl = document.querySelector(elem + ' [data-slide-ul=firstUl]');
+
+        this.now = 0;
+        this.on0ff = false;
+    }
+
+    // 拓展实例方法
+    Slide.prototype = {
+        init: function(options) {
+
+            var options = options || {},
+                aLi = this.aLi;
+
+            this.defaults = {
+                startIndex: 0,
+                loop: false,
+                smallBtn: false,
+                number: false,
+                laseMoveFn: false,
+                location: false,
+                preDef: 'lnr',
+                autoPlay: false,
+                autoHeight: false,
+                preFn: null
+            };
+
+            // 对参数处理
+            Slide.extend(this.defaults, options);
+            // 默认图片展示第几张
+            this.now = this.defaults.startIndex;
+
+           
+
+            // 是否是小按钮形式
+            if (this.defaults.smallBtn) {
+
+                this.btns = document.querySelectorAll(this.elem + ' [data-ol-btn="btn"]');
+
+                for (var i = 0; i < this.btns.length; i++) {
+                    this.btns[i].className = '';
+                };
+
+                this.btns[Slide.getNow(this.now, aLi.length)].className = 'active';
+            }
+
+            // 数字形式
+            if (this.defaults.number) {
+                this.slideNub = document.getElementById('slide-nub');
+                this.slideSum = document.getElementById('slide-sum');
+
+                this.slideNub.innerHTML = this.now + 1;
+                this.slideSum.innerHTML = this.aLi.length;
+            }
+
+            if (this.aLi.length <= 2) {
+            	if (this.defaults.loop) {
+                    this.oUl.innerHTML += this.oUl.innerHTML;
+                }
+            	
+                this.aLi = document.querySelectorAll(this.elem + ' [data-ul-child=child]');
+
+                this.need = true;
+
+
+            }
+
+            // 是否自动播放
+            if (this.defaults.autoPlay) {
+                this.pause()
+                this.play();
+            }
+
+
+            // 初始化
+            this.liInit();
+            this.bind();
+
+
+
+        },
+        bind: function() {
+
+            var oBox = this.oBox,
+                device = Slide._device();
+
+            if (!device.hasTouch) {
+                oBox.style.cursor = 'pointer';
+                oBox.ondragstart = function(ev) {
+                    if (ev) {
+                        return false;
+                    }
+                    return true;
+                };
+            }
+
+            var supportsOrientationChange = "onorientationchange" in window;
+            var resize = supportsOrientationChange ? "orientationchange" : "resize";
+
+
+            oBox.addEventListener(device.startEvt, this);
+            window.addEventListener(resize, this);
+            window.addEventListener('touchcancel', this);
+            window.addEventListener('blur', this);
+            window.addEventListener('focus', this);
+
+
+        },
+        liInit: function() {
+
+            var aLi = this.aLi,
+                length = aLi.length,
+                oUl = this.oUl,
+                w = this.oBox.offsetWidth,
+                now = this.now,
+                that = this;
+
+             if (this.defaults.preFn) {
+                this.defaults.preFn()
+            }
+
+
+            oUl.style.width = w * length + 'px';
+
+
+            for (var i = 0; i < length; i++) {
+
+                Slide.setStyle(aLi[i], {
+                    WebkitTransition: 'all 0ms ' + 'ease',
+                    transition: 'all 0ms ' + 'ease'
+                })
+            }
+
+
+
+            if (this.defaults.autoHeight) {
+
+                var boxW = this.oBox.offsetWidth;
+
+
+
+                for (var i = 0; i < length; i++) {
+                    aLi[i].style.width = boxW + 'px';
+                };
+
+
+                var pic = aLi[0].getElementsByTagName('img')[0];
+
+                if (pic) {
+                    var img = new Image();
+
+                    img.onload = function() {
+
+                        that.oBox.style.height = aLi[0].offsetHeight + 'px';
+                    }
+                    img.src = pic.src;
+                } else {
+
+                    this.oBox.style.height = aLi[0].offsetHeight + 'px';
+                }
+
+
+
+
+            }
+
+
+
+            // 循环切换li的初始化
+            if (this.defaults.loop) {
+
+
+
+
+                for (var i = 0; i < length; i++) {
+
+                    Slide.setStyle(aLi[i], {
+                        position: 'absolute',
+                        left: 0,
+                        top: 0
+                    });
+
+                    if (i == Slide.getNow(now, length)) {
+
+                        Slide.setStyle(aLi[i], {
+                            WebkitTransform: 'translateX(' + 0 + 'px)',
+                            transform: 'translateX(' + 0 + 'px)',
+                            zIndex: 100
+                        });
+
+                    } else if (i == Slide.getPre(now, length)) {
+                        Slide.setStyle(aLi[i], {
+                            WebkitTransform: 'translateX(' + -w + 'px)',
+                            transform: 'translateX(' + -w + 'px)',
+                            zIndex: 100
+                        });
+
+                    } else if (i == Slide.getNext(now, length)) {
+                        Slide.setStyle(aLi[i], {
+                            WebkitTransform: 'translateX(' + w + 'px)',
+                            transform: 'translateX(' + w + 'px)',
+                            zIndex: 100
+                        });
+
+                    } else {
+
+                        Slide.setStyle(aLi[i], {
+                            WebkitTransform: 'translateX(' + 0 + 'px)',
+                            transform: 'translateX(' + 0 + 'px)',
+                            zIndex: 99
+                        });
+                    }
+
+                }
+
+                // 不循环切换切换li的初始化
+            } else {
+                for (var i = 0; i < length; i++) {
+
+                    Slide.setStyle(aLi[i], {
+                        WebkitTransform: 'translateX(' + now * -w + 'px)',
+                        transform: 'translateX(' + now * -w + 'px)'
+                    });
+
+                }
+            }
+        },
+        handleEvent: function(ev) {
+
+            var device = Slide._device(),
+                oBox = this.oBox;
+
+            switch (ev.type) {
+                case device.startEvt:
+                    if (this.defaults.autoPlay) this.pause();
+                    this.startHandler(ev);
+                    break;
+                case device.moveEvt:
+                    if (this.defaults.autoPlay) this.pause();
+                    this.moveHandler(ev);
+                    break;
+                case device.endEvt:
+                    if (this.defaults.autoPlay) {
+                        this.pause();
+                        this.play();
+                    }
+                    this.endHandler(ev);
+                    break;
+                case 'touchcancel':
+                    if (this.defaults.autoPlay) {
+                        this.pause();
+                        this.play();
+                    }
+                    this.endHandler(ev);
+                    break;
+                case 'orientationchange':
+                    this.orientationchangeHandler();
+                    break;
+                case 'resize':
+                    this.orientationchangeHandler();
+                    break;
+                case 'focus':
+                    if (this.defaults.autoPlay) {
+                        this.pause();
+                        this.play();
+                    }
+                    break;
+                case 'blur':
+                    if (this.defaults.autoPlay) {
+                        this.pause();
+                    }
+                    break;
+            }
+        },
+        //触摸开始
+        startHandler: function(ev) {
+
+            this.on0ff = true;
+
+            var device = Slide._device(),
+                hasTouch = device.hasTouch,
+                oBox = this.oBox,
+                now = this.now,
+                aLi = this.aLi
+
+            oBox.addEventListener(device.moveEvt, this);
+            oBox.addEventListener(device.endEvt, this);
+
+
+            this.downTime = Date.now();
+
+
+
+            this.downX = hasTouch ? ev.targetTouches[0].pageX : ev.clientX - oBox.offsetLeft;
+            this.downY = hasTouch ? ev.targetTouches[0].pageY : ev.clientY - oBox.offsetTop;
+
+            // 获取初始transform 值
+            this.startT = Slide.getTranX(aLi[Slide.getNow(now, aLi.length)]);
+
+
+            this.startNowT = Slide.getTranX(aLi[Slide.getNow(now, aLi.length)]);
+            this.startPreT = Slide.getTranX(aLi[Slide.getPre(now, aLi.length)]);
+            this.startNextT = Slide.getTranX(aLi[Slide.getNext(now, aLi.length)]);
+
+
+        },
+        //移动开始
+        moveHandler: function(ev) {
+            var oBox = this.oBox,
+                device = Slide._device();
+
+            if (this.on0ff) {
+
+                var hasTouch = device.hasTouch;
+
+                var nowX = hasTouch ? ev.targetTouches[0].pageX : ev.clientX - oBox.offsetLeft;
+                var nowY = hasTouch ? ev.targetTouches[0].pageY : ev.clientY - oBox.offsetTop;
+
+
+                var aLi = this.aLi,
+                    length = aLi.length,
+                    now = this.now,
+                    w = aLi[0].offsetWidth;
+
+
+                // 全部阻止
+                if (this.defaults.preDef == 'all') {
+                    // ev.preventDefault();
+                    Slide.stopDefault(ev);
+                }
+
+                for (var i = 0; i < length; i++) {
+
+                    Slide.setStyle(aLi[i], {
+                        WebkitTransition: 'all 0ms ' + 'ease',
+                        transition: 'all 0ms ' + 'ease'
+                    })
+                }
+
+                if (Math.abs(nowX - this.downX) < Math.abs(nowY - this.downY)) {
+
+                    // 阻止上下滑动才默认事件 
+                    if (this.defaults.preDef == 'tnd' && this.defaults.preDef != 'all') {
+
+                        // ev.preventDefault();
+                        Slide.stopDefault(ev);
+                    }
+
+
+                } else {
+
+
+                    if (Math.abs(nowX - this.downX) > 10) {
+
+                        // 阻止左右滑动才默认事件 
+                        if (this.defaults.preDef == 'lnr' && this.defaults.preDef != 'all') {
+
+                            // ev.preventDefault();
+                            Slide.stopDefault(ev);
+                        }
+
+                        if (this.defaults.loop) {
+
+                            nowT = (this.startNowT + nowX - this.downX).toFixed(4);
+                            preT = (this.startPreT + nowX - this.downX).toFixed(4);
+                            nextT = (this.startNextT + nowX - this.downX).toFixed(4);
+
+                            Slide.move(aLi[Slide.getNow(now, length)], nowT, 100);
+
+                            Slide.move(aLi[Slide.getPre(now, length)], preT, 100);
+
+                            Slide.move(aLi[Slide.getNext(now, length)], nextT, 100);
+
+
+                        } else {
+
+                            var nowT = Slide.getTranX(aLi[now]);
+
+                            if (nowT > 0) {
+                                var tansX = ((this.startT + nowX - this.downX) / 3).toFixed(4);
+
+                                for (var i = 0; i < length; i++) {
+
+                                    Slide.move(aLi[i], tansX);
+
+                                }
+
+                            } else if (Math.abs(nowT) >= Math.abs((length - 1) * w)) {
+
+                                var tansX = (this.startT + (nowX - this.downX) / 3).toFixed(4);
+
+                                for (var i = 0; i < length; i++) {
+                                    Slide.move(aLi[i], tansX);
+                                }
+
+                                // 在最后一张图片滑动的时候传入的fn 并且传出位移
+                                if (this.defaults.laseMoveFn && typeof this.defaults.laseMoveFn == 'function') {
+
+                                    var x = (tansX - this.startT).toFixed(4);
+
+                                    this.defaults.laseMoveFn(x);
+
+                                }
+
+                            } else {
+                                var tansX = (this.startT + nowX - this.downX).toFixed(4);
+
+                                for (var i = 0; i < length; i++) {
+                                    Slide.move(aLi[i], tansX);
+                                }
+
+                            }
+
+                        }
+
+
+                    }
+
+                }
+                // 非常重要
+            } else {
+                oBox.removeEventListener(device.moveEvt, this);
+                oBox.removeEventListener(device.endEvt, this);
+
+            }
+
+        },
+        //移动结束
+        endHandler: function(ev) {
+
+            this.on0ff = false;
+
+            var endTime = Date.now(),
+                device = Slide._device(),
+                hasTouch = device.hasTouch,
+                oBox = this.oBox,
+                endX = hasTouch ? ev.changedTouches[0].pageX : ev.clientX - oBox.offsetLeft,
+                endY = hasTouch ? ev.changedTouches[0].pageY : ev.clientY - oBox.offsetTop,
+                aLi = this.aLi,
+                w = aLi[0].offsetWidth,
+                endT = Slide.getTranX(aLi[Slide.getNow(this.now, aLi.length)]);
+
+
+
+            if (endX - this.downX < 30 && endX - this.downX >= 0 && Math.abs(endY - this.downY) < 30) {
+                this.tab(endT, '+=');
+              
+                return 'click';
+
+            } else if (endX - this.downX > -30 && endX - this.downX <= 0 && Math.abs(endY - this.downY) < 30) {
+                this.tab(endT, '-=');
+               
+                return 'click';
+            } else {
+
+
+                
+                if(Math.abs(endY - this.downY)-Math.abs(endX - this.downX)>30&&endX - this.downX<0)
+                {
+                   
+                     this.tab(endT, '-=');
+                     return;
+                }
+
+                if(Math.abs(endY - this.downY)-Math.abs(endX - this.downX)>30&&endX - this.downX>0)
+                {
+
+                     this.tab(endT, '+=');
+                     return;
+                }
+
+                if (endX < this.downX) {
+
+
+                    if (this.downX - endX > w / 3 || endTime - this.downTime < 200) {
+                        this.now++;
+                        this.tab(endT, '++');
+                        return 'left';
+                    } else {
+
+                        this.tab(endT, '+=');
+                        return 'stay';
+                    }
+
+
+                } else {
+
+
+                    if (endX - this.downX > w / 3 || endTime - this.downTime < 200) {
+                        this.now--;
+                        this.tab(endT, '--');
+                        return 'right';
+                    } else {
+                        this.tab(endT, '-=');
+                        return 'stay';
+                    }
+
+                }
+            }
+
+            // 释放掉监听
+            oBox.removeEventListener(device.moveEvt, this);
+            oBox.removeEventListener(device.endEvt, this);
+
+        },
+        //结束后的动画
+        tab: function(endT, sign, timer) {
+
+
+            var aLi = this.aLi,
+                length = aLi.length,
+                w = aLi[0].offsetWidth,
+                oBox = this.oBox,
+                device = Slide._device(),
+                that = this,
+                now = this.now;
+
+
+            if (this.defaults.loop) {
+
+                if (now < 0) {
+                    now = length - 1;
+                    this.now = length - 1;
+                }
+
+                for (var i = 0; i < length; i++) {
+
+
+                    if (i == Slide.getPre(now, length)) {
+
+                        var runing;
+
+                        switch (sign) {
+                            case '++':
+                                runing = 300;
+                                break;
+                            case '--':
+                                runing = 0;
+                                break;
+                            case '+=':
+                                runing = 0;
+                                break;
+                            case '-=':
+                                runing = 300;
+                                break;
+                            default:
+                                break;
+                        }
+
+
+                        Slide.setStyle(aLi[Slide.getPre(now, length)], {
+                            WebkitTransform: 'translateX(' + -w + 'px)',
+                            transform: 'translateX(' + -w + 'px)',
+                            zIndex: 100,
+                            WebkitTransition: 'all ' + runing + 'ms ' + 'ease',
+                            transition: 'all ' + runing + 'ms ' + 'ease'
+                        })
+
+
+                    } else if (i == Slide.getNow(now, length)) {
+
+                        Slide.setStyle(aLi[Slide.getNow(now, length)], {
+                            WebkitTransform: 'translateX(' + 0 + 'px)',
+                            transform: 'translateX(' + 0 + 'px)',
+                            zIndex: 100,
+                            WebkitTransition: 'all ' + 300 + 'ms ' + 'ease',
+                            transition: 'all ' + 300 + 'ms ' + 'ease'
+                        })
+
+                    } else if (i == Slide.getNext(now, length)) {
+                        var runing;
+
+                        switch (sign) {
+                            case '++':
+                                runing = 0;
+                                break;
+                            case '--':
+                                runing = 300;
+                                break;
+                            case '+=':
+                                runing = 300;
+                                break;
+                            case '-=':
+                                runing = 0;
+                                break;
+                            default:
+                                break;
+                        }
+
+                        Slide.setStyle(aLi[Slide.getNext(now, length)], {
+                            WebkitTransform: 'translateX(' + w + 'px)',
+                            transform: 'translateX(' + w + 'px)',
+                            zIndex: 100,
+                            WebkitTransition: 'all ' + runing + 'ms ' + 'ease',
+                            transition: 'all ' + runing + 'ms ' + 'ease'
+
+                        })
+                    } else {
+
+                        Slide.setStyle(aLi[i], {
+                            WebkitTransform: 'translateX(' + 0 + 'px)',
+                            transform: 'translateX(' + 0 + 'px)',
+                            zIndex: 99,
+                            WebkitTransition: 'all ' + 0 + 'ms ' + 'ease',
+                            transition: 'all ' + 0 + 'ms ' + 'ease'
+
+                        })
+                    }
+
+                }
+
+
+            } else {
+              
+                for (var i = 0; i < length; i++) {
+
+                    Slide.setStyle(aLi[i], {
+                        WebkitTransition: 'all ' + 300 + 'ms ' + 'ease',
+                        transition: 'all ' + 300 + 'ms ' + 'ease'
+                    })
+
+                }
+
+                if (now <= 0) {
+                    now = 0;
+                    this.now = 0;
+
+                }
+                if (now > length - 1) {
+
+                    if (timer) {
+                        now = 0;
+                        this.now = 0;
+                    } else {
+                        now = length - 1;
+                        this.now = length - 1;
+                    }
+
+                }
+
+                for (var j = 0; j < length; j++) {
+
+                    Slide.setStyle(aLi[j], {
+                        WebkitTransform: 'translateX(' + (-now * w) + 'px)',
+                        transform: 'translateX(' + (-now * w) + 'px)'
+                    })
+                }
+            }
+
+            // 是否是小按钮情况
+            if (this.defaults.smallBtn) {
+
+                for (var i = 0; i < this.btns.length; i++) {
+                    this.btns[i].className = '';
+                };
+
+                if (this.need) {
+
+                    this.btns[Slide.getNow(now, length / 2)].className = 'active';
+                } else {
+                    this.btns[Slide.getNow(now, length)].className = 'active';
+                }
+
+            }
+
+            // 是否是数字情况
+            if (this.defaults.number) {
+
+                this.slideNub.innerHTML = Slide.getNow(now, length) + 1;
+            }
+
+
+
+            aLi[Slide.getNow(now, length)].addEventListener("webkitTransitionEnd", end, false);
+            aLi[Slide.getNow(now, length)].addEventListener("transitionend", end, false);
+
+            // transitionend 回调参数
+            function end() {
+
+                // 判断是否达到跳转页面的条件
+                if (that.defaults.location) {
+
+                    if (endT < -(length - 1) * w - w / 5) {
+
+                        window.location.href = that.defaults.location;
+                    }
+                }
+
+                aLi[Slide.getNow(that.now, length)].removeEventListener("webkitTransitionEnd", end, false);
+                aLi[Slide.getNow(that.now, length)].removeEventListener("transitionend", end, false);
+
+            }
+
+        },
+        // 开启定时器
+        play: function() {
+
+            var that = this;
+
+            that.timer = setInterval(function() {
+                that.now++
+                that.tab(null, '++', true);
+            }, 6000)
+        },
+        // 关闭定时器
+        pause: function() {
+            var that = this;
+            clearInterval(that.timer);
+        },
+        // 屏幕翻转
+        orientationchangeHandler: function() {
+            var that = this;
+            setTimeout(function() {
+                that.liInit()
+                // that.tab(null, '++', true);
+            }, 300);
+        },
+        show:function(){
+            this.oBox.style.display='inline-block';
+        },
+        hide:function(){
+            this.oBox.style.display='none';
+        }
+    };
+
+
+    // 静态方法  只写了浅拷贝 够用了
+    Slide.extend = function(target, source) {
+
+        for (name in source) {
+            if (source[name] !== undefined) target[name] = source[name]
+        }
+
+    };
+
+    // Slide 添加工具方法
+    Slide.extend(Slide, {
+        // 设置样式
+        setStyle: function(obj, json) {
+
+            for (name in json) {
+                obj.style[name] = json[name];
+            }
+        },
+        // 获取 translateX 值
+        getTranX: function(obj) {
+            var getT = obj.style.WebkitTransform || obj.style.transform;
+            var getIndex = getT.indexOf('translateX(');
+            var nowT = parseInt(getT.substring(getIndex + 11, getT.length - 3));
+
+            return nowT;
+        },
+        // 判断是否是移动发设备
+        _device: function() {
+
+            var hasTouch = !!('ontouchstart' in window || window.DocumentTouch && document instanceof window.DocumentTouch);
+            var startEvt = hasTouch ? 'touchstart' : 'mousedown';
+            var moveEvt = hasTouch ? 'touchmove' : 'mousemove';
+            var endEvt = hasTouch ? 'touchend' : 'mouseout';
+
+            return {
+                hasTouch: hasTouch,
+                startEvt: startEvt,
+                moveEvt: moveEvt,
+                endEvt: endEvt
+            };
+        },
+        getNow: function(n, length) {
+
+            return n % length
+        },
+        getPre: function(n, length) {
+            if (n % length - 1 < 0) {
+                var pre = length - 1
+            } else {
+                var pre = n % length - 1;
+            }
+            return pre;
+        },
+        getNext: function(n, length) {
+
+            if (n % length + 1 > length - 1) {
+                var next = 0;
+            } else {
+                var next = n % length + 1
+            }
+            return next;
+        },
+        move: function(obj, x, index) {
+            var zIndex = index || null;
+
+            if (zIndex) obj.style.zIndex = zIndex;
+
+            Slide.setStyle(obj, {
+                WebkitTransform: 'translateX(' + x + 'px)',
+                transform: 'translateX(' + x + 'px)'
+            });
+        },
+        stopDefault: function(ev) {
+
+            if (ev && ev.preventDefault)
+                ev.preventDefault();
+            else
+                window.event.returnValue = false;
+            return false;
+        }
+
+    });
+
+
+    return slide;
+})();

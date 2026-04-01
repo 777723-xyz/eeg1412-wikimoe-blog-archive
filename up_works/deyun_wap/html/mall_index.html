@@ -1,0 +1,371 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>德云首页</title>
+<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'/>
+<link href="../css/deyun_common.css" rel="stylesheet" type="text/css">
+<link href="../css/deyun_mall_index.css" rel="stylesheet" type="text/css">
+<link href="../css/app_download.css" rel="stylesheet" type="text/css">
+<script src="../js/Zepto.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+</head>
+
+<body class="deyun_mhome">
+<!--app下载开始-->
+<div class="deyun_app_download">
+   <div class="deyun_app_download_close"></div>
+   <div class="deyun_app_download_body">
+      <div class="deyun_app_ico"></div>
+      <div class="deyun_app_download_txt">下载德云app<br>
+随时随地关注最新动态</div>
+      <div class="deyun_app_download_link">
+         <!--ios下载链接-->
+         <a href="#" class="deyun_app_download_ios">立即下载</a>
+         <!--安卓下载链接-->
+         <a href="#" class="deyun_app_download_Android">立即下载</a>
+      </div>
+   </div>
+</div>
+<script type="text/javascript">
+var phoneu = navigator.userAgent;
+var isAndroid = phoneu.indexOf('Android') > -1 || phoneu.indexOf('Adr') > -1; //android终端
+var isiOS = !!phoneu.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+if(isAndroid){
+	$('.deyun_app_download_Android').show();
+}
+else if(isiOS){
+	$('.deyun_app_download_ios').show();
+}
+else{
+	$('.deyun_app_download_Android').show();
+}
+var wua = navigator.userAgent.toLowerCase();//获取判断用的对象
+    if (wua.match(/MicroMessenger/i) == "micromessenger") {
+        $('.deyun_app_download').hide();      
+    }
+$('.deyun_app_download_close').click(function(){
+	$('.deyun_app_download').hide();   
+});
+</script>
+<!--app下载结束-->
+<div class="deyun_index_search_banner_big_box">
+  <div class="deyun_index_search_box">
+      <div class="deyun_index_logo_box"></div>
+      <div class="deyun_index_search_textfile">
+           <form method="post" id="Form2" name="searchbar_17">
+               <input type="text" name="search[name]" placeholder="智能手机开春降价" class="deyun_index_search_textfile_input" >
+               <a id="searchbtn" href="javascript:void(0);" class="deyun_index_search_btn"></a>
+         </form>
+     </div>
+   </div>
+  <div class="deyun_index_banner_box" id="mySwipe">
+      <ul class="deyun_index_banner_ul swiper-wrapper">
+         <li class="deyun_index_banner_li" style="background-image: url(../images/deyun_m_banner_1.jpg);"><a href="http://mobile.storecode.cn/"></a></li>
+         <li class="deyun_index_banner_li" style="background-image: url(../images/deyun_m_banner_2.jpg);"><a href="http://demo.storecode.cn/"></a></li>
+         <li class="deyun_index_banner_li" style="background-image: url(../images/deyun_m_banner_3.jpg);"><a href="http://mobile.storecode.cn/html/solution/o2o/"></a></li>
+      </ul>
+      <div class="swiper-pagination"></div>
+   </div>
+</div>
+<script>
+$( document ).ready(function() {
+function banner_Size(){
+    var banner_W = $(window).width();
+    var banner_H = banner_W * (556/1080);
+	if(banner_W>=640){
+		$('.deyun_index_search_textfile').css('width',parseInt(640 - 640*0.046-41));
+		$('.deyun_index_search_textfile_input').css('width',640*0.7-15);
+		$('.deyun_index_banner_box').css('width',640).css('height',640* (556/1080));
+		$('.deyun_index_banner_li').css('width',640).css('height',640* (556/1080));
+		var banner_Nums = $('.deyun_index_banner_li').length;
+	    $('.deyun_index_banner_ul').css('width',640*banner_Nums);
+	}
+	else if(banner_W<=300){
+		$('.deyun_index_search_textfile').css('width',parseInt(300 - 300*0.046-41));
+		$('.deyun_index_search_textfile_input').css('width',300*0.7-15);
+		$('.deyun_index_banner_box').css('width',300).css('height',300* (556/1080));
+		$('.deyun_index_banner_li').css('width',300).css('height',300* (556/1080));
+		var banner_Nums = $('.deyun_index_banner_li').length;
+	    $('.deyun_index_banner_ul').css('width',300*banner_Nums);
+	}
+	else{
+		$('.deyun_index_search_textfile').css('width',parseInt(banner_W - banner_W*0.046-41));
+	    $('.deyun_index_banner_box').css('width',banner_W).css('height',banner_H);
+	    $('.deyun_index_banner_li').css('width',banner_W).css('height',banner_H);
+	    var banner_Nums = $('.deyun_index_banner_li').length;
+	    $('.deyun_index_banner_ul').css('width',banner_W*banner_Nums);
+	}
+	var search_Box_W = $('.deyun_index_search_textfile').width();
+	$('.deyun_index_search_textfile_input').css('width',parseInt(search_Box_W-15-30-search_Box_W*0.01));
+}
+    banner_Size();
+	$(window).resize(function(){
+		banner_Size();
+    });
+});
+var swiper = new Swiper('#mySwipe', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+		slideClass:'deyun_index_banner_li',
+		autoplay: 3500,//可选选项，自动滑动
+		autoplayDisableOnInteraction : false,
+		observer:true,
+        observeParents:true,
+		loop : true,
+    });
+</script>
+<nav class="deyun_index_nav_box clearfix">
+   <a href="#" class="deyun_index_nav_a">
+      <img src="../images/index_nav_ico_01.png"> 
+      <span>云超市</span>
+   </a>
+   <a href="#" class="deyun_index_nav_a">
+      <img src="../images/index_nav_ico_03.png"> 
+      <span>进口超市</span>
+   </a>
+   <a href="#" class="deyun_index_nav_a">
+      <img src="../images/index_nav_ico_05.png"> 
+      <span>百货超市</span>
+   </a>
+   <a href="#" class="deyun_index_nav_a">
+      <img src="../images/index_nav_ico_07.png"> 
+      <span>促销区</span>
+   </a>
+   <a href="#" class="deyun_index_nav_a">
+      <img src="../images/index_nav_ico_09.png"> 
+      <span>金融</span>
+   </a>
+   <a href="#" class="deyun_index_nav_a">
+      <img src="../images/index_nav_ico_11.png"> 
+      <span>爱心区</span>
+   </a>
+   <a href="#" class="deyun_index_nav_a">
+      <img src="../images/index_nav_ico_13.png"> 
+      <span>查订单</span>
+   </a>
+   <a href="#" class="deyun_index_nav_a">
+      <img src="../images/index_nav_ico_15.png"> 
+      <span>分类</span>
+   </a>   
+</nav>
+<div class="deyun_index_big_news_box clearfix">
+   <div class="deyun_index_big_news_ico fl"></div>
+   <div class="deyun_index_big_news_money fl">
+      <span id="man_nums"></span><span id="qian_nums"></span><span>元</span>
+   </div>
+   <div id="nums" style="display:none;">10020</div>
+</div>
+<script>
+$(document).ready(function () {
+	var nums = $('#nums').html();
+	/*先将数字除以10000小数点前的就是万元数字*/
+	var man_qian_num = parseInt(nums)/10000; 
+    var strs_qian=man_qian_num.toFixed(4); 
+	/*小数点进行拆分*/
+    var arr_qian = strs_qian.split(".");
+   /*输出万位后面的数字*/
+   $('#qian_nums').html(arr_qian[arr_qian.length - 1]);
+   var qian_nums_B = $('#qian_nums').html();
+   $('#qian_nums').html(qian_nums_B.replace(/\b(0+)/gi,""))
+ 
+   var strsb_man=parseInt(man_qian_num); 
+   /*判断万位数是否为0*/
+   if(strsb_man<=0){
+	   /*如果万位数为0则要筛选数字前面的0*/
+	   var qian_zero = $('#qian_nums').html();
+	   $('#qian_nums').html(qian_zero.replace(/\b(0+)/gi,""))
+   }
+   /*如果万位数后面本身是0*/
+   if(qian_zero<=0){
+	   /*直接输出0*/
+	   $('#qian_nums').html("0")
+   }
+   /*输出万位数前面的数字*/
+   if(strsb_man<=0){
+	   $('#man_nums').empty();
+   }
+   else{
+       $('#man_nums').html(strsb_man+'万')
+   }
+   /*if($('#qian_nums').html()=="0000"){
+	   $('#qian_nums').empty();
+   }*/
+});
+</script>
+<div class="deyun_index_hot_susume_big_box clearfix">
+   <div class="deyun_index_hot_susume_top clearfix">
+     <h2 class="deyun_index_hot_susume_h2 fl">热卖推荐</h2>
+     <a class="deyun_index_hot_susume_more fr" href="#">查看更多></a>
+   </div>
+   <div class="deyun_index_hot_susume_ul_scroll">
+   <ul class="deyun_index_hot_susume_ul clearfix">
+      <li class="deyun_index_hot_susume_li">
+         <a class="deyun_index_hot_susume_item_pic" href="#"><img src="../images/94970a07.jpg"></a>
+         <div class="deyun_index_hot_susume_item_name"><a href="#">Apple Watch Sport 智能手表MLCJ2CH/A )</a></div>
+         <div class="deyun_index_hot_susume_item_price_box">
+            <span class="deyun_index_hot_susume_item_price_db">德币：</span>
+            <span class="deyun_index_hot_susume_item_price">25888.00</span>
+         </div>
+      </li>
+      <li class="deyun_index_hot_susume_li">
+         <a class="deyun_index_hot_susume_item_pic" href="#"><img src="../images/94970a07.jpg"></a>
+         <div class="deyun_index_hot_susume_item_name"><a href="#">Apple Watch Sport 智能手表MLCJ2CH/A )</a></div>
+         <div class="deyun_index_hot_susume_item_price_box">
+            <span class="deyun_index_hot_susume_item_price_db">德币：</span>
+            <span class="deyun_index_hot_susume_item_price">25888.00</span>
+         </div>
+      </li>
+      <li class="deyun_index_hot_susume_li">
+         <a class="deyun_index_hot_susume_item_pic" href="#"><img src="../images/94970a07.jpg"></a>
+         <div class="deyun_index_hot_susume_item_name"><a href="#">Apple Watch Sport 智能手表MLCJ2CH/A )</a></div>
+         <div class="deyun_index_hot_susume_item_price_box">
+            <span class="deyun_index_hot_susume_item_price_db">德币：</span>
+            <span class="deyun_index_hot_susume_item_price">25888.00</span>
+         </div>
+      </li>
+      <li class="deyun_index_hot_susume_li">
+         <a class="deyun_index_hot_susume_item_pic" href="#"><img src="../images/94970a07.jpg"></a>
+         <div class="deyun_index_hot_susume_item_name"><a href="#">Apple Watch Sport 智能手表MLCJ2CH/A )</a></div>
+         <div class="deyun_index_hot_susume_item_price_box">
+            <span class="deyun_index_hot_susume_item_price_db">德币：</span>
+            <span class="deyun_index_hot_susume_item_price">25888.00</span>
+         </div>
+      </li>
+      <li class="deyun_index_hot_susume_li">
+         <a class="deyun_index_hot_susume_item_pic" href="#"><img src="../images/94970a07.jpg"></a>
+         <div class="deyun_index_hot_susume_item_name"><a href="#">Apple Watch Sport 智能手表MLCJ2CH/A )</a></div>
+         <div class="deyun_index_hot_susume_item_price_box">
+            <span class="deyun_index_hot_susume_item_price_db">德币：</span>
+            <span class="deyun_index_hot_susume_item_price">25888.00</span>
+         </div>
+      </li>
+      <li class="deyun_index_hot_susume_li">
+         <a class="deyun_index_hot_susume_item_pic" href="#"><img src="../images/94970a07.jpg"></a>
+         <div class="deyun_index_hot_susume_item_name"><a href="#">Apple Watch Sport 智能手表MLCJ2CH/A )</a></div>
+         <div class="deyun_index_hot_susume_item_price_box">
+            <span class="deyun_index_hot_susume_item_price_db">德币：</span>
+            <span class="deyun_index_hot_susume_item_price">25888.00</span>
+         </div>
+      </li>
+   </ul>
+   </div>
+<script>
+$(document).ready(function () {
+	var deyun_index_hot_susume_li = $('.deyun_index_hot_susume_li').length;
+	$('.deyun_index_hot_susume_li').first().css('marginLeft','13px')
+	$('.deyun_index_hot_susume_ul').css('width',deyun_index_hot_susume_li*139+13)
+});
+</script>
+</div>
+
+<div class="deyun_index_hot_susume_big_box">
+   <div class="deyun_index_hot_susume_top clearfix">
+     <h2 class="deyun_index_hot_susume_h2 fl">猜你喜欢</h2>
+     <a class="deyun_index_hot_susume_more fr" href="#">查看更多></a>
+   </div>
+   <ul class="deyun_index_think_ul clearfix">
+      <li class="deyun_index_think_li">
+         <a class="deyun_index_think_item_pic" href="#"><img src="../images/94970a07.jpg"></a>
+         <div class="deyun_index_think_item_name"><a href="#">Apple Watch Sport 智能手表MLCJ2CH/A )</a></div>
+         <div class="deyun_index_think_item_price_box">
+            <span class="deyun_index_think_item_price_db">德币：</span>
+            <span class="deyun_index_think_item_price">25888.00</span>
+         </div>
+      </li>
+      
+      <li class="deyun_index_think_li">
+         <a class="deyun_index_think_item_pic" href="#"><img src="../images/94970a07.jpg"></a>
+         <div class="deyun_index_think_item_name"><a href="#">Apple Watch Sport 智能手表MLCJ2CH/A )</a></div>
+         <div class="deyun_index_think_item_price_box">
+            <span class="deyun_index_think_item_price_db">德币：</span>
+            <span class="deyun_index_think_item_price">25888.00</span>
+         </div>
+      </li>
+      
+      <li class="deyun_index_think_li">
+         <a class="deyun_index_think_item_pic" href="#"><img src="../images/94970a07.jpg"></a>
+         <div class="deyun_index_think_item_name"><a href="#">Apple Watch Sport 智能手表MLCJ2CH/A )</a></div>
+         <div class="deyun_index_think_item_price_box">
+            <span class="deyun_index_think_item_price_db">德币：</span>
+            <span class="deyun_index_think_item_price">25888.00</span>
+         </div>
+      </li>
+      
+      <li class="deyun_index_think_li">
+         <a class="deyun_index_think_item_pic" href="#"><img src="../images/94970a07.jpg"></a>
+         <div class="deyun_index_think_item_name"><a href="#">Apple Watch Sport 智能手表MLCJ2CH/A )</a></div>
+         <div class="deyun_index_think_item_price_box">
+            <span class="deyun_index_think_item_price_db">德币：</span>
+            <span class="deyun_index_think_item_price">25888.00</span>
+         </div>
+      </li>
+      
+      
+   </ul>
+<script>
+$(document).ready(function () {
+	function think_W(){
+	    $('.deyun_index_think_li').css('width',parseInt(($('body').width()-13*3)/2));
+		var think_item_H = parseInt(($('body').width()-13*3)/2);
+		$('.deyun_index_think_item_pic').css('height',think_item_H);
+		$('.deyun_index_think_item_pic').css('width',think_item_H);
+	}
+	$(window).resize(function(){
+       think_W();
+    });
+	think_W();
+});
+</script> 
+</div>
+
+<div class="index_go_top" id="top"></div>
+<script>
+	$(window).scroll(function(){
+	var s=$(window).scrollTop();
+		if(s>0){
+		$("#top").css("display","block");
+		}
+		else{
+		$("#top").css("display","none");
+		}
+	});
+	 //当点击跳转链接后，回到页面顶部位置
+	$("#top").click(function() {
+        window.scrollTo(0,0);
+    });
+	
+</script>
+<!--底部导航开始-->
+<div class="deyun_bottom_nav_box">
+   <!--选中状态class加上nav_active-->
+   <a class="deyun_bottom_nav_link nav_active" href="#">
+      <span class="deyun_bottom_nav_ico_box nav_type_index"></span>
+      <span class="deyun_bottom_nav_txt">主页</span>
+   </a>
+   <a class="deyun_bottom_nav_link" href="#">
+      <span class="deyun_bottom_nav_ico_box nav_type_class"></span>
+      <span class="deyun_bottom_nav_txt">分类</span>
+   </a>
+   <a class="deyun_bottom_nav_link" href="#">
+      <span class="deyun_bottom_nav_ico_box nav_type_buycart"></span>
+      <span class="deyun_bottom_nav_txt">购物车</span>
+   </a>
+   <a class="deyun_bottom_nav_link" href="#">
+      <span class="deyun_bottom_nav_ico_box nav_type_me"></span>
+      <span class="deyun_bottom_nav_txt">我</span>
+   </a>
+</div>
+<script>
+$(document).ready(function () {
+	$('body').css('paddingBottom','51px');
+});
+</script>
+<!--底部导航结束-->
+<!--底部信息开始-->
+<footer class="deyun_m_footer">
+   <div class="deyun_footer_copyright">Copyright  © 2016 DEYUN</div>
+</footer>
+<!--底部信息结束-->
+</body>
+</html>

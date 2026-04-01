@@ -1,0 +1,695 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>消费卡申请</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css" />
+<link href="../css/deyun_member.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/num_animate.js"></script>
+</head>
+
+<body>
+<!-- 这里是添加的导航开始 --> 
+<table class="daohangdaohang">
+    <style>
+        .daohangdaohang{z-index:9999;position:fixed;top:400px;left:10px;background:#CCCCCC;}
+        .daohangdaohang td{border: 1px solid #ccc;background: #fff;height:36px;width:75px;text-align: center}
+        .daohangdaohang td a{text-decoration: none;color:#333;font-size:14px;}
+        .daohangdaohang td a:hover{text-decoration:underline;}
+    </style>
+    <tbody>
+        <tr>
+            <td><a href="donate_block.html">爱心区</a></td>
+            <td><a href="finance.html">时时借</a></td>
+        </tr>
+        <tr>
+            <td><a href="index.html">商场首页</a></td>
+            <td><a href="cloud_super_market.html">云超市</a></td>
+        </tr>
+        <tr>
+            <td><a href="item_list.html">列表页</a></td>
+            <td><a href="goods.html">商品页</a></td>
+        </tr>
+        <tr>
+            <td><a href="pay.html">支付</a></td>
+            <td><a href="index_register.html">注册</a></td>
+        </tr>
+        <tr>
+            <td><a href="member_center_index.html">用户中心</a></td>
+            <td><a href="member_center_buy_card.html">消费卡申请</a></td>
+        </tr>
+        <tr>
+            <td><a href="member_center_recommend.html">推荐收益</a></td>
+            <td><a href="member_center_wallet.html">我的钱包</a></td>
+        </tr>
+        <tr>
+            <td><a href="article_item.html">文章页</a></td>
+            <td><a href="member_center_gmm.html">借款申请</a></td>
+        </tr>
+       
+    </tbody>
+</table> 
+
+<div class="mall_member_top_big_box">
+   <div class="deyun_layout">
+      <div class="member_top_btn_box fr">
+         <!--登录前-->
+         <span class="logon_span">欢迎来到德云，请<a href="#">登录</a><a href="#">免费注册</a></span>
+         <!--登录前结束-->
+         <!--登陆后-->
+         <span class="logon_span" style="display:none;">您好，<a href="#">德云用户</a><a class="top_login_out_link" href="#">退出</a></span>
+         <!--登陆后结束-->
+         <a href="#" class="order_mobile my_order_a">我的订单</a>
+         <a href="#" class="order_mobile mobile_a">手机端</a>
+      </div>
+   </div>
+</div>
+<div class="logo_top_big_box">
+   <div class="deyun_layout tou_big_box">
+      <div class="logo_top_logo fl"><a href="#"><img src="../images/logo.png" width="96" height="32" /></a></div>
+      <div class="top_search_box fl">
+         <input class="top_input_search" type="text" name="search[name]" id="search_keywords" placeholder="">
+         <button type="button" class="top_btn_search" id="btn_search">搜索</button>
+      </div>
+      
+      <div class="top_buycart fr">
+         <a href="#">
+            我的购物车<i class="buycart_nums">0</i>
+         </a>
+      </div>
+   </div>
+</div>
+<div class="deyun_nav_big_box">
+   <div class="deyun_layout deyun_nav_box">
+      <div class="deyun_nav_list_box fl">
+         <div class="deyun_nav_list_box_name">全部商品分类<i class="down_ico_d"></i></div> 
+         <div class="deyun_nav_list_lv1_box">
+         <!--分类最多只能容纳十项-->
+            <ul class="deyun_nav_list_lv1_ul">
+               <li class="deyun_nav_list_lv1_li">
+                  <div class="deyun_nav_list_lv1_name"><a href="#">母婴用品测试超长的文本</a></div>
+                  <div class="deyun_nav_list_lv2_box">
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                  </div>
+               </li>
+               
+               <li class="deyun_nav_list_lv1_li">
+                  <div class="deyun_nav_list_lv1_name"><a href="#">母婴用品</a></div>
+                  <div class="deyun_nav_list_lv2_box">
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                     
+                     <a href="#">零食</a>
+                  </div>
+               </li>
+               <li class="deyun_nav_list_lv1_li">
+                  <div class="deyun_nav_list_lv1_name"><a href="#">母婴用品</a></div>
+                  <div class="deyun_nav_list_lv2_box">
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                    
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                  </div>
+               </li>
+               <li class="deyun_nav_list_lv1_li">
+                  <div class="deyun_nav_list_lv1_name"><a href="#">母婴用品</a></div>
+                  <div class="deyun_nav_list_lv2_box">
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                   
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                  </div>
+               </li>
+               <li class="deyun_nav_list_lv1_li">
+                  <div class="deyun_nav_list_lv1_name"><a href="#">母婴用品</a></div>
+                  <div class="deyun_nav_list_lv2_box">
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                   
+                  </div>
+               </li>
+               <li class="deyun_nav_list_lv1_li">
+                  <div class="deyun_nav_list_lv1_name"><a href="#">母婴用品</a></div>
+                  <div class="deyun_nav_list_lv2_box">
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                  </div>
+               </li>
+               <li class="deyun_nav_list_lv1_li">
+                  <div class="deyun_nav_list_lv1_name"><a href="#">母婴用品</a></div>
+                  <div class="deyun_nav_list_lv2_box">
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                  </div>
+               </li>
+               <li class="deyun_nav_list_lv1_li">
+                  <div class="deyun_nav_list_lv1_name"><a href="#">母婴用品</a></div>
+                  <div class="deyun_nav_list_lv2_box">
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                   
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                  </div>
+               </li>
+               <li class="deyun_nav_list_lv1_li">
+                  <div class="deyun_nav_list_lv1_name"><a href="#">母婴用品</a></div>
+                  <div class="deyun_nav_list_lv2_box">
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                  </div>
+               </li>
+               <li class="deyun_nav_list_lv1_li">
+                  <div class="deyun_nav_list_lv1_name"><a href="#">母婴用品</a></div>
+                  <div class="deyun_nav_list_lv2_box">
+                     <a href="#">母婴用品</a>
+                     <a href="#">奶粉</a>
+                     <a href="#">尿布湿</a>
+               
+                     <a href="#">尿布湿</a>
+                     <a href="#">婴儿车</a>
+                     <a href="#">营养品</a>
+                     <a href="#">零食</a>
+                  </div>
+               </li>
+            </ul>
+            <div class="deyun_nav_ad">
+               <a href="#"><img src="../images/ad1.jpg" width="180" height="96" /></a>
+            </div>
+         </div>
+      </div>
+      
+      
+      
+      <div class="deyun_nav_item fl">
+         <ul>
+            <li class="deyun_nav_li fl"><a href="#">云超市</a></li>
+            <li class="deyun_nav_li fl"><a href="#">进口超市</a></li>
+            <li class="deyun_nav_li fl"><a href="#">百货超市</a></li>
+            <li class="deyun_nav_li fl"><a href="#">促销区</a></li>
+            <li class="deyun_nav_li fl"><a href="#">时时借</a></li>
+            <li class="deyun_nav_li fl"><a href="#">爱心区</a></li>
+         </ul>
+      </div>
+   </div>
+</div>
+
+
+<div class="deyun_index_content">   
+     <div class="deyun_layout deyun_member_tag">
+        <!--左侧收缩菜单开始-->
+        <div class="deyun_left_tools_siber_big_box fl">
+           <div class="deyun_member_home_tit_box">
+              <a href="#">个人中心</a>
+           </div>
+           <div class="deyun_left_tools_siber_list_box">
+              <div class="deyun_left_tools_siber_lv1_box siber_type_up">
+              交易管理
+              </div>
+              <ul class="deyun_left_tools_siber_lv2_ul" style="height: 0px;">
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>全部订单</span>
+                    </a>
+                 </li>
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>待支付订单</span>
+                    </a>
+                 </li>
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>待发货订单</span>
+                    </a>
+                 </li>
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>待评价订单</span>
+                    </a>
+                 </li>
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>退换货订单</span>
+                    </a>
+                 </li>
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>已关闭订单</span>
+                    </a>
+                 </li>
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>待收货订单</span>
+                    </a>
+                 </li>
+              </ul>
+           </div>
+           
+           <div class="deyun_left_tools_siber_list_box">
+              <div class="deyun_left_tools_siber_lv1_box siber_type_down">
+              我的账户
+              </div>
+              <ul class="deyun_left_tools_siber_lv2_ul">
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>我的钱包</span>
+                    </a>
+                 </li>
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>会员福利</span>
+                    </a>
+                 </li>
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>我的收藏</span>
+                    </a>
+                 </li>
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>我的足迹</span>
+                    </a>
+                 </li>
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>购物车</span>
+                    </a>
+                 </li>
+              </ul>
+           </div>
+           <div class="deyun_left_tools_siber_list_box">
+              <div class="deyun_left_tools_siber_lv1_box siber_type_down">
+              我的收益
+              </div>
+              <ul class="deyun_left_tools_siber_lv2_ul">
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>首充收益</span>
+                    </a>
+                 </li>
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>借款返点</span>
+                    </a>
+                 </li>
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>消费返利</span>
+                    </a>
+                 </li>
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>推荐收益</span>
+                    </a>
+                 </li>
+              </ul>
+           </div>
+           <div class="deyun_left_tools_siber_list_box">
+              <div class="deyun_left_tools_siber_lv1_box siber_type_up">
+              我的申请
+              </div>
+              <ul class="deyun_left_tools_siber_lv2_ul" style="height: 0px;">
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>消费卡申请</span>
+                    </a>
+                 </li>
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>借款申请</span>
+                    </a>
+                 </li>
+              </ul>
+           </div>
+           <div class="deyun_left_tools_siber_list_box">
+              <div class="deyun_left_tools_siber_lv1_box siber_type_down">
+              个人信息
+              </div>
+              <ul class="deyun_left_tools_siber_lv2_ul">
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>站内公告</span>
+                    </a>
+                 </li>
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>系统提示</span>
+                    </a>
+                 </li>
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>基本资料</span>
+                    </a>
+                 </li>
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>修改密码</span>
+                    </a>
+                 </li>
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>地址管理</span>
+                    </a>
+                 </li>
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>安全设置</span>
+                    </a>
+                 </li>
+                 <li class="deyun_left_tools_siber_lv2_li">
+                    <a href="#">
+                       <span>·&nbsp;&nbsp;</span>
+                       <span>退出</span>
+                    </a>
+                 </li>
+              </ul>
+           </div>
+        </div>
+<script>
+$(document).ready(function () {
+	$('.deyun_left_tools_siber_lv1_box').click(function(){
+		if($(this).hasClass('siber_type_down')){
+			$(this).removeClass('siber_type_down')
+			$(this).addClass('siber_type_up')
+			$(this).next().stop(true, false).animate({height:'0px'},"300");
+		}
+		else{
+			$(this).removeClass('siber_type_up')
+			$(this).addClass('siber_type_down')
+			var ul_li_nums = $(this).next().find('li').length;
+			var ul_hei = 35*ul_li_nums
+			$(this).next().stop(true, false).animate({height:ul_hei},"300");
+		}
+	});
+});
+</script>
+        <!--左侧收缩菜单结束-->
+        <div class="rightside">
+		<!-- 右侧 -->
+		   <div class="deyun_member_right_tit_box">消费卡申请</div>
+           <div class="deyun_member_right_nr_box">
+              <div class="deyun_member_bank_card_nr_box">
+             <p> 一、消费卡申请流程</p>
+
+<p>1、注册成等级会员<br />
+2、下载消费卡申请表单<br />
+3、填写表单（请到附件下载）</p> 
+
+<p>二、消费卡所需提交资料</p>
+
+<p>A、身份证正反面扫描件<br />
+B、持A4纸拍照，A4纸上亲自写下：本人***于2016年*月*日自愿办理《德云天下》购物网站的消费卡，明确知道使用后要进行分期还款并支付利息。（本人签字）身份证号码、联系电话。<br />
+C、消费卡申请表单。</p>
+
+<p>三、提交资料 </p>
+
+<p>消费卡所需提交资料以图片或扫描件的方式打包发送到企业邮箱：deyuntianxia@163.com
+<br />（打包文件命名：日期-姓名-功能  例子如2016-2-22-张三-消费卡申请）</p>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<a href="#"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;附件：消费卡申请表单</b></a>
+
+
+              </div>
+           </div>
+	    </div>
+        <div style="clear:both"></div>
+     </div> 
+</div>
+
+
+
+<!--右边功能-->
+<div class="right_slider_big_box">
+   <div class="right_slider_box">
+      <div class="right_slider_buycart_box right_slider_item_box">
+         <a class="right_slider_ico deyun_buycart type_normal" href="###"></a>
+         <a class="right_slider_ico hover_type" style="border-top-width:0px;display:none" href="###">购物车</a>
+      </div>
+      <div class="right_slider_kefu_box right_slider_item_box">
+         <a class="right_slider_ico deyun_kefu type_normal" href="###"></a>
+         <a class="right_slider_ico hover_type" id="right_slider_kefu" style="display:none" href="###">客服</a>
+         <div class="kefu_qr_box"><img src="../images/kefu_qr.jpg" width="95" height="98" /></div>
+      </div>
+      <div class="right_slider_gotop_box right_slider_item_box" id="gototop">
+         <a class="right_slider_ico deyun_gotop type_normal" href="###"></a>
+         <a class="right_slider_ico hover_type" style="display:none" href="###">置顶</a>
+      </div>
+   </div>
+</div>
+<script>
+$(document).ready(function () {
+	$('.u-list .tab a').last().css('marginRight','0');
+	$('.deyun_bi_point_item_box').eq(1).css('width','236px')
+	$('.deyun_bi_point_item_box').eq(2).css('width','253px')
+	$('.deyun_bi_point_item_box').eq(3).css('width','225px')
+});
+</script>
+<script>
+	$(function(){
+		$(".title h1").click(function  () {
+			var index=$(this).index(".title h1");
+			$(this).addClass("on").siblings().removeClass("on");
+			$($(".roll-main-list")[index]).show().siblings().hide();
+		})
+		$(".roll-main-a ul").css({width:$(".roll-main-a ul li").length*(104+26)+"px"});
+		$(".roll-main-b ul").css({width:$(".roll-main-b ul li").length*(104+26)+"px"});
+		var numwidth=(104+26)*7;
+		$(".roll-main-list .btnl").click(function(){
+			var obj=$(this).parent(".roll-main-list").find("ul");
+			if (!(obj.is(":animated"))) {
+				var lefts=parseInt(obj.css("left").slice(0,-2));
+				if(lefts<11){
+					obj.animate({left:lefts+numwidth},1000);
+				}
+			}
+		})
+		$(".roll-main-list .btnr").click(function(){
+			var obj=$(this).parent(".roll-main-list").find("ul");
+			var objcds=-(11+(Math.ceil(obj.find("li").length/7)-2)*numwidth);
+			if (!(obj.is(":animated"))) {
+				var lefts=parseInt(obj.css("left").slice(0,-2));
+				
+				if(lefts>objcds){
+					obj.animate({left:lefts-numwidth},1000);
+				 }
+				
+				
+			}
+		})
+	})
+</script>
+
+<script type="text/javascript">
+function AutoScroll(obj){
+        $(obj).find("ul:first").animate({
+                marginTop:"-36px"/*根据一条的实际高度*/
+        },500,function(){
+                $(this).css({marginTop:"0px"}).find("li:first").appendTo(this);
+        });
+}
+$(document).ready(function(){
+	li_num = $('#myscroll ul li').length
+	tenki_speed = 1500 //滚动速度
+	if(li_num > 12){
+setInterval('AutoScroll("#myscroll")',tenki_speed)
+	}
+});
+</script>
+<script>
+$(document).ready(function () {
+	$('.deyun_finance_ico_big_box .deyun_finance_ico_link').mouseover(function(){
+		$(this).stop(true, false).animate({marginTop:'-18px'},"300");
+	});
+	$('.deyun_finance_ico_big_box .deyun_finance_ico_link').mouseout(function(){
+		$(this).stop(true, false).animate({marginTop:'0px'},"300");
+	});
+});
+</script>
+<script>
+$(document).ready(function () {
+	var deyun_wh = $(window).height();
+	var slider_top = (deyun_wh-152)/2;
+	$('.right_slider_big_box').css('top',slider_top)
+	$(window).resize(function(){
+		var deyun_wh = $(window).height();
+	    var slider_top = (deyun_wh-152)/2;
+		$('.right_slider_big_box').css('top',slider_top)
+	});	
+    $('.right_slider_ico.type_normal').mouseenter(function(){
+		$(this).hide().next().show()
+	});
+	$('.right_slider_item_box').mouseleave(function(){
+		$(this).find('.hover_type').hide();
+		$(this).find('.type_normal').show();
+	});
+	$('#right_slider_kefu').mouseenter(function(){
+		$(this).next().show()
+	});
+	$('#right_slider_kefu').mouseleave(function(){
+		$(this).next().hide()
+	});
+	
+	 //回到页面顶部位置
+	$("#gototop").click(function() {
+	    $('body,html').animate({scrollTop: 0},500);
+	    return false;
+	});
+	
+});
+</script>
+
+
+<div class="foot_big_box">
+   <div class="deyun_layout foot_box">
+      <div class="fl foot_logo"></div>
+      <div class="fl foot_web_map_box">
+         <div class="foot_web_map_list">
+            <h4 class="foot_web_map_tit">新手上路</h4>
+            <ul>
+               <li class="foot_web_map_li"><a href="###">购物流程</a></li>
+               <li class="foot_web_map_li"><a href="###">会员制度</a></li>
+               <li class="foot_web_map_li"><a href="###">消费卡申请</a></li>
+               <li class="foot_web_map_li"><a href="###">常见问题</a></li>
+            </ul>
+         </div>
+         <div class="foot_web_map_list">
+            <h4 class="foot_web_map_tit">售后服务</h4>
+            <ul>
+               <li class="foot_web_map_li"><a href="###">退换货政策</a></li>
+               <li class="foot_web_map_li"><a href="###">退款说明</a></li>
+               <li class="foot_web_map_li"><a href="###">联系客服</a></li>
+               
+            </ul>
+         </div>
+         <div class="foot_web_map_list">
+            <h4 class="foot_web_map_tit">服务保障</h4>
+            <ul>
+               <li class="foot_web_map_li"><a href="###">隐私保护政策</a></li>
+               <li class="foot_web_map_li"><a href="###">会员注册协议</a></li>
+               <li class="foot_web_map_li"><a href="###">品质承诺</a></li>
+            </ul>
+         </div>
+         <div class="foot_web_map_list">
+            <h4 class="foot_web_map_tit">公司信息</h4>
+            <ul>
+               <li class="foot_web_map_li"><a href="###">关于德云</a></li>
+               <li class="foot_web_map_li"><a href="###">联系我们</a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="fr foot_qr_big_box">
+         <div class="foot_qr_box">
+         <img src="../images/foot_qr.jpg" width="100" height="103" /> 
+         <p>移动端</p>
+         </div>
+         <div class="foot_qr_box">
+         <img src="../images/foot_qr.jpg" width="100" height="103" /> 
+         <p>联系客服</p>
+         </div>
+      </div>
+      <div style="clear:both;"></div>
+   </div>
+   <div class="deyun_layout foot_beian_box">
+      <p class="beian_p">版权所有 2016 © deyuntianxia.com 浙ICP备16008946号</p>
+   </div>
+</div>
+
+
+<script src="../js/deyun_banner.js"></script>
+
+<script src="../js/deyun_nav.js"></script>
+</body>
+</html>

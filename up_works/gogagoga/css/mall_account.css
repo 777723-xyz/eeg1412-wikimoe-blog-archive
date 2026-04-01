@@ -1,0 +1,201 @@
+@charset "utf-8";
+/* CSS Document */
+
+.mall_big_box .gogagoga_id_box {
+	background-color: #FFF;
+	clear: both;
+	position: relative;
+	height: 745px;
+}
+.gogagoga_id_box .login_pic_box {
+	position: absolute;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+}
+.gogagoga_id_box .center_bar {
+	background-color: #FFF;
+	position: absolute;
+	z-index: 3;
+	height: 745px;
+	width: 500px;
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	left: 349px;
+	top: 0px;
+}
+.gogagoga_id_box .account_inpu_big_box {
+	color: #141414;
+	position: absolute;
+	z-index: 4;
+	left: 400px;
+	top: 150px;
+}
+.account_inpu_big_box .account_tit_box {
+	background-color: #FFF;
+	height: 51px;
+	width: 402px;
+}
+.account_tit_box .fl.account_tit {
+	font-size: 17px;
+	margin-top: 12px;
+	margin-left: 30px;
+	font-weight: bold;
+}
+.account_tit_box .account_link_box {
+	font-size: 13px;
+	margin-top: 14px;
+	margin-right: 29px;
+	font-weight: bold;
+}
+.account_inpu_big_box .account_input_box {
+	background-color: #FFF;
+	width: 400px;
+	/*height: 173px;*/
+	border: 1px solid #141414;
+	margin-top: 4px;
+}
+.account_input_box .account_padding_box {
+	padding: 24px 30px;
+}
+.account_input_box .account_label {
+	display: block;
+	height: 30px;
+	position: relative;
+	margin-bottom:4px;
+}
+.account_input_box .account_tips {
+	position: absolute;
+	float: left;
+	line-height: 40px;
+	left: 10px;
+	color: #fab900;
+	cursor: text;
+	line-height:28px;
+	font-size:18px;
+	z-index:1;
+}
+.account_input_box .input_txt {
+	width: 328px;
+	border: solid 1px #141414;
+	height: 28px;
+	line-height:28px;
+	font-size:18px;
+	color: #fab900;
+	padding-left:8px;
+	outline:medium;
+}
+.account_input_box .capcha_small_input{
+	width:232px!important;
+}
+
+
+.account_input_box .capchadiv {
+	position: absolute;
+	right: 0px;
+	top: 1px;
+}
+
+.account_input_box .checkbox_box {
+	margin-top: 9px;
+}
+.checkbox_box .checkbox_label {
+	margin-right: 10px;
+	float: left;
+}
+.checkbox_label span {
+	vertical-align: -2px;
+	*vertical-align: -2px!important;
+    margin-left: 2px;
+	font-size:14px;
+}
+.checkbox_box .forgot_link {
+	display: block;
+    height: 21px;
+    width: 102px;
+    background: #141414;
+    color: #fff;
+    text-align: center;
+    line-height: 21px;
+    float: right;
+}
+.gogagoga_id_box .ten_bg {
+	background-image: url(../images/bg_ten.png);
+	background-repeat: repeat;
+	position: absolute;
+	height: 745px;
+	width: 1200px;
+	left: 0px;
+	top: 0px;
+	z-index: 2;
+}
+.account_inpu_big_box .login_btn_box {
+	margin-top: 4px;
+
+}
+.login_btn_box .login_btn {
+	width: 402px;
+	height: 50px;
+	display: block;
+	background: #fab900;
+	border: 0px;
+	cursor: pointer;
+	color: #141414;
+	outline: medium;
+	font-size: 18px;
+	text-align: center;
+	font-family: "Microsoft YaHei", arial, "Hiragino Sans GB", sans-serif;	
+}
+
+.login_btn_box .login_btn span {
+	font-size: 12px;
+}
+.account_inpu_big_box .otherlogin_box {
+	background-color: #FFF;
+	height: 60px;
+	width: 402px;
+	margin-top: 4px;
+}
+.otherlogin_box .otherlogin_tit {
+	padding-top: 5px;
+	padding-left: 30px;
+}
+.otherlogin_box .otherlogin_link_tit {
+	padding-left: 30px;
+	margin-top: 2px;
+}
+.otherlogin_link_tit a img {
+	height: 30px;
+	margin-right: 5px;
+}
+.account_label .account_input_tips_name {
+	padding-top: 4px;
+	font-size:14px;
+}.account_label .send_phone_code_btn {
+	color: #FFF;
+	background-color: #141414;
+	display: inline-block;
+	height: 30px;
+	width: 100px;
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+}
+.input_type01{width:273px!important;}
+.input_type02{width:138px!important;margin-left:12px!important;}
+.input_type03{width:283px!important;}
+.input_type04{width:255px!important;}
+.input_type05{width:176px!important;margin-left:12px!important;}
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fab900;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fab900;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fab900;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #fab900;
+}

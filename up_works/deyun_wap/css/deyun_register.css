@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+.go_login_box{
+    height: 100%;
+    width: 24px;
+    margin-right: 12px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.go_login_box a{
+	color:#585858;
+	line-height:40px;
+}
+.deyun_register_body{
+}
+.deyun_register_body .register_input_box{
+	height:42px;
+	border-bottom:1px solid #d2d2d2;
+	line-height:42px;
+	padding:0 18px;
+}
+.deyun_register_body .register_input_box label{
+	width:64px;
+	display:inline-block;
+	height:42px;
+	text-align:right;
+	color:#585858;
+	padding-right:5px;
+}
+.deyun_register_body .register_input_box label .sex_name{
+	vertical-align: middle;
+}
+.deyun_register_body .register_input_box .register_input{
+	border:0px;
+	outline:none;
+	padding:12px 0;
+	height:18px;
+	line-height:18px;
+	color:#585858;
+}
+.deyun_register_body .register_input_box .register_radio_label{
+	text-align:left;
+}
+.deyun_register_body .register_select{
+	width:90px;
+	height:20px;
+	border:1px solid #d2d2d2;
+	outline:none;
+}
+.deyun_register_body .register_send_code{
+	width:79px;
+	height:23px;
+	border:0px;
+	background:#54ddff;
+	text-align:center;
+	color:#fff;
+	line-height:23px;
+	outline:none;
+}
+.deyun_register_body .register_input_box.type_three{
+	border-bottom:0px solid #d2d2d2;
+}
+.deyun_register_body .deyun_register_ty_txt,.deyun_register_body .deyun_register_xy_txt{
+	vertical-align:middle;
+}
+.deyun_register_body .deyun_register_xy_txt{
+	color:#54ddff;
+}
+.deyun_register_body .register_btn{
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	z-index:999;
+	width:100%;
+	height:42px;
+	border:0px;
+	background:#54ddff;
+	color:#fff;
+	line-height:42px;
+	outline:none;
+}

@@ -1,0 +1,211 @@
+@charset "utf-8";
+/* CSS Document */
+.cj_user_center_body{
+	padding:0.2rem 0.24rem;
+}
+.cj_user_info_body{
+	height:2rem;
+	margin-bottom:0.2rem;
+	background-image:url(../images/personal_avatarBg_icon@3x.png);
+	background-position:left center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	border-radius:0.1rem;
+}
+.cj_user_info_box{
+	padding:0.4rem;
+}
+.cj_ava_box{
+	width:1.2rem;
+	height:1.2rem;
+	border-radius:50%;
+	overflow:hidden;
+}
+.cj_ava_box img{
+	width:1.2rem;
+	height:1.2rem;
+}
+.cj_username{
+	padding-left:0.3rem;
+	line-height:1.2rem;
+	height:1.2rem;
+	font-size:0.28rem;
+	color:#fff;
+	width:4.33rem;
+}
+.cj_my_coll_body{
+	background:#fff2d7;
+	padding:0.4rem 0.4rem 0.1rem 0.4rem;
+	margin-bottom:0.2rem;
+	border-radius:0.1rem;
+}
+.cj_colltitle_name{
+	color:#222;
+	font-size:0.28rem;
+	line-height:0.46rem;
+}
+.cj_colltitle_link{
+	height:0.46rem;
+}
+.cj_colltitle_link a{
+	font-size:0.24rem;
+	color:#999;
+	line-height:0.46rem;
+	display:block;
+	height:0.46rem;
+	padding-right:0.28rem;
+	background-image:url(../images/personal_arrow_icon@3x.png);
+	background-position:right center;
+	background-repeat:no-repeat;
+	background-size:0.24rem;
+}
+.cj_my_coll_title_box{
+	margin-bottom:0.2rem;
+}
+.cj_my_coll_goodslist_box{
+	height:1.7rem;
+	background-image:url(../images/personal_listGgRg_icon@3x.png);
+	background-position:left center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	border-radius:0.1rem;
+	position:relative;
+	z-index:1;
+	margin-bottom:0.3rem;
+	overflow:hidden;
+}
+
+.cj_my_coll_goodslist_link{
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	display:block;
+	position:absolute;
+}
+.cj_my_coll_goodslist_link.type_z1{
+	z-index:1;
+}
+.cj_my_coll_goodslist_link.type_z2{
+	z-index:2;
+}
+.cj_my_coll_goodslist_link.type_red{
+	background-color:rgba(235,60,21,0.80);
+	text-align:center;
+}
+.cj_my_coll_goodslist_link.type_black{
+	background-color:rgba(0,0,0,0.80);
+	text-align:center;
+}
+.cl_my_coll_goodslist_name{
+	color:#fff;
+	font-size:0.34rem;
+	line-height:0.34rem;
+	padding:0.24rem 0.32rem 0 0.32rem;
+}
+.cl_my_coll_goodslist_goods_nums{
+	font-size:0.24rem;
+}
+.cl_my_coll_goodslist_company{
+	color:#fff;
+	padding:0.15rem 0.32rem 0 0.32rem;
+	font-size:0.24rem;
+	line-height:0.24rem;
+}
+.cl_my_coll_goodslist_time{
+	background:#ffcb5c;
+	text-align:center;
+	height:0.26rem;
+	line-height:0.26rem;
+	font-size:0.22rem;
+	border-radius:0.13rem;
+	color:#fff;
+	margin:0.20rem 0.32rem 0 0.32rem;
+	padding:0 0.12rem;
+	display:inline-block;
+}
+.co_my_coll_goodslist_banner_go{
+	width:0.48rem;
+	height:0.48rem;
+	position:absolute;
+	z-index:2;
+	background-image:url(../images/co_banner_go.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:0.46rem;
+	right:0.32rem;
+	top:50%;
+	margin-top:-0.24rem;
+}
+.cl_my_coll_goodslist_time_wait{
+	padding:0.08rem 0.18rem;
+	display:inline-block;
+	background:#eb3c15;
+	border-radius:0.22rem;
+	font-size:0.24rem;
+	line-height:0.24rem;
+	margin-top:0.15rem;
+	color:#fff;
+	border:1px solid #fff;
+}
+.cl_my_coll_goodslist_name.type_2{
+	font-size:0.28rem;
+	line-height:0.28rem;
+}
+.cl_my_coll_goodslist_end{
+	display:inline-block;
+	width:1.1rem;
+	height:1.16rem;
+	background-image:url(../images/cj_list_end.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:1rem;
+	margin-top:0.3rem;
+}
+/*首页*/
+.cj_index_banner{
+	margin-bottom:0.2rem;
+	display:block;
+}
+.cj_index_banner img{
+	height:3rem;
+}
+.cj_index_list_body{
+	padding:0 0.24rem;
+}
+.cj_my_coll_goodslist_box.type_index{
+	background-image:url(../images/home_listRgBg@3x.jpg)
+}
+.cl_index_goodslist_name{
+	font-size:0.48rem;
+	line-height:0.48rem;
+	color:#eaa515;
+	text-shadow:#fff 0.02rem 0 0,#fff 0 0.02rem 0,#fff -0.02rem 0 0,#fff 0 -0.02rem 0;
+    -webkit-text-shadow:#fff 0.02rem 0 0,#fff 0 0.02rem 0,#fff -0.02rem 0 0,#fff 0 -0.02rem 0;
+    -moz-text-shadow:#fff 0.02rem 0 0,#fff 0 0.02rem 0,#fff -0.02rem 0 0,#fff 0 -0.02rem 0;
+	padding:0.16rem 0 0 0.32rem;
+}
+.cl_index_goodslist_goods_nums{
+	color:#fff;
+	font-size:0.24rem;
+	line-height:0.24rem;
+	padding:0.2rem 0.32rem 0 0;
+}
+.cj_copany_time_box{
+	margin-top:0.50rem;
+}
+.cl_index_goodslist_time{
+	color:#fff;
+	padding:0.12rem 0.15rem;
+	background:rgba(0,0,0,0.40);
+	line-height:0.22rem;
+	font-size:0.22rem;
+	border-radius:0 0.25rem 0.25rem 0;
+}
+.cl_index_goodslist_company{
+	color:#fff;
+	font-size:0.24rem;
+	line-height:0.46rem;
+	padding:0 0.32rem 0 0;
+	max-width:2.8rem;
+}

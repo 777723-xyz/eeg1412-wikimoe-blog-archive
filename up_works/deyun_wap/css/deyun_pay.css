@@ -1,0 +1,350 @@
+@charset "utf-8";
+/* CSS Document */
+.deyun_pay_body .deyun_pay_addr_body{
+	background:#fff;
+}
+.deyun_pay_body .deyun_pay_addr_now_box{
+	padding:15px 0 20px 0;
+}
+.deyun_pay_addr_now_box .name_phone span{
+	color:#585858;
+	font-size:13px;
+}
+.deyun_pay_addr_now_box .deyun_pay_addr_now{
+	color:#585858;
+	font-size:12px;
+}
+.deyun_pay_addr_body .deyun_pay_addr_now_ico{
+	height: inherit;
+	width: 18px;
+	background-image: url(../images/pay_addr_ico.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:contain;
+	margin:0 15px;
+}
+.deyun_pay_addr_body .deyun_pay_addr_now_more_ico{
+	height: inherit;
+	width: 5px;
+	background-image: url(../images/event_right.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	margin: 0 15px;
+}
+.deyun_pay_addr_body .deyun_pay_new_addr_tit{
+	padding-left:25px;
+	padding-top:10px;
+	font-size:13px;
+	color:#585858;
+}
+.deyun_pay_addr_body .deyun_pay_new_addr_li{
+	margin:0px 10px 5px 10px;
+	padding:8px 15px;
+	font-size:12px;
+	color:#898989;
+	word-break:break-all;
+	border-bottom:1px solid #f6f6f6;
+}
+.deyun_pay_new_addr_body .deyun_creat_addr_btn {
+    height: 33px;
+    line-height: 33px;
+    border: none;
+    background: #54ddff;
+    color: #fff;
+	display:block;
+	margin:0 20px;
+	text-align:center;
+	border-radius:5px;
+}
+.deyun_pay_new_addr_body{
+	padding-bottom:10px;
+	display:none;
+}
+.deyun_pay_body .deyun_pay_item_list_body{
+	background:#fff;
+	margin-top:7px;
+	padding:8px 12px;
+}
+.deyun_pay_item_list_body .deyun_pay_item_pic_box{
+	height:108px;
+	width:108px;
+	border:1px solid #d2d2d2;
+}
+.deyun_pay_item_list_body .deyun_pay_item_pic_box img{
+	max-height:108px;
+	max-width:108px;
+}
+.deyun_pay_item_list_body .deyun_pay_item_li{
+	margin-bottom:6px;
+}
+.deyun_pay_item_ul .deyun_pay_item_right_box{
+	margin-left: 117px;
+}
+.deyun_pay_item_ul .deyun_pay_item_right_name{
+	color:#585858;
+	height:34px;
+	overflow:hidden;
+	word-break:break-all;
+}
+.deyun_pay_item_ul .deyun_pay_item_right_name a{
+	color:#585858;
+	word-break:break-all;
+	line-height: 16px;
+}
+.deyun_pay_item_ul .deyun_pay_item_right_sku{
+	color:#a3a3a3;
+	margin-top:3px;
+	height:16px;
+	overflow:hidden;
+}
+.deyun_pay_item_ul .deyun_pay_right_price span{
+	color:#54ddff;
+}
+.deyun_pay_item_ul .deyun_pay_right_nums span{
+	color:#54ddff;
+}
+.deyun_pay_item_ul .deyun_pay_right_price_nums_body{
+	margin-top:39px;
+}
+.deyun_pay_ca_event_body{
+	background:#fff;
+	margin-top:1px;
+	padding:7px 15px;
+}
+.deyun_pay_ca_event_body .deyun_pay_ca_event_tit{
+	color:#4e4e4e;
+}
+.deyun_pay_ca_event_body .deyun_pay_ca_event_list ul li{
+	line-height:25px;
+}
+.deyun_pay_ca_event_body .deyun_pay_ca_event_list ul li .tag{
+	display: inline-block;
+    min-width: 60px;
+	color:#898989!important;
+}
+.deyun_pay_ca_event_body .deyun_pay_ca_event_list ul li .name{
+	color:#333333;
+}
+.deyun_pay_price_info_body{
+	background:#fff;
+	margin-top:1px;
+	padding:7px 15px;
+	color:#4e4e4e;
+	line-height:20px;
+}
+.deyun_pay_buy_input_info_body{
+	margin-top:8px;
+}
+.deyun_pay_buy_input_info_body .deyun_pay_buy_input_info_list{
+	margin-bottom:1px;
+	padding:0px 15px;
+	height:33px;
+	overflow:hidden;
+	background:#fff;
+}
+.deyun_pay_buy_input_info_body .deyun_pay_buy_input_info_tit{
+	color:#4e4e4e;
+	vertical-align:middle;
+	line-height:33px;
+}
+.deyun_pay_buy_input_info_body .deyun_pay_buy_input_info{
+	height:13px;
+	vertical-align:middle;
+	line-height:13px;
+	border:0px;
+	outline:none;
+	padding:10px 0;
+}
+.deyun_pay_buy_input_info_body .deyun_pay_buy_input_info_right_txt{
+	line-height:33px;
+	color:#4e4e4e;
+	display:inline-block;
+	vertical-align:middle;
+}
+.deyun_pay_buy_input_info_body .deyun_pay_buy_input_info_right_ico{
+	height: 33px;
+	width: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url(../images/pay_right.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:contain;
+	
+}
+.deyun_go_order_body{
+	width:100%;
+	height:42px;
+	background:#fff;
+	position:fixed;
+	z-index:999;
+	bottom:0px;
+	left:0px;
+}
+.deyun_go_order_body .deyun_go_order_btn{
+	width:29%;
+	height:100%;
+	background:#54ddff;
+	border:0px;
+	display:block;
+	line-height:100%;
+	text-align:center;
+	color:#fff;
+	outline:none;
+}
+.deyun_go_order_info{
+	width:71%;
+	border-top:1px solid #efefef;
+	height:41px;
+	line-height:41px;
+	text-align:right;
+}
+.deyun_go_order_info span{
+	padding-right:10px;
+	color:#585858;
+}
+.deyun_go_order_info span em{
+	color:#54ddff;
+}
+.deyun_pay_window_body{
+	width:100%;
+	background:#fff;
+	position:fixed;
+	z-index:10000;
+	bottom:0px;
+	left:0px;
+	display:none;
+}
+.deyun_pay_window_body .deyun_pay_window_tit{
+	height:34px;
+	width:100%;
+	background:#f6f6f6;
+	line-height:34px;
+}
+.deyun_pay_window_body .deyun_pay_window_tit span{
+	padding-left:15px;
+	color:#4e4e4e;
+}
+.deyun_pay_window_body .deyun_pay_type_sel_body{
+	height:22px;
+	border-bottom:1px solid #d2d2d2;
+	padding:5px 18px;
+}
+.deyun_pay_type_sel_body .type_name{
+	vertical-align:middle;
+}
+.deyun_pay_type_sel_body label{
+	margin-right:5px;
+}
+.deyun_pay_type_db_body{
+	padding:21px 21px 11px 21px;
+	display:none;
+}
+.debi_type_input_box input{
+	width:90px;
+	height:20px;
+	border:1px solid #d2d2d2;
+	color:#e62400;
+	text-align:right;
+	line-height:20px;
+	padding:0 3px;
+	outline:none;
+}
+.debi_type_ico_box{
+	line-height:20px;
+	margin-right:8px;
+}
+.debi_type_ico_box .debi_type_ico{
+	width: 16px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:contain;
+}
+.debi_type_ico_box.type_ptdb .debi_type_ico{
+	background-image: url(../images/db_pt_ico.png);
+}
+.debi_type_ico_box.type_scdb .debi_type_ico{
+	background-image: url(../images/db_sc_ico.png);
+}
+.debi_type_ico_box.type_xfyb .debi_type_ico{
+	background-image: url(../images/yb_xf_ico.png);
+}
+.debi_type_ico_box.type_zsyb .debi_type_ico{
+	background-image: url(../images/yb_zs_ico.png);
+}
+
+.debi_type_ico_box .debi_type_name{
+	display: inline-block;
+	color:#585858;
+	vertical-align:middle;
+}
+.deyun_pay_type_db_li .debi_yue_box{
+	height:20px;
+	line-height:20px;
+}
+.deyun_pay_type_db_li .debi_yue_box span{
+	vertical-align:middle;
+	color:#8c8c8c;
+}
+.deyun_pay_type_db_ul .deyun_pay_type_db_li{
+	margin-bottom:6px;
+}
+.deyun_pay_ybsm_txt{
+	color:#e62400;
+	margin-top:13px;
+}
+.deyun_pay_window_check_ok_btn{
+	background:#54ddff;
+	display:block;
+	width:100%;
+	height:38px;
+	line-height:38px;
+	text-align:center;
+	color:#fff;
+}
+.deyun_pay_rmb_pay_pic img{
+	max-width:18px;
+	max-height:18px;
+}
+.deyun_pay_rmb_pay_type_body{
+}
+.deyun_pay_rmb_pay_type_body li{
+	padding:10px 21px 7px 21px;
+	height:20px;
+}
+.deyun_pay_rmb_pay_name{
+	color:#4e4e4e;
+}
+.deyun_pay_window_item_body .c-g{
+	border-bottom: 1px solid #F6F6F6;
+}
+.deyun_pay_window_item_body .c-g .text{
+	width: 100%;
+    border: 0;
+    margin: 5px 14px;
+	height:18px;
+	line-height:18px;
+	outline:none;
+}
+.deyun_pay_window_item_body .c-g textarea.text{
+	height:38px;
+}
+.deyun_pay_window_body .shiptime_body {
+	padding:5px 14px;
+}
+.deyun_pay_window_body .shiptime_body .single-select li{
+	margin:5px 0;
+}
+.deyun_pay_window_body label{
+	vertical-align:middle;
+	color:#8c8c8c;
+}
+.deyun_pay_window_body .send_type_name{
+	vertical-align:middle;
+	color:#8c8c8c;
+	padding-left:5px;
+}

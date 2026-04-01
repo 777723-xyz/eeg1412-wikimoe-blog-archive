@@ -1,0 +1,698 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>结算页</title>
+<link href="../css/common.css" rel="stylesheet" type="text/css" />
+<link href="../css/mall_order.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery.jqzoom.js"></script>
+<link href="../js/skins/minimal/yellow.css" rel="stylesheet">
+<script src="../js/icheck.min.js"></script>
+</head>
+<body class="gogagoga_mall_body">
+<!-- 这里是添加的导航开始 --> 
+<!-- 这里是添加的导航开始 --> 
+<table class="daohangdaohang">
+    <style>
+        .daohangdaohang{z-index:9999;position:fixed;top:400px;left:10px;background:#CCCCCC;}
+        .daohangdaohang td{border: 1px solid #141414;background: #FAB900;height:36px;width:75px;text-align: center}
+        .daohangdaohang td a{text-decoration: none;color:#333;font-size:14px;}
+        .daohangdaohang td a:hover{text-decoration:underline;}
+    </style>
+    <tbody>
+        <tr>
+            <td><a href="index.html">首页</a></td>
+            <td><a href="about.html">关于</a></td>
+        </tr>
+        <tr>
+            <td><a href="join.html">加盟</a></td>
+            <td><a href="contact.html">联系</a></td>
+        </tr>
+        <tr>
+            <td><a href="mall_list.html">商城列表</a></td>
+            <td><a href="mall_goods.html">商城详情</a></td>
+        </tr>
+        <tr>
+            <td><a href="mall_paycar.html">购物车</a></td>
+            <td><a href="mall_login.html">登录</a></td>
+        </tr>
+        <tr>
+            <td><a href="mall_register.html">注册</a></td>
+            <td><a href="mall_find_password.html">找回密码</a></td>
+        </tr>
+        <tr>
+            <td><a href="mall_place_an_order.html">下单</a></td>
+            <td><a href="mall_pay.html">支付</a></td>
+        </tr>
+        <tr>
+            <td><a href="mall_pay_ok.html">支付成功</a></td>
+            <td></td>
+        </tr>
+       
+    </tbody>
+</table> 
+<div class="gogagoga_layout">
+  <div class="mall_big_box">
+    <div class="index_tab_box black_tab">
+      <div class="fl">
+        <ul class="share_link_box">
+          <li class="fl"> <a href="###" class="weixin" id="winxin_open"></a>
+            <div class="weixin_qr_box">
+              <div id="qr_close" class="qr_close">×</div>
+              <img src="../images/gogagogaqr.jpg" width="260" height="260" /> </div>
+          </li>
+          <li class="fl"> <a href="###" class="sina"></a> </li>
+          <li class="fl"> <a href="###" class="baidu"></a> </li>
+        </ul>
+      </div>
+      <div class="fl"> <a href="###" class="index_logo_link"></a> </div>
+      <div class="fl">
+        <ul class="tab_list_ul">
+          <li class="fl"> <a href="index.html" class="index_tab_btn"> <span class="tab_for_english">HOME</span> <span class="tab_for_chinese">首页</span> </a> </li>
+          <li class="fl"> <a href="mall_list.html" class="index_tab_btn"> <span class="tab_for_english">MALL</span> <span class="tab_for_chinese">商城</span> </a>
+            <ul class="index_tab_lv2">
+              <li class="tab_lv2_li"><a href="mall_list.html" class="lv2_link">水果小蜜</a></li>
+              <li class="tab_lv2_li"><a href="mall_list.html" class="lv2_link">因果关系</a></li>
+              <li class="tab_lv2_li"><a href="mall_list.html" class="lv2_link">条条有理</a></li>
+            </ul>
+          </li>
+          <li class="fl"> <a href="about.html" class="index_tab_btn"> <span class="tab_for_english">ABOUT</span> <span class="tab_for_chinese">关于</span> </a>
+            <ul class="index_tab_lv2">
+              <li class="tab_lv2_li"><a href="about.html" class="lv2_link">平台介绍</a></li>
+              <li class="tab_lv2_li"><a href="about.html" class="lv2_link">公司介绍</a></li>
+            </ul>
+          </li>
+          <li class="fl"> <a href="join.html" class="index_tab_btn"> <span class="tab_for_english">JOIN</span> <span class="tab_for_chinese">加盟</span> </a>
+            <ul class="index_tab_lv2">
+              <li class="tab_lv2_li"><a href="join.html" class="lv2_link">线上加盟</a></li>
+              <li class="tab_lv2_li"><a href="join.html" class="lv2_link">线下加盟</a></li>
+            </ul>
+          </li>
+          <li class="fl"> <a href="contact.html" class="index_tab_btn"> <span class="tab_for_english">CONTACT</span> <span class="tab_for_chinese">联系</span> </a> </li>
+        </ul>
+      </div>
+    </div>
+    <div style="clear:both;"></div>
+    <div class="mall_place_an_order_big_box">
+      <div class="order">
+        <div class="title"> 结算页  </div>
+        <div class="tit"> 填写并核对订单信息 </div>
+        <div class="order_main">
+          <div class="list">
+            <div class="cc"> 
+              <!-- 收货地址 -->
+              
+              <div class="ct"> 收货人信息 <a href="javascript:void(0)" id="add_address">新增收货地址</a> </div>
+              <!-- 订单收货地址 --> 
+              <!-- 标题 -->
+              <div id="order_delivery" class="order-section order-delivery">
+                <div class="add_select_padding_box">
+                  <ul class="add_select clearfix" id="change_shipping">
+                    <!--地址模板样式开始-->
+                    <li class="" style="display:none;" id="li_" onclick="$('.add_select li').removeClass('on');$(this).addClass('on');change_select(this);$('#protectAddr').click();" name="address" value="" data="">
+                      <div class="b_map">
+                        <p class="send_user_name"></p>
+                        <span class="send_user_addr"></span> <a href="###" key="" class="edit_this_addr" data="" onclick="edit_addr(this);">修改</a> <a class="delete_this_addr" href="###" onclick="">删除</a> </div>
+                      <i class="i1"></i> </li>
+                    <!--地址模板样式结束-->
+                    <li id="li_1" onclick="$('.add_select li').removeClass('on');$(this).addClass('on');change_select(this);$('#protectAddr').click();" name="address" value="1" data="{'id':'1','provice':'11,浙江省','city':'177,温州市','dist':'2168,龙湾区','community':'15858,永中街道','address':'12333','contname':'12121212','mobile':'13566212121'}">
+                      <div class="b_map">
+                        <p class="send_user_name">12121212</p>
+                        <span class="send_user_addr">浙江省          温州市          龙湾区          永中街道12333          ，13566212121</span> <a href="###" key="0" class="edit_this_addr" data="{'id':'1','provice':'11,浙江省','city':'177,温州市','dist':'2168,龙湾区','community':'15858,永中街道','address':'12333','contname':'12121212','mobile':'13566212121','postalcode':'','telphone':''}" onclick="edit_addr(this);">修改</a> <a class="delete_this_addr" href="###" onclick="delete_addr(1)">删除</a> </div>
+                      <i class="i1"></i> </li>
+                    <li id="li_2" onclick="$('.add_select li').removeClass('on');$(this).addClass('on');change_select(this);$('#protectAddr').click();" name="address" value="2" data="{'id':'2','provice':'4,山西省','city':'86,阳泉市','dist':'1320,平定县','community':'7487,冶西镇','address':'121212','contname':'11111111','mobile':'13566287373'}">
+                      <div class="b_map">
+                        <p class="send_user_name">11111111</p>
+                        <span class="send_user_addr">山西省          阳泉市          平定县          冶西镇121212          ，13566287373</span> <a href="###" key="1" class="edit_this_addr" data="{'id':'2','provice':'4,山西省','city':'86,阳泉市','dist':'1320,平定县','community':'7487,冶西镇','address':'121212','contname':'11111111','mobile':'13566287373','postalcode':'121212','telphone':''}" onclick="edit_addr(this);">修改</a> <a class="delete_this_addr" href="###" onclick="delete_addr(2)">删除</a> </div>
+                      <i class="i1"></i> </li>
+                    <li id="li_3" onclick="$('.add_select li').removeClass('on');$(this).addClass('on');change_select(this);$('#protectAddr').click();" name="address" value="3" data="{'id':'3','provice':'2,天津市','city':'55,和平区','dist':'885,南市街道','community':'0','address':'121212','contname':'121212','mobile':'13566287373'}">
+                      <div class="b_map">
+                        <p class="send_user_name">121212</p>
+                        <span class="send_user_addr">天津市          和平区          南市街道           121212          ，13566287373</span> <a href="###" key="2" class="edit_this_addr" data="{'id':'3','provice':'2,天津市','city':'55,和平区','dist':'885,南市街道','community':'0','address':'121212','contname':'121212','mobile':'13566287373','postalcode':'','telphone':''}" onclick="edit_addr(this);">修改</a> <a class="delete_this_addr" href="###" onclick="delete_addr(3)">删除</a> </div>
+                      <i class="i1"></i> </li>
+                    <li id="li_4" onclick="$('.add_select li').removeClass('on');$(this).addClass('on');change_select(this);$('#protectAddr').click();" name="address" value="4" data="{'id':'4','provice':'3,河北省','city':'73,石家庄市','dist':'1130,新乐市','community':'5088,南大岳镇','address':'12121313','contname':'1313','mobile':'13566287373'}">
+                      <div class="b_map">
+                        <p class="send_user_name">1313</p>
+                        <span class="send_user_addr">河北省          石家庄市          新乐市          南大岳镇12121313          ，13566287373</span> <a href="###" key="3" class="edit_this_addr" data="{'id':'4','provice':'3,河北省','city':'73,石家庄市','dist':'1130,新乐市','community':'5088,南大岳镇','address':'12121313','contname':'1313','mobile':'13566287373','postalcode':'','telphone':''}" onclick="edit_addr(this);">修改</a> <a class="delete_this_addr" href="###" onclick="delete_addr(4)">删除</a> </div>
+                      <i class="i1"></i> </li>
+                    <li id="li_5" onclick="$('.add_select li').removeClass('on');$(this).addClass('on');change_select(this);$('#protectAddr').click();" name="address" value="5" data="{'id':'5','provice':'11,浙江省','city':'177,温州市','dist':'2165,瓯海区','community':'15791,娄桥街道','address':'测试001','contname':'111','mobile':'13566212121'}">
+                      <div class="b_map">
+                        <p class="send_user_name">111</p>
+                        <span class="send_user_addr">浙江省          温州市          瓯海区          娄桥街道测试001          ，13566212121</span> <a href="###" key="4" class="edit_this_addr" data="{'id':'5','provice':'11,浙江省','city':'177,温州市','dist':'2165,瓯海区','community':'15791,娄桥街道','address':'测试001','contname':'111','mobile':'13566212121','postalcode':'','telphone':''}" onclick="edit_addr(this);">修改</a> <a class="delete_this_addr" href="###" onclick="delete_addr(5)">删除</a> </div>
+                      <i class="i1"></i> </li>
+                    <li class="on" id="li_6" onclick="$('.add_select li').removeClass('on');$(this).addClass('on');change_select(this);$('#protectAddr').click();" name="address" value="6" data="{'id':'6','provice':'11,浙江省','city':'177,温州市','dist':'2159,平阳县','community':'15618,朝阳乡','address':'测试0113','contname':'我是测试0113','mobile':'13566287373'}">
+                      <div class="b_map">
+                        <p class="send_user_name">我是测试0113</p>
+                        <span class="send_user_addr">浙江省          温州市          平阳县          朝阳乡测试0113          ，13566287373</span> <a href="###" key="5" class="edit_this_addr" data="{'id':'6','provice':'11,浙江省','city':'177,温州市','dist':'2159,平阳县','community':'15618,朝阳乡','address':'测试0113','contname':'我是测试0113','mobile':'13566287373','postalcode':'','telphone':''}" onclick="edit_addr(this);">修改</a> <a class="delete_this_addr" href="###" onclick="delete_addr(6)">删除</a> </div>
+                      <i class="i1"></i> </li>
+                    <li id="li_7" onclick="$('.add_select li').removeClass('on');$(this).addClass('on');change_select(this);$('#protectAddr').click();" name="address" value="7" data="{'id':'7','provice':'11,浙江省','city':'177,温州市','dist':'2166,苍南县','community':'15816,浦亭乡','address':'11111','contname':'我是测试00','mobile':'13566287272'}">
+                      <div class="b_map">
+                        <p class="send_user_name">我是测试00</p>
+                        <span class="send_user_addr">浙江省          温州市          苍南县          浦亭乡11111          ，13566287272</span> <a href="###" key="6" class="edit_this_addr" data="{'id':'7','provice':'11,浙江省','city':'177,温州市','dist':'2166,苍南县','community':'15816,浦亭乡','address':'11111','contname':'我是测试00','mobile':'13566287272','postalcode':'','telphone':''}" onclick="edit_addr(this);">修改</a> <a class="delete_this_addr" href="###" onclick="delete_addr(7)">删除</a> </div>
+                      <i class="i1"></i> </li>
+                  </ul>
+                  <div id="tc_position">
+                    <div class="tc_title">
+                      <h2>添加新地址</h2>
+                      <a href="javascript:void(0)" class="tc_close" style="display:none;"> <span></span> </a> </div>
+                    <div class="from_part tc_main"> 
+                      <!-- 添加收货地址 -->
+                      <table class="fill-shipping fold" id="newAddr">
+                        <input type="hidden" value="0" name="addr_id">
+                        <tbody>
+                          <tr>
+                            <th><em>*</em>收货地区：</th>
+                            <td style="padding-left: 5px;"><span class="region" vtype="area" id="dom_el_5597430">
+                              <select id="sheng1" name="province" class="inputstyle">
+                                <option value="-1">--请选择--</option>
+                                <option value="1,北京市">北京市</option>
+                                <option value="2,天津市">天津市</option>
+                                <option value="3,河北省">河北省</option>
+                                <option value="4,山西省">山西省</option>
+                                <option value="5,内蒙古自治区">内蒙古自治区</option>
+                                <option value="6,辽宁省">辽宁省</option>
+                                <option value="7,吉林省">吉林省</option>
+                                <option value="8,黑龙江省">黑龙江省</option>
+                                <option value="9,上海市">上海市</option>
+                                <option value="10,江苏省">江苏省</option>
+                                <option value="11,浙江省">浙江省</option>
+                                <option value="12,安徽省">安徽省</option>
+                                <option value="13,福建省">福建省</option>
+                                <option value="14,江西省">江西省</option>
+                                <option value="15,山东省">山东省</option>
+                                <option value="16,河南省">河南省</option>
+                                <option value="17,湖北省">湖北省</option>
+                                <option value="18,湖南省">湖南省</option>
+                                <option value="19,广东省">广东省</option>
+                                <option value="20,广西壮族自治区">广西壮族自治区</option>
+                                <option value="21,海南省">海南省</option>
+                                <option value="22,重庆市">重庆市</option>
+                                <option value="23,四川省">四川省</option>
+                                <option value="24,贵州省">贵州省</option>
+                                <option value="25,云南省">云南省</option>
+                                <option value="26,西藏自治区">西藏自治区</option>
+                                <option value="27,陕西省">陕西省</option>
+                                <option value="28,甘肃省">甘肃省</option>
+                                <option value="29,青海省">青海省</option>
+                                <option value="30,宁夏回族自治区">宁夏回族自治区</option>
+                                <option value="31,新疆维吾尔自治区">新疆维吾尔自治区</option>
+                                <option value="32,台湾省">台湾省</option>
+                                <option value="33,香港特别行政区">香港特别行政区</option>
+                              </select>
+                              <select id="shi1" name="city" class="inputstyle">
+                                <option value="0">--</option>
+                                <option value="175,杭州市">杭州市</option>
+                                <option value="176,宁波市">宁波市</option>
+                                <option value="177,温州市">温州市</option>
+                                <option value="178,嘉兴市">嘉兴市</option>
+                                <option value="179,湖州市">湖州市</option>
+                                <option value="180,绍兴市">绍兴市</option>
+                                <option value="181,舟山市">舟山市</option>
+                                <option value="182,衢州市">衢州市</option>
+                                <option value="183,金华市">金华市</option>
+                                <option value="184,台州市">台州市</option>
+                                <option value="185,丽水市">丽水市</option>
+                              </select>
+                              <select id="xian1" name="dist" class="inputstyle">
+                                <option value="0">--</option>
+                                <option value="2167,鹿城区">鹿城区</option>
+                                <option value="2168,龙湾区">龙湾区</option>
+                                <option value="2165,瓯海区">瓯海区</option>
+                                <option value="2164,瑞安市">瑞安市</option>
+                                <option value="2158,乐清市">乐清市</option>
+                                <option value="2166,苍南县">苍南县</option>
+                                <option value="2159,平阳县">平阳县</option>
+                                <option value="2163,洞头区">洞头区</option>
+                                <option value="2161,永嘉县">永嘉县</option>
+                                <option value="2160,文成县">文成县</option>
+                                <option value="2162,泰顺县">泰顺县</option>
+                                <option value="其他">其他</option>
+                              </select>
+                              <select id="xiang1" name="community" class="inputstyle">
+                                <option value="0">--</option>
+                              </select>
+                              </span></td>
+                          </tr>
+                          <tr>
+                            <th><em>*</em>收货地址：</th>
+                            <td><input class="x-input" type="text" name="addr" id="addrInput" value="" vtype="required" size="40" data-caution="请填写收货地址"></td>
+                          </tr>
+                          <tr>
+                            <th>邮编：</th>
+                            <td><input class="x-input" type="text" name="zip" id="elInput" value=""></td>
+                          </tr>
+                          <tr>
+                            <th><em>*</em>收货人姓名：</th>
+                            <td><input class="x-input" type="text" name="name" id="manInput" vtype="required" value="" data-caution="请填写收货人姓名"></td>
+                          </tr>
+                          <tr>
+                            <th><em>*</em>手机：</th>
+                            <td><input class="x-input" type="text" name="mobile" id="phoneInput" vtype="onesecond" value=""></td>
+                          </tr>
+                          <tr>
+                            <th>固定电话：</th>
+                            <td><input class="x-input" type="text" name="tel" id="tellInput" value="" vtype="onesecond"></td>
+                          </tr>
+                          <tr>
+                            <th></th>
+                            <td><button type="button" class="button4" onclick="saveNewAddr();"><span><span>保存</span></span></button>
+                              <button type="button" class="button_close" onclick="closeNewAdd()"><span><span>关闭</span></span></button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!-- 添加收货地址END --> 
+                      
+                    </div>
+                  </div>
+                  <div class="map_link"> <a href="#" class="fr" style="display:none;">显示全部地址</a> </div>
+                  <div style="clear:both;"></div>
+                </div>
+              </div>
+              <div id="add_cache" style="display:none;"></div>
+              <div id="order_shipping" class="order-section order-shipping" data-validatemsg="请完整填写收货信息并确认收货信息" style="display:none;">
+                <div class="order-section-title"><b>收货信息</b> </div>
+                <div class="order-section-content"> 
+                  
+                  <!-- 常用收货地址列表 --> 
+                  
+                  <!-- 常用收货地址列表 -->
+                  
+                  <ul class="change-shipping foldA" style="display:none">
+                    <li>
+                      <button type="button" class="btn btn-caution" id="protectAddr"><span><span>确认收货信息</span></span></button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- end 收货地址 --> 
+            </div>
+          </div>
+          <div class="list">
+            <div class="ct"> 配送方式 </div>
+            <ul class="cc">
+              <!-- 配送方式 --> 
+              
+              <!-- 配送方式 -->
+              <li>
+                <input style="display:none;" class="ck_delivery_radio" name="shipping" type="radio" value="{&quot;id&quot;:9,&quot;name&quot;:&quot;顺丰速递&quot;}">
+                <span title="默认将包裹的总重量作为运费计算标准" class="ck_delivery">顺丰速递</span> </li>
+              <li>
+                <input style="display:none;" class="ck_delivery_radio" name="shipping" type="radio" value="{&quot;id&quot;:10,&quot;name&quot;:&quot;一般快递&quot;}">
+                <span title="" class="ck_delivery">一般快递</span> </li>
+              <script>
+$(document).ready(function(){
+$('input[name="shipping"]:checked').next().addClass('active');
+
+$('.ck_delivery_radio').click(function(){
+			setTimeout(function () { 
+				$('.ck_delivery').removeClass('active')	;
+		         $('input[name="shipping"]:checked').next().addClass('active')}, 100)
+			});
+
+$('.ck_delivery').click(function(){
+		$(this).prev().click()			
+	});
+});
+</script> <!-- end 配送方式 -->
+              
+            </ul>
+          </div>
+          <div class="list">
+            <div class="ct"> 支付方式 </div>
+            <div class="cc"> 
+              <!-- 支付方式 --> 
+              
+              <!-- 支付方式 -->
+              
+              <div id="order_payment" class="order-section order-payment"> 
+                <!--<div class="order-section-title"><b>支付方式</b></div>-->
+                <div class="order-section-content">
+                  <table class="view-payment fold">
+                  </table>
+                  <div class="change-payment fold">
+                    <div class="payment-info">
+                      <ul>
+                        <li class="form-item">
+                          <div class="popup-body">
+                            <div class="popup-content clearfix">
+                              <div class="change-payment">
+                                <ul>
+                                  <!-- 支付方法开始 -->
+                                  
+                                  <li class="change-box">
+                                    <label> <span class="payinput">
+                                      <input type="radio" name="payment" value="{&quot;pay_app_id&quot;:&quot;alipay&quot;,&quot;payment_name&quot;:&quot;支付宝支付&quot;}" class="icheck_radio paymentinput-b">
+                                      </span> <span class="payment-img-box" style="padding: 0;border: 0;"> <img src="../images/alipay.jpg" width="220" height="70" class="payico-b"> </span> </label>
+                                    <div style="text-align:center"><em class="payment-name" id="name_alipay">支付宝支付</em></div>
+                                    <div style="clear:both"></div>
+                                  </li>
+                                  
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<script>
+$(document).ready(function(){
+  $('.icheck_radio').iCheck({
+    checkboxClass: 'icheckbox_minimal-yellow',
+    radioClass: 'iradio_minimal-yellow',
+    increaseArea: '20%' // optional
+  });
+});
+</script>
+              <!-- end 支付方式 --> 
+            </div>
+          </div>
+          <div class="list">
+            <div class="ct"> 配送时间 </div>
+            <ul class="cc">
+              <!-- 配送时间 -->
+              
+              <li>
+                <input type="radio" style="display:none;" class="radio shiptime_radio" checked="checked" name="ship_time" value="双休日、工作日均可送货">
+                <span class="ship_time_txt">双休日、工作日均可送货</span> </li>
+              <li>
+                <input type="radio" style="display:none;" class="radio shiptime_radio" name="ship_time" value="仅在工作日送货">
+                <span class="ship_time_txt">仅在工作日可送货</span> </li>
+              <li>
+                <input type="radio" style="display:none;" class="radio shiptime_radio" name="ship_time" value="仅在双休日送货">
+                <span class="ship_time_txt">仅在双休日可送货</span> </li>
+<script>
+$(document).ready(function(){
+$('input[name="ship_time"]:checked').next().addClass('active');
+
+$('.shiptime_radio').click(function(){
+
+			    setTimeout(function () { 
+				$('.ship_time_txt').removeClass('active')	;
+		        $('input[name="ship_time"]:checked').next().addClass('active')}, 50)
+			
+			});
+
+$('.ship_time_txt').click(function(){
+		$(this).prev().click()			
+	});
+});
+</script>
+
+              <!-- 配送时间 -->
+            </ul>
+          </div>
+          <div class="list">
+            <div class="ct"> 送货清单 </div>
+            <div class="">
+              <table class="orders_table">
+                <tbody>
+                  <tr>
+                    <td width="150"><img src="../images/goods_big_pic.jpg" height="100" alt="波司登冬季羽绒服女韩版甜美修身中长款时尚保暖外套正品B1301096"></td>
+                    <td width="auto"><p> 至尊系列 </p></td>
+                    <td width="50"> ×1 </td>
+                    <td width="110"><p>规格：豪华版</p></td>
+                    <td width="100"> 111g </td>
+                    <td width="100"><p>￥359.00</p></td>
+                  </tr>
+                  <tr>
+                    <td width="150"><img src="../images/goods_big_pic.jpg" height="100" alt="波司登冬季羽绒服女韩版甜美修身中长款时尚保暖外套正品B1301096"></td>
+                    <td width="auto"><p> 赠礼系列 </p></td>
+                    <td width="50"> ×1 </td>
+                    <td width="110"><p>规格：普通版</p></td>
+                    <td width="100"> 111g </td>
+                    <td width="100"><p>￥359.00</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="list">
+            <div class="ct"> 发票信息 </div>
+            <!-- 发票信息方式 -->
+            
+            <input type="hidden" name="invoice[is_tax]" value="false">
+            <ul class="cc">
+              <li>
+                <input style="display:none;" class="invoice_radio" type="radio" name="invoice[tax_type]" id="action_invoice_false" value="false" checked="checked">
+                <span class="invoice_txt">不需要发票</span> </li>
+              <li>
+                <input style="display:none;" class="invoice_radio" type="radio" name="invoice[tax_type]" id="action_invoice_personal" value="personal">
+                <span class="invoice_txt">个人发票</span> </li>
+              <li>
+                <input style="display:none;" class="invoice_radio" type="radio" name="invoice[tax_type]" id="action_invoice_company" value="company">
+                <span class="invoice_txt">公司发票</span> </li>
+            </ul>
+            <div class="invoice">
+              <div class="tit">发票抬头:</div>
+              <ul class="cc">
+                <li>
+                  <input type="text" name="invoice[tax_company]" id="tax_company">
+                </li>
+              </ul>
+            </div>
+            <div class="invoice">
+              <div class="tit">发票内容:</div>
+              <ul class="cc">
+                <li>
+                  <input type="text" name="invoice[tax_content]" id="tax_content">
+                </li>
+              </ul>
+            </div>
+<script>
+$(document).ready(function(){
+$('input[name="invoice[tax_type]"]:checked').next().addClass('active');
+
+$('.invoice_radio').click(function(){
+
+			    setTimeout(function () { 
+				$('.invoice_txt').removeClass('active')	;
+		        $('input[name="invoice[tax_type]"]:checked').next().addClass('active')}, 50)
+			
+			});
+
+$('.invoice_txt').click(function(){
+		$(this).prev().click()			
+	});
+});
+</script>
+
+            <!-- end 发票信息 --> 
+            
+          </div>
+          <div class="list">
+            <div class="ct"> 积分抵扣 </div>
+            
+            <!-- 积分抵扣 --> 
+            
+            <!-- 积分 -->
+            <div class="integral point-content" id="order_deduction" style="margin-left: 0px;">
+              <p class="scoreinput"> 输入积分:
+                <input class="action-input-score" type="text" max="33700" name="point_score">
+                <input type="hidden" name="point_rate" value="0.01">
+                <input class="use_point_btn" type="button" value="使用" onclick="confirPoint();">
+              </p>
+              <div class="integral" style="margin-left: 0px;">
+                <p class="scoreinput">本单最多抵扣订单总额的 <i>100%</i>，100积分=￥1</p>
+                <p class="scoreinput"><i>当前账户积分：</i><b class="action-user-score">997052375</b></p>
+              </div>
+              <p class="usedscore">抵扣积分：<strong>34300</strong> 抵扣金额：<b>343.00</b> <a id="action-cancel-score" href="javascript:void(0);" class="lnklike action-cancel-score" onclick="cancelpoint();">[取消使用]</a></p>
+            </div>
+            
+            <!-- end 积分 --> 
+            <!-- end 积分抵扣 --> 
+            <!-- 备注 --> 
+          </div>
+        </div>
+        <!-- 优惠  -->
+        <div class="user_loc">
+        <div class="order-promotion" id="order_promotion">
+          <h3><a href="javascript:void(0);" class="action-toggle btn-expand" id="pmt_ck" onclick="chengePam(this);return false;">-</a>订单优惠</h3>
+          <ul class="pam-content" id="pamdiv" style="display: block;">
+            <li><b>减价</b>&nbsp;&nbsp;满十减一</li>
+            <li><b>满就送</b>&nbsp;&nbsp;买一送一</li>
+          </ul>
+        </div>
+
+        <table class="order_s_list">
+          <tbody>
+            <tr>
+              <td width="85%"> 总商品金额： </td>
+              <td id="total_amount">￥359.00</td>
+            </tr>
+            <tr>
+              <td> 优惠： </td>
+              <td id="pmt_order">-￥22</td>
+            </tr>
+            <tr>
+              <td> 积分消费： </td>
+              <td id="unpoint">0</td>
+            </tr>
+            <tr>
+              <td> 可获积分： </td>
+              <td id="point">359</td>
+            </tr>
+            <tr>
+              <td> 运费： </td>
+              <td id="cost_freight">￥0.00</td>
+            </tr>
+          </tbody>
+        </table>
+        <div style="clear:both;"></div>
+        <input type="hidden" value="0" name="able_point" id="able_point">
+        <input type="hidden" value="0" name="member_point" id="member_point">
+        <input type="hidden" value="0" name="able_money" id="able_money">
+        <div id="pmt_tip" style="display:none;">
+          <li></li>
+        </div>
+        </div>
+        <div class="user_loc">
+          <div class="memo_box"> 
+            <!-- 用户自定义表单 -->
+            <div class="order-remark" style="margin-bottom:5px;">
+              <label>身份证：</label>
+              <input class="x-input" type="text" name="form_1" id="form_1">
+            </div>
+            <div class="order-remark" style="margin-bottom:5px;">
+              <label>证件号码：</label>
+              <textarea name="form_2" id="form_2" class="action-remark-textarea" cols="60" rows="3"></textarea>
+              <span style="color:red">*</span> </div>
+            <!-- 用户自定义表单end -->
+            <div id="order_remark" class="order-remark">
+              <label>订单备注：</label>
+              <textarea name="memo" id="memo" class="action-remark-textarea" cols="60" rows="3" placeholder="请在此填写您对该订单或商品的特殊要求或说明，最多300字。"></textarea>
+            </div>
+          </div>
+          <table class="view-shipping view-addr">
+            <tbody id="showAddr">
+              <!-- 如果存在默认的地址 --> 
+              
+              <!-- 如果存在默认的地址 --> 
+              
+              <!-- 如果存在默认的地址 --> 
+              
+              <!-- 如果存在默认的地址 --> 
+              
+              <!-- 如果存在默认的地址 --> 
+              
+              <!-- 如果存在默认的地址 -->
+              <tr>
+                <th>收货地区：</th>
+                <td><input type="hidden" name="_addr_id" id="_addr_id" value="6">
+                  <input type="hidden" name="addrid" id="addrid" value="6">
+                  浙江省          温州市          平阳县          朝阳乡</td>
+              </tr>
+              <tr>
+                <th>收货地址：</th>
+                <td>浙江省          温州市          平阳县          朝阳乡测试0113</td>
+              </tr>
+              <tr>
+                <th>收货人姓名：</th>
+                <td>我是测试0113</td>
+              </tr>
+              <tr>
+                <th>手机：</th>
+                <td>13566287373</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-caution" id="SureAddr" onclick="Sure();" data="6" style="display:none"><span><span>确认使用这一地址</span></span></button></td>
+              </tr>
+              
+              <!-- 如果存在默认的地址 -->
+              
+            </tbody>
+          </table>
+          <div style="clear:both"></div>
+        </div>
+        <div class="submit"> 应付总额: <strong id="final_amount">￥337.00</strong> <a href="#" id="postcreate"> 提交订单  </a> </div>
+      </div>
+    </div>
+  </div>
+  <div style="clear:both"></div>
+  <div class="mall_foot_box">
+    <div class="foot_box"> <span>Copyright ©2016 GOGAGOGA All Rights Reserved.杭州果加果加网络科技有限公司 版权所有 浙ICP备15028803号</span> </div>
+  </div>
+</div>
+<script>
+$(document).ready(function () {
+$('.memo_box span').css('color','#F9B700')
+$('#add_address').click(function(){
+	$('#tc_position').show()
+	$("body").append("<div class='tc_bg'></div>");
+    $("html").css("overflow","hidden");
+})
+$('.button_close').click(function(){
+	$('#tc_position').hide()
+	$(".tc_bg").remove();
+    $("html").css("overflow","auto");
+})
+});
+</script>
+<script>
+$(document).ready(function () {
+	
+	
+	$('.index_tab_btn').mouseenter(function() { 
+	    $(this).addClass('tab_btn_hover');
+		$(this).find('.tab_for_english').hide();
+		$(this).find('.tab_for_chinese').show();
+    });
+	$('.index_tab_btn').mouseleave(function() { 
+	    $(this).removeClass('tab_btn_hover');
+		$(this).find('.tab_for_english').show();
+		$(this).find('.tab_for_chinese').hide();
+    });
+	
+	$('.tab_list_ul .index_tab_btn').mouseenter(function() { 
+	    $(this).next().show();
+    });
+	$('.tab_list_ul .index_tab_btn').mouseleave(function() { 
+	    $(this).next().hide();
+    });
+	
+	
+	$('.tab_list_ul .index_tab_lv2').mouseenter(function() { 
+	    $(this).show().prev().addClass('tab_btn_hover');
+		$(this).prev().find('.tab_for_english').hide();
+		$(this).prev().find('.tab_for_chinese').show();
+    });
+	$('.tab_list_ul .index_tab_lv2').mouseleave(function() { 
+	    $(this).hide().prev().removeClass('tab_btn_hover');
+		$(this).prev().find('.tab_for_english').show();
+		$(this).prev().find('.tab_for_chinese').hide();
+    });
+	
+	
+	$('.index_tab_btn').last().css('margin-right','0')
+	$(".index_tab_lv2 .tab_lv2_li:last-child").find('.lv2_link').addClass("noborder")
+	
+	var winw = $(window).width()
+	var winh = $(window).height()
+	
+	var emleft = (winw-300)/2
+	var emtop = (winh-300)/2
+	$('.weixin_qr_box').css('left',emleft).css('top',emtop)
+	
+	$(window).resize(function(){
+     	var winw = $(window).width()
+	    var winh = $(window).height()
+	
+	    var emleft = (winw-300)/2
+	    var emtop = (winh-300)/2
+	    $('.weixin_qr_box').css('left',emleft).css('top',emtop)
+    });
+	
+	$('#winxin_open').click(function() { 
+	    $('.weixin_qr_box').show();
+	});
+	$('#qr_close').click(function() { 
+	    $('.weixin_qr_box').hide();
+	});
+});
+</script>
+</body>
+</html>
