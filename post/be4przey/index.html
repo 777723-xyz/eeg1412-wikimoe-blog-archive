@@ -59,10 +59,10 @@
 <video poster="https://www.wikimoe.com/content/uploadfile/202404/thum-660f5c21c52e53f77d53f6e7.webp?t=1712320548535" playsinline="true" preload="none" muted="muted" loop="loop" controls="true" width="222" height="480"><source src="https://filedn.eu/lgBqVslpFWCkYuND5NfXwQB/wikimoe/content/uploadfile/202404/660f5c21c52e53f77d53f6e7.mp4" type="video/mp4" data-href="https://filedn.eu/lgBqVslpFWCkYuND5NfXwQB/wikimoe/content/uploadfile/202404/660f5c21c52e53f77d53f6e7.mp4"></video>
 </div><p>可以看到红色区域是video元素，虽然video的宽高变了，但是内容始终保持原来的大小。</p><p>这个问题我看了下官方的反馈列表，目前并没有人反馈这个问题，于是就向苹果官方反馈了这个问题。</p><p>截至目前，官方给我的反馈是无法复现😅。</p><p>我看了眼官方的测试案例，苹果将我的代码放到了jsfiddle上进行测试，确实就复现不出来了。</p><p>后来我发现，如果内容是在&lt;iframe&gt;中运行的话确实就复现不出来了，很神奇。这才又建立了github pages，让苹果的技术人员通过github pages进行测试。</p><p>因为苹果官方和我有时差，通过邮件来回基本上也只能一天沟通一次，所以后续进展如何会更新在这里，敬请期待！</p><p>如果大家有兴趣的话，也可以用苹果手机试一试。</p><p>以下是复现步骤：</p><ol><li>在iPhone（iOS 17.4.1）上打开链接：<a href="https://eeg1412.github.io/safari-video-bug/" target="_blank">https://eeg1412.github.io/safari-video-bug/</a></li><li>允许摄像头访问。</li><li>等待相机画面出现在屏幕上。</li><li>单击摄像机源以更改视频的大小。</li></ol><p><strong>解决方案</strong></p><p>这个问题我目前的解决是将原先的block-&gt;flex改成block-&gt;none-&gt;flex，进行强行重新渲染。</p><p><br></p><h4>2024年5月4日更新：</h4><p>官方已经修复【视频元素中的内容不会跟随video标签的宽高变化而变化】的问题</p><p> <a href="https://github.com/WebKit/WebKit/pull/28125" target="_blank">https://github.com/WebKit/WebKit/pull/28125</a> </p></div>
       </div>
+      <div class="post-source">原文：<a href="https://www.wikimoe.com/post/be4przey" target="_blank" rel="noopener noreferrer">https://www.wikimoe.com/post/be4przey</a></div>
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/safari/">#safari</a></div>
       <div class="post-footer">
         <a href="https://eeg1412.github.io/wikimoe-blog-archive/">&laquo; 返回首页</a>
-        <a href="https://www.wikimoe.com/post/be4przey" target="_blank" rel="noopener noreferrer">查看原文</a>
       </div>
     </article>
     </div>

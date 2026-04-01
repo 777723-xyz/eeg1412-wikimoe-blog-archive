@@ -683,6 +683,22 @@ main {
   gap: 8px;
 }
 
+/* 原文链接 */
+.post-source {
+  margin-top: 20px;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  word-break: break-all;
+}
+
+.post-source a {
+  color: var(--primary);
+}
+
+.post-source a:hover {
+  text-decoration: underline;
+}
+
 /* Tags below post content */
 /* .post-detail > .tag-list {
   margin-top: 20px;

@@ -71,10 +71,10 @@
       <div class="post-content">
         <div class="tweet-detail-text">想着给博客增加一个页面跳转时的过渡动画，结果加上后发现页面时不时会报错。<br>于是经历了一番调查之后发现在Nuxt.js中给页面加上跳转动画pageTransition后，页面和组件的onMounted会被执行2次！？<br>相关的Issue在Github上也有人提出：<a href="https://github.com/nuxt/nuxt/issues/27442" target="_blank" rel="noopener noreferrer">https://github.com/nuxt/nuxt/issues/27442</a><br>大致需要满足3个条件才会触发：<br>1.设置了pageTransition<br>2.mode设置为out-in<br>3.页面上有await useAsyncData加载接口内容<br>感觉有点天坑，这个问题虽然最早是今年6月有人发现的，但是实际上我所用的Nuxt版本是去年年底的版本，也就是说这个bug存在了至少大半年...</div>
       </div>
+      <div class="post-source">原文：<a href="https://www.wikimoe.com/post/bvvqzc7a" target="_blank" rel="noopener noreferrer">https://www.wikimoe.com/post/bvvqzc7a</a></div>
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/Nuxt/">#Nuxt</a></div>
       <div class="post-footer">
         <a href="https://eeg1412.github.io/wikimoe-blog-archive/">&laquo; 返回首页</a>
-        <a href="https://www.wikimoe.com/post/bvvqzc7a" target="_blank" rel="noopener noreferrer">查看原文</a>
       </div>
     </article>
     </div>
