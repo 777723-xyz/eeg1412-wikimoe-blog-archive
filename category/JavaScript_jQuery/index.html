@@ -89,7 +89,7 @@
         <time class="post-date" datetime="2023-04-17T06:18:39.000Z">2023-04-17 15:18</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">根本原因是新的vue-cli用的css-loader默认会将&quot;/a.png&quot; 视为 &quot;require('/a.png')&quot;导致的。 此时需要配置vue.config.js，添加如下内容 css: { loaderOptions: { css: { url: { filter: url =&gt; url[0] !== '/' } } } } 参考链接：https://github.com/vuejs/v</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/Vue.js/">#Vue.js</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/278/">
         <div class="blog-card-cover">
@@ -106,7 +106,7 @@
         <time class="post-date" datetime="2021-11-01T12:08:20.000Z">2021-11-01 21:08</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">有时候在绘制canvas的时候可能会用到一些特殊字体。而中文字体例如是用类似谷歌字体加载的话，可能会是分段加载，DOM不一定会加载过某些字体从而导致在绘制canvas时出现字体缺失。 这个时候可以使用如下代码预加载css中的字体 document.fonts.load 实际使用案例： const loadTextFont = async (fontSize, text) =&gt; { await do</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/263/">
         <div class="blog-card-cover">
@@ -123,7 +123,7 @@
         <time class="post-date" datetime="2021-05-23T09:03:02.000Z">2021-05-23 18:03</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">在Ionic中，Vue的生命周期是被接管的。 因为Ionic对页面进行了缓存，所以每次页面只有第一次加载时才会触发Vue的生命周期，所以为了防止出现奇怪的问题，往往会用Ionic的生命周期，但是Ionic的生命周期问题也不少。 在Ionic中，有如下的生命周期 名称 描述 ionViewWillEnter 页面进入时触发 ionViewDidEnter 页面进入动画结束后触发 ionViewWil</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/Ionic/">#Ionic</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/260/">
         <div class="blog-card-cover">
@@ -140,7 +140,7 @@
         <time class="post-date" datetime="2021-05-23T08:52:59.000Z">2021-05-23 17:52</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">先说答案： 在需要长按保存的图片中增加一段样式 -webkit-touch-callout: default !important; 原理： 这是一段苹果Safari专用的样式，用途就是禁止图片的长按保存。估计Ionic的UI策略本来是也想禁止掉安卓的长按保存，但是安卓似乎没有对应的方案，就唯独给苹果设置上了...因为自己用的是安卓的手机，项目是明确要求长按保存的，结果一直没有发现这个问题，属实坑</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/Ionic/">#Ionic</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/259/">
         <div class="blog-card-cover">
@@ -157,7 +157,7 @@
         <time class="post-date" datetime="2019-12-08T07:49:32.000Z">2019-12-08 16:49</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">在Element UI里，如果点击过一次某个按钮，这个按钮就会被选择，然后这个时候按下回车就会连续触发按钮的点击事件，对一些需要服务器交互的按钮来说太过不友善。 根据官方文档，似乎禁不了这个事件，那么只能通过代码去禁止了。 &lt;el-button type=&quot;primary&quot; ref=&quot;btn&quot;&gt;按钮&lt;/el-button&gt; 首先给按钮定义一个ref。 mounted() { this.$refs.</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/243/">
         <div class="blog-card-cover">
@@ -174,7 +174,7 @@
         <time class="post-date" datetime="2019-05-08T01:39:51.000Z">2019-05-08 10:39</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">应用场景：将对象数组根据指派的数组内容进行排序，未指定的对象按照原始顺序。 const nodeData_ = [ {account:'a',node:1}, {account:'b',node:2}, {account:'c',node:3}, {account:'d',node:4}, {account:'e',node:5}, {account:'f',node:6} ] const sor</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/226/">
         <div class="blog-card-cover">
@@ -191,7 +191,7 @@
         <time class="post-date" datetime="2018-10-29T02:14:05.000Z">2018-10-29 11:14</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">需求：有一组关键词数组，在数组中筛选出符合关键字的内容并将关键字高亮。 最终效果： HTML： &lt;div class=&quot;q_iw_input_tip_item&quot; v-for=&quot;(item, key, index) in wordTips&quot; :key=&quot;index&quot;&gt; &lt;span&gt;{{item.substr(0,item.indexOf(inputVal))}}&lt;/span&gt;&lt;span class=</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/Vue.js/">#Vue.js</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/198/">
         <div class="blog-card-cover">
@@ -208,7 +208,7 @@
         <time class="post-date" datetime="2018-10-27T08:09:15.000Z">2018-10-27 17:09</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">打开文件：electron-vue/webpack.renderer.config.js 在大约21行左右找到 let whiteListedModules 将element-ui添加进去，最终如下所示。 let whiteListedModules = ['vue', 'element-ui'] 最后重启下项目就好了。</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/Vue.js/">#Vue.js</a><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/electron/">#electron</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/197/">
         <div class="blog-card-cover">
@@ -225,7 +225,7 @@
         <time class="post-date" datetime="2018-09-16T10:16:46.000Z">2018-09-16 19:16</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">早在去年十月，我写过一篇题为《【H5小游戏】制作一个简单的赛车游戏》的文章。基于最基本的canvas功能，而且是以格子的形式去刷新游戏界面，游戏原理类似上世纪的game&amp;watch。 然后最近学了些pixi.js的东西（相关文章可以从《2D WebGL renderer Pixi.js v4 入门【第一回】》开始看），于是就把游戏换成了基于pixi.js的游戏。 游戏质量也从game&amp;watch模</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/pixi.js/">#pixi.js</a><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/H5%E5%B0%8F%E6%B8%B8%E6%88%8F/">#H5小游戏</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/189/">
         <div class="blog-card-cover">
@@ -242,7 +242,7 @@
         <time class="post-date" datetime="2018-09-12T05:47:31.000Z">2018-09-12 14:47</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">前情回顾 上回链接：《2D WebGL renderer Pixi.js v4 入门【第五回】》 上回学习了WebGL的各种图像与文字的绘制。 检测碰撞 上图为理想状态。 左边的猫能够使用键盘操作，右边的块是无法移动的，然后上面的信息提示状态。 在基于&lt;第三回&gt;的键盘控制所写的代码中， 改造和追加了一部分代码。 var 猫, 块, 消息, 状态; function setup(){ 放入猫; 制作</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/pixi.js/">#pixi.js</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/187/">
         <div class="blog-card-cover">
@@ -259,7 +259,7 @@
         <time class="post-date" datetime="2018-08-31T07:08:01.000Z">2018-08-31 16:08</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">前情回顾 上回链接：《2D WebGL renderer Pixi.js v4 入门【第四回】》 上回我们说了精灵的编组以及Container和ParticleContainer。 这次我们来说说WebGL的图形绘制吧。 图形绘制的方法 如果懂canvas自带的图形绘制功能的话，大可跳过这里。 首先使用PIXI.Graphics，描绘各种图形。 // 画矩形 var rectangle = new</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/pixi.js/">#pixi.js</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/176/">
         <div class="blog-card-cover">
@@ -276,7 +276,7 @@
         <time class="post-date" datetime="2018-08-31T05:36:36.000Z">2018-08-31 14:36</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">前情回顾 上回链接：《2D WebGL renderer Pixi.js v4 入门【第三回】》 精灵制作篇完结了，在前面我们尝试制作了一些（无限）动画呢。 然后还制作了根据方向键移动的精灵。 精灵的编组 所谓编组就是制作一个新的Container()，将出现在同一场景下的东西集中起来传到renderer中。 使得精灵的管理变得更加便捷了呢！ var id = resources[&quot;images/</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/pixi.js/">#pixi.js</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/175/">
         <div class="blog-card-cover">
@@ -293,7 +293,7 @@
         <time class="post-date" datetime="2018-08-31T04:14:43.000Z">2018-08-31 13:14</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">前情回顾 上回链接：《2D WebGL renderer Pixi.js v4 入门【第二回】》 介绍完了精灵制作的其中两种方法。 剩下介绍完第三种方法吧。 三种方法： 1.使用图像（一个一个读取进去） 2.将项目内用到的所有图片（sub-image）全部集合成一张大图片（tileset）使用。（就是将大量小图合成一张） 3.通过JSON（texture atlas）指定大图（tileset）中各</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/pixi.js/">#pixi.js</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/173/">
         <div class="blog-card-cover">
@@ -310,7 +310,7 @@
         <time class="post-date" datetime="2018-08-31T03:20:49.000Z">2018-08-31 12:20</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">前情回顾 上回链接：《2D WebGL renderer Pixi.js v4 入门【第一回】》 介绍了精灵的三种方法。 三种方法： 1.使用图像（一个一个读取进去） 2.将项目内用到的所有图片（sub-image）全部集合成一张大图片（tileset）使用。（就是将大量小图合成一张） 3.通过JSON（texture atlas）指定大图（tileset）中各自图像的位置和大小。 1.使用图像并</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/pixi.js/">#pixi.js</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/172/">
         <div class="blog-card-cover">
@@ -327,7 +327,7 @@
         <time class="post-date" datetime="2018-08-31T02:25:05.000Z">2018-08-31 11:25</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">Start with pixi.js 首先先引入pixi.js吧！ 但是由于这是个练习，所以想快一点就直接读了CDN。 制作html。 &lt;!DOCTYPE html&gt; &lt;html lang=&quot;ja&quot;&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot;&gt; &lt;title&gt;Start with pixi.js&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;script src=&quot;https:/</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/pixi.js/">#pixi.js</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/171/">
         <div class="blog-card-cover">
@@ -344,7 +344,7 @@
         <time class="post-date" datetime="2018-08-02T01:38:49.000Z">2018-08-02 10:38</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">一般情况下JS使用数字运算比较大的大整数： 10000000000000000 - 1 = 10000000000000000 所以这里还是要用字符串去运算比较大的正整数 function minus(a, b){//字符串减法 a = a.split(''); b = b.split(''); var aMaxb = a.length &gt; b.length; // 标记A是否大于B if(a.l</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/168/">
         <div class="blog-card-cover">
@@ -361,7 +361,7 @@
         <time class="post-date" datetime="2018-07-23T06:39:53.000Z">2018-07-23 15:39</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">因为JS的精度缺失导致大整数在十六进制转换上也会有精度确实。 例如： Number('999999999999999999').toString(16) &quot;de0b6b3a7640000&quot; 0xde0b6b3a7640000 = 1000000000000000000 这个时候可以先用以前文章提到过的大整数字符串运算来得出数字字符串，然后再通过下面的方法来转换成十六进制字符串。 function </p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/166/">
         <div class="blog-card-cover">
@@ -378,7 +378,7 @@
         <time class="post-date" datetime="2018-07-23T04:08:54.000Z">2018-07-23 13:08</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">大整数相乘： function multi(a,b){ var str1,str2,len1,len2,maxlen,result = []; str1 = a.split(&quot;&quot;).reverse(); str2 = b.split(&quot;&quot;).reverse(); len1 = str1.length; len2 = str2.length; for(var i = 0;i &lt; len1;i++){</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/165/">
         <div class="blog-card-cover">
@@ -395,7 +395,7 @@
         <time class="post-date" datetime="2018-07-05T04:31:41.000Z">2018-07-05 13:31</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">因为JavaScript精度丢失的问题，经常会出现一些骚操作，例如： 999900000000630000/1000000000000000000 返回结果：0.9999000000006301 迷之多了01 这时候换个角度思考，不用数学运算，改为字符串操作，比如上面的例子是除以18个0就是向前挪18位加个小数点。 那么直接丢代码： function stringAddPoint(num,s){ </p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/162/">
         <div class="blog-card-cover">
@@ -412,7 +412,7 @@
         <time class="post-date" datetime="2018-06-26T07:08:04.000Z">2018-06-26 16:08</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">因为需要让局域网内其他人也能访问到自己的项目，所以必须要使用局域网IP来访问。但是发现只有localhost或者127.0.0.1能访问到项目，局域网内的IP死都不行。 后来搜索了一把，发现其实很简单就能解决。 只用把vue-cli项目下的config文件夹下面的index.js文件里的localhost改为0.0.0.0就可以了。 这样修改也不妨碍127.0.0.1或者localhost的访问。</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/Vue.js/">#Vue.js</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/160/">
         <div class="blog-card-cover">
@@ -429,7 +429,7 @@
         <time class="post-date" datetime="2018-06-22T03:03:08.000Z">2018-06-22 12:03</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">因为需求需要读取excel的.xlsx和.xls文件来批量生成网页数据。找了网上的资料后发现js-xlsx可以实现。 首先安装依赖： $ npm install xlsx HTML部分： &lt;input type=&quot;file&quot; ref=&quot;upload&quot; accept=&quot;.xls,.xlsx&quot; class=&quot;outputlist_upload&quot;&gt; 引入： import XLSX from 'xlsx'</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/Vue.js/">#Vue.js</a><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/JavaScript/">#JavaScript</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/157/">
         <div class="blog-card-cover">
@@ -446,7 +446,7 @@
         <time class="post-date" datetime="2018-06-22T02:45:58.000Z">2018-06-22 11:45</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">因为需要需要生成一张字节流二维码，然后研究了下原理大致是： 十六进制数据→二进制数组→通过fromCharCode转换回字符串→通过qrious等不支持生成中文二维码的二维码生成库生成二维码。 用到的代码如下： 十六进制字符串转二进制数组： /** * @desc 十六进制字符串转二进制数组 */ function Str2Bytes(str){ var pos = 0; var len = st</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/JavaScript/">#JavaScript</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/156/">
         <div class="blog-card-cover">
@@ -463,7 +463,7 @@
         <time class="post-date" datetime="2018-06-18T04:29:44.000Z">2018-06-18 13:29</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">Live2d的看板娘——椎名真白 在原先的基础上加上了如下功能： 1.可以基于图灵机器人的聊天功能（需要自己写接口，默认隐藏）。 2.能够随意移动并记录位置（关闭浏览器后失效）。 3.能够随意唤醒或者关闭并记录状态。 4.自动判断浏览器是否为IE或者手机浏览器，如果判断为true则不加载模型。 5.给骚扰加了限制频率，不能狂骚扰了。 6.增加换装功能。 准备工作 首先下载代码 链接：https:/</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/Live2d/">#Live2d</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/live2d-mashiro/">
         <div class="blog-card-cover">
@@ -480,7 +480,7 @@
         <time class="post-date" datetime="2018-05-17T04:51:26.000Z">2018-05-17 13:51</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">试着用Canvas做了时下比较流行的熊猫记仇 测试预览： .jichou_body{ text-align: center; } .jichou_textarea{ width: 416px; height: 216px; max-width:100%; border:1px solid #000; } #jichou{ max-width:100%; height:auto; } 保存 var </p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/canvas/">#canvas</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/146/">
         <div class="blog-card-cover">
@@ -497,7 +497,7 @@
         <time class="post-date" datetime="2018-04-02T04:50:06.000Z">2018-04-02 13:50</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">function GetURLparam(name){ var reg = new RegExp(&quot;(^|&amp;)&quot;+ name +&quot;=([^&amp;]*)(&amp;|$)&quot;); var r = window.location.search.substr(1).match(reg); if(r!=null)return unescape(r[2]); return null; } GetURLparam('想要获</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/123/">
         <div class="blog-card-cover">
@@ -514,7 +514,7 @@
         <time class="post-date" datetime="2018-03-24T04:45:28.000Z">2018-03-24 13:45</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">Live2d的看板娘——蕾姆(Rem) 伊斯特瓦尔点这里。 在原先的基础上加上了如下功能： 1.可以基于图灵机器人的聊天功能（需要自己写接口，默认隐藏）。 2.能够随意移动并记录位置（关闭浏览器后失效）。 3.能够随意唤醒或者关闭并记录状态。 4.自动判断浏览器是否为IE或者手机浏览器，如果判断为true则不加载模型。 5.给骚扰加了限制频率，不能狂骚扰了。 准备工作 首先下载代码（码云点这里下载</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/Live2d/">#Live2d</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/120/">
         <div class="blog-card-cover">
@@ -531,7 +531,7 @@
         <time class="post-date" datetime="2018-03-21T02:50:24.000Z">2018-03-21 11:50</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">base58加密解密： var ALPHABET = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz' var ALPHABET_MAP = {} for(var i = 0; i &lt; ALPHABET.length; i++) { ALPHABET_MAP[ALPHABET.charAt(i)] = i } var BASE</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/109/">
         <div class="blog-card-cover">
@@ -548,7 +548,7 @@
         <time class="post-date" datetime="2018-03-19T08:10:12.000Z">2018-03-19 17:10</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">Event Pages Script Call： Battle-Related Script Calls： SceneManager._scene._logWindow.addText('text');战斗时增加提示。 SceneManager._scene._logWindow.clear();战斗时去除提示。</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/RPGMakerMV/">#RPGMakerMV</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/108/">
         <div class="blog-card-cover">
@@ -565,7 +565,7 @@
         <time class="post-date" datetime="2018-03-19T06:58:19.000Z">2018-03-19 15:58</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">在浏览器中我们可以使用如下代码将base64转换层二进制数组。 function _base64ToArrayBuffer(base64) { var binary_string = window.atob(base64); var len = binary_string.length; var bytes = new Uint8Array( len ); for (var i = 0; i &lt; </p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/107/">
         <div class="blog-card-cover">
@@ -582,7 +582,7 @@
         <time class="post-date" datetime="2018-03-17T15:06:22.000Z">2018-03-18 00:06</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">在解谜游戏中经常要用到字符的比对而不是数字的比对，在我以前做的小游戏里是通过各种选择项来拼成英文单词，体验贼差。 这时候可以用一款插件：CmdInp.js 链接：https://pan.baidu.com/s/1Cv9iRLY6G7iq9J9mKhabOw 密码：8szb 原插件转自：这里 原插件有2个BUG我上面提供的文件修复了一下，修复BUG如下。 1.修复默认会生成一个空格，导致输入框从第二</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/RPGMakerMV/">#RPGMakerMV</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/106/">
         <div class="blog-card-cover">
@@ -599,7 +599,7 @@
         <time class="post-date" datetime="2018-03-08T09:01:04.000Z">2018-03-08 18:01</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">前面做《四女神Online》模板的时候参照code pen上的一则飘雪效果改的。 首先引入HTML并想好canvas的ID： &lt;canvas id='canvasbg' class=&quot;star_effect&quot;&gt;&lt;/canvas&gt; 然后引入JS： (function() { var Base, Particle, canvas, colors, context, drawables, i, mous</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/101/">
         <div class="blog-card-cover">
@@ -616,7 +616,7 @@
         <time class="post-date" datetime="2018-03-06T08:16:10.000Z">2018-03-06 17:16</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">经常用到备份下，方便复制。 filters: { capitalize: function (value) { var date = new Date(parseInt(value)); var tt = [date.getFullYear(), date.getMonth()+1, date.getDate()].join('-') + ' ' +[date.getHours(), date.g</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/99/">
         <div class="blog-card-cover">
@@ -633,7 +633,7 @@
         <time class="post-date" datetime="2018-02-02T08:19:02.000Z">2018-02-02 17:19</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">其实原理就是控制正弦波的幅度。 CSS: html, body { height: 100%; text-align: center; background-color: #323436; } canvas#sineCanvas { width:500px; height:500px; overflow:hidden; background:#5b5d5e; } HTML: &lt;div id=&quot;ca</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/86/">
         <div class="blog-card-cover">
@@ -650,7 +650,7 @@
         <time class="post-date" datetime="2018-01-26T03:11:10.000Z">2018-01-26 12:11</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">Fullscreen API在H5视频和H5游戏进入全屏的时候非常有用。 但是却隐藏着非常多的坑。 首先，看下兼容情况： 例子： 点击下面的DEMO进入例子页面，如果浏览器支持的话DIV会全屏显示在屏幕中央。 查看DEMO 使用方法： document.&quot;前缀&quot;FullscreenEnabled 来调查是否支持Fullscreen API document.&quot;前缀&quot;RequestFullscree</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/82/">
         <div class="blog-card-cover">
@@ -667,7 +667,7 @@
         <time class="post-date" datetime="2018-01-16T07:28:41.000Z">2018-01-16 16:28</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">因为浏览器的优化原因，setTimeout()和setInterval()，在浏览器窗口非激活的状态下会停止工作或者以极慢的速度工作。目前我已知就IE不会有这种问题。 这样的优化就会带来一个问题，比如我以前的一段代码【JavaScript】模拟随机号码中奖，因为需要不断随机出号码，所以会用到setInterval()，但是一旦切换窗口的话，就会停止随机算出号码，需要再次激活窗口才会重新运行。 这个</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/78/">
         <div class="blog-card-cover">
@@ -684,7 +684,7 @@
         <time class="post-date" datetime="2018-01-13T03:28:58.000Z">2018-01-13 12:28</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">.post .prettyprint, pre.prettyprint { overflow: auto; } 基于上篇文章：给博客加上能陪聊的Live2d版伊斯特瓦尔——emlog插件版 Typecho插件版：Typecho插件版之给博客加上能陪聊的Live2d版伊斯特瓦尔 去掉了emlog特制的功能后的版本。 保留了如下功能： 1.可以基于图灵机器人的聊天功能（需要自己写接口，默认隐藏）。 2</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/Live2d/">#Live2d</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/76/">
         <div class="blog-card-cover">
@@ -701,7 +701,7 @@
         <time class="post-date" datetime="2017-12-25T02:08:46.000Z">2017-12-25 11:08</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">swiper版本为3.4.2。 因为效果需要，如果页面内容超过屏幕高度则先触发overflow的滚动条，当滚动条滚动到底部再触发swiper的页面滑动效果。 var swiper = new Swiper('.swiper-container', { direction: 'vertical', }); var startScroll, touchStart, touchCurrent; swip</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/68/">
         <div class="blog-card-cover">
@@ -718,7 +718,7 @@
         <time class="post-date" datetime="2017-11-07T08:49:54.000Z">2017-11-07 17:49</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">功能： 无聊作品，每10毫秒在35个数字里随机出5个、12个数字里随机出2个。然后去对比中奖号码，看看随机出多少组号码能中多少次各个奖。如果全中，则多随机一组号码展示在最上面（干嘛的我就不说了）。 要注意的是，非IE浏览器会在窗口非激活时停止或减慢运算间隔。</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/62/">
         <div class="blog-card-cover">
@@ -735,7 +735,7 @@
         <time class="post-date" datetime="2017-10-18T07:28:38.000Z">2017-10-18 16:28</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">基于上次的丢鱼雷小游戏的代码。这次删除了投弹相关的代码，并在原先代码的基础上制作了图片，让游戏更像是FC红白机时代的游戏。 因为有了图片，所以就要注意图片必须要加载完才能运行canvas绘制。这里就用到了读取相关的代码： var imgSrc = [ &quot;img/bg.png&quot;, &quot;img/mycar.png&quot;, &quot;img/emcar.png&quot;, &quot;img/boom.png&quot; ] var image</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/H5%E5%B0%8F%E6%B8%B8%E6%88%8F/">#H5小游戏</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/60/">
         <div class="blog-card-cover">
@@ -752,7 +752,7 @@
         <time class="post-date" datetime="2017-10-11T07:31:12.000Z">2017-10-11 16:31</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">这是非常简单的一个小游戏，js脚本甚至就只用200多行。 首先，确定下游戏规则。 1、我方战舰通过按空格丢出一枚鱼雷，鱼雷会以一定速度移动。 2、我方战舰可以通过左右按键来移动，但是不能上下移动。 3、敌方战舰不定时刷新，并按照一定速度向左移动。 4、一艘敌方战舰移出了画面外，判断为敌舰逃脱，HP-1 。 5、当HP归零游戏结束。 6、打中一艘敌方战舰获得1分。 7、每打中一艘敌方战舰就立刻刷新出</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/H5%E5%B0%8F%E6%B8%B8%E6%88%8F/">#H5小游戏</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/59/">
         <div class="blog-card-cover">
@@ -769,7 +769,7 @@
         <time class="post-date" datetime="2017-08-20T09:14:33.000Z">2017-08-20 18:14</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">1、首先要安装好Node.js 2、然后推荐将npm更换成cnpm： //更换npm的源地址 npm config set registry https://registry.npm.taobao.org // 配置后可通过下面方式来验证是否成功 npm config get registry //使用cnpm替代默认的npm npm install -g cnpm --registry=http</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/Vue.js/">#Vue.js</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/54/">
         <div class="blog-card-cover">
@@ -786,7 +786,7 @@
         <time class="post-date" datetime="2017-07-13T08:42:42.000Z">2017-07-13 17:42</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">.post strong { font-weight: bold; } .post img{ max-width:100%; height:auto; } 上回的制作入门（1）中，我们制作了一个在角色名字后面追加ID显示的简单插件。可以通过插件参数设定初始显示，然后通过插件指令来切换显示。 这次也继续上回，拓展这个插件。 将状态保存到存档文件中 上次制作的插件虽然准备了插件指令，但有一个缺点。就是</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/RPGMakerMV/">#RPGMakerMV</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/49/">
         <div class="blog-card-cover">
@@ -803,7 +803,7 @@
         <time class="post-date" datetime="2017-07-08T02:03:53.000Z">2017-07-08 11:03</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">.post strong { font-weight: bold; } .post img{ max-width:100%; height:auto; } 本文为RPG Maker MV所使用的基于JavaScript的Game Scripting System (JGSS) 插件入门资料。需要有一定的JS(JavaScript)基础知识。 创建插件文件 以下为我经常使用的插件模板文件。 //==</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/RPGMakerMV/">#RPGMakerMV</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/48/">
         <div class="blog-card-cover">
@@ -820,7 +820,7 @@
         <time class="post-date" datetime="2017-05-29T02:41:19.000Z">2017-05-29 11:41</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">HTML &lt;p class=&quot;caipiao_p&quot;&gt;&lt;span class=&quot;caipiao35&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;caipiao35&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;caipiao35&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;caipiao35&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;caipiao35&quot;&gt;*&lt;/span&gt;&lt;span&gt;+&lt;/span&gt;</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/JavaScript/">#JavaScript</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/42/">
         <div class="blog-card-cover">
@@ -837,7 +837,7 @@
         <time class="post-date" datetime="2017-05-26T06:23:25.000Z">2017-05-26 15:23</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">HTML： &lt;p class=&quot;caipiao_p&quot;&gt;&lt;span class=&quot;caipiao35&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;caipiao35&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;caipiao35&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;caipiao35&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;caipiao35&quot;&gt;5&lt;/span&gt;&lt;span&gt;+&lt;/span</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/JavaScript/">#JavaScript</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/41/">
         <div class="blog-card-cover">
@@ -854,7 +854,7 @@
         <time class="post-date" datetime="2016-08-26T07:55:33.000Z">2016-08-26 16:55</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">$(&quot;点击的id或者class&quot;).click(function (event) { $(&quot;显示或者隐藏的菜单id或者class&quot;).toggle(); event.stopPropagation(); }); $(document).on('click', function(e) { if (!$(e.target).closest('菜单的id或者class').length) { $('菜单</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/35/">
         <div class="blog-card-cover">
@@ -871,7 +871,7 @@
         <time class="post-date" datetime="2016-05-20T02:38:22.000Z">2016-05-20 11:38</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">function getElementsByClassName(targetClass){ var foundElements = new Array(); //将发现的元素暂时存入数组 if (document.all){ //IE情况下获取全部元素 var allElements = document.all; } else { //其他情况下获取全部元素 var allElements = </p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/JavaScript/">#JavaScript</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/34/">
         <div class="blog-card-cover">
@@ -888,7 +888,7 @@
         <time class="post-date" datetime="2016-05-06T02:01:58.000Z">2016-05-06 11:01</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">通过如下写法： .css('cssText','background-image:none!important');</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/31/">
         <div class="blog-card-cover">
@@ -905,7 +905,7 @@
         <time class="post-date" datetime="2016-05-04T08:13:24.000Z">2016-05-04 17:13</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">ajaxfileupload.js是一个好插件，能够兼容ie7、ie8这种老浏览器，但是因为长期没有更新导致无法支持高版本的jQuery库。 会报：jQuery.handleError is not a function 解决办法是增加一段修正脚本： jQuery.extend({ handleError: function (s, xhr, status, e) { if (s.error) {</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/30/">
         <div class="blog-card-cover">
@@ -922,7 +922,7 @@
         <time class="post-date" datetime="2016-04-18T06:20:33.000Z">2016-04-18 15:20</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">在弹出窗口时绑定事件： $(&quot;body&quot;).on('touchmove',function(event) { event.preventDefault(); }, false); 在关闭弹窗时取消绑定： $(&quot;body&quot;).unbind('touchmove'); 已知问题： 如果弹窗本身使用滑动（overflow:auto），例如弹出注册条款这种需要滑动的窗口，则会导致无法滑动。</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/29/">
         <div class="blog-card-cover">
@@ -939,7 +939,7 @@
         <time class="post-date" datetime="2016-04-05T06:07:44.000Z">2016-04-05 15:07</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">JS: &lt;script&gt; $('#change_item_list .hot_susume_item_box').hide();//先全部隐藏 //产生不重复随机排序数组 function randomIndex(n){ var i, j, tmp, a = new Array(n); a[0] = 0; for(i = n-1; i &gt; 0; i--) { j = Math.floor(Math</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/28/">
         <div class="blog-card-cover">
@@ -956,7 +956,7 @@
         <time class="post-date" datetime="2016-03-24T13:18:06.000Z">2016-03-24 22:18</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">问题对象：IE7和IE8 问题描述：主流的浏览器没有发生这种问题，但是只有IE7和IE8出现问题。局部刷新无效，json数据是对的。 问题代码：$(‘#id’).html(json) 问题原因：经过一系列排查，发现输出的html里有多余的&lt;/div&gt;，将其删除后功能正常。看起来低版本的浏览器对于html的容差很差，略微有未封闭或多余的标签就会导致毫无错误报告的问题。</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/22/">
         <div class="blog-card-cover">
@@ -973,7 +973,7 @@
         <time class="post-date" datetime="2016-03-14T11:07:34.000Z">2016-03-14 20:07</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">var userAgent = window.navigator.userAgent.toLowerCase(); var appVersion = window.navigator.appVersion.toLowerCase(); if (userAgent.indexOf(&quot;msie&quot;) &gt; -1) { if (appVersion.indexOf(&quot;msie 6.0&quot;) &gt; -1) { a</p>
+      
       <div class="tag-list"><a class="tag-item" href="https://eeg1412.github.io/wikimoe-blog-archive/tag/JavaScript/">#JavaScript</a></div>
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/20/">
         <div class="blog-card-cover">
@@ -990,7 +990,7 @@
         <time class="post-date" datetime="2016-03-13T10:10:15.000Z">2016-03-13 19:10</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">因为客户的要求，要将一串数字转换成类似xxx万xxxx元的格式，所以就试着写了下面的代码： CSS： .fl{ float:left; } #nums{ height: 20px; line-height: 20px; border: 1px solid #ccc; padding-left: 3px; } #btn_go{ background: #ED3D7D; padding: 2px 10</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/19/">
         <div class="blog-card-cover">
@@ -1007,7 +1007,7 @@
         <time class="post-date" datetime="2016-03-02T11:56:23.000Z">2016-03-02 20:56</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">自己写了个类似淘宝晒图的代码，但是感觉还有些凌乱，应该还能优化。 CSS部分： &lt;style&gt; .content-img-list img { height: 30px; width: 45px; vertical-align: middle; } .content-img-box .content-img-list { float: left; margin-right: 10px; borde</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/18/">
         <div class="blog-card-cover">
@@ -1024,7 +1024,7 @@
         <time class="post-date" datetime="2016-02-27T06:03:20.000Z">2016-02-27 15:03</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">在使用jQuery的.animate()的时候经常会遇到鼠标重复划过导致动画重复播放的问题。 这个时候就要用到stop([clearQueue], [gotoEnd])来阻止重复动画。 那么如何科学使用stop()来阻止重复动画呢？下面就举五个例子。 例1：无stop()的情况下： $(this).animate(); 如例子所示，在没有stop()的情况下，会随着鼠标划过的次数进行重复动画。 例</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/17/">
         <div class="blog-card-cover">
@@ -1041,7 +1041,7 @@
         <time class="post-date" datetime="2016-02-27T04:37:36.000Z">2016-02-27 13:37</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">HTML： &lt;div class=&quot;demo_test&quot;&gt;&lt;/div&gt; &lt;div class=&quot;demo_test&quot;&gt;&lt;/div&gt; &lt;div class=&quot;demo_test&quot;&gt;&lt;/div&gt; &lt;div class=&quot;demo_test&quot;&gt;&lt;/div&gt; &lt;div class=&quot;demo_test&quot;&gt;&lt;/div&gt; JS： &lt;script&gt; $(document).ready(function () {</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/16/">
         <div class="blog-card-cover">
@@ -1058,7 +1058,7 @@
         <time class="post-date" datetime="2016-02-12T13:35:13.000Z">2016-02-12 22:35</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">CSS: .newsloader-bg { display: none; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; background: #eee; z-index: 1; } .newsloader { display: none; position: absolute; top: 50%; left</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/12/">
         <div class="blog-card-cover">
@@ -1075,7 +1075,7 @@
         <time class="post-date" datetime="2016-02-12T13:08:37.000Z">2016-02-12 22:08</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">CSS部分： #mobile4{width:auto;height:60px;overflow:hidden;cursor: pointer;font-size:12px!important;} #mobile4 a{color:#000;} #mobile4 .wtleft{ width:75px;float:left;} #mobile4 .wtname{width:100%;float:le</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/11/">
         <div class="blog-card-cover">
@@ -1092,7 +1092,7 @@
         <time class="post-date" datetime="2016-02-12T12:15:25.000Z">2016-02-12 21:15</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">HTML部分： &lt;div class=&quot;abb&quot;&gt; &lt;p class=&quot;p&quot;&gt;晴&lt;/p&gt; &lt;img alt=&quot;&quot; src=&quot;&quot; class=&quot;img&quot;/&gt; &lt;p class=&quot;p&quot;&gt;雨&lt;/p&gt; &lt;img alt=&quot;&quot; src=&quot;&quot; class=&quot;img&quot;/&gt; &lt;p class=&quot;p&quot;&gt;晴&lt;/p&gt; &lt;img alt=&quot;&quot; src=&quot;&quot; class=&quot;img&quot;/&gt; &lt;p class=&quot;p&quot;&gt;雨转多云&lt;</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/10/">
         <div class="blog-card-cover">
@@ -1109,7 +1109,7 @@
         <time class="post-date" datetime="2016-02-12T09:36:33.000Z">2016-02-12 18:36</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">代码下载地址： http://pan.baidu.com/s/1kUzvAL5 使用方法： 第一步先导入css样式 .right_down_ad_box { position: fixed; z-index: 9999; display:none; } .right_down_ad_box .right_down_ad_close { background-repeat: no-repeat; h</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/9/">
         <div class="blog-card-cover">
@@ -1126,7 +1126,7 @@
         <time class="post-date" datetime="2016-02-12T09:01:04.000Z">2016-02-12 18:01</time>
         <a class="post-category" href="https://eeg1412.github.io/wikimoe-blog-archive/category/JavaScript_jQuery/">JavaScript</a>
       </div>
-      <p class="post-excerpt">代码下载地址： http://pan.baidu.com/s/1mhjK5i4 使用方法： 第一步先导入css样式 .double_ad_right_box,.double_ad_left_box { position: fixed; display:none; z-index:99999; } .double_ad_close { background-repeat: no-repeat; he</p>
+      
       
       <a class="blog-card-panel" href="https://eeg1412.github.io/wikimoe-blog-archive/post/8/">
         <div class="blog-card-cover">
