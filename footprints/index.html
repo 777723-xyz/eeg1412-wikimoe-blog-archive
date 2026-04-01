@@ -126,6 +126,15 @@
       var pointRadius = isTouchDevice ? 7 : 6;
       var labelOffsetY = isTouchDevice ? -17 : -16;
 
+      // 避免 canvas getImageData 频繁读取时的性能警告
+      (function() {
+        var orig = HTMLCanvasElement.prototype.getContext;
+        HTMLCanvasElement.prototype.getContext = function(type, attrs) {
+          if (type === '2d') { attrs = Object.assign({ willReadFrequently: true }, attrs); }
+          return orig.call(this, type, attrs);
+        };
+      })();
+
       var map = new ol.Map({
         target: 'ol-map',
         layers: [worldLayer, markerLayer, labelLayer],
