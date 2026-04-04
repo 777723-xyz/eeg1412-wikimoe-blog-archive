@@ -550,9 +550,60 @@ main {
   line-height: 1;
   padding: 3px 7px;
   border-bottom-right-radius: 4px;
-  pointer-events: none;
+  pointer-events: auto;
   z-index: 10;
   white-space: nowrap;
+  cursor: default;
+}
+
+.media-desc-tag::after {
+  content: attr(data-desc);
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 160px;
+  max-width: 260px;
+  max-height: 200px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.3) transparent;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.6;
+  padding: 6px 10px;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.media-desc-tag:hover::after {
+  display: block;
+}
+
+/* ========== GLightbox Description Override ========== */
+.glightbox-clean .gslide-description {
+  background: rgba(0, 0, 0, 0.72) !important;
+}
+
+.glightbox-clean .gslide-title {
+  display: none !important;
+}
+
+.glightbox-clean .gdesc-inner {
+  max-height: 120px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.3) transparent;
+}
+
+.glightbox-clean .gslide-desc {
+  color: #e8e8e8 !important;
+  font-size: 0.85em;
+  line-height: 1.6;
 }
 
 /* ========== Tweet Detail ========== */
