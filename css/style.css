@@ -567,7 +567,7 @@ main {
   max-height: 200px;
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: rgba(255,255,255,0.3) transparent;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
   background: rgba(0, 0, 0, 0.75);
   color: #fff;
   font-size: 12px;
@@ -597,7 +597,7 @@ main {
   max-height: 120px;
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: rgba(255,255,255,0.3) transparent;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
 }
 
 .glightbox-clean .gslide-desc {
