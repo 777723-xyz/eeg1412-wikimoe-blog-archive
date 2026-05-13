@@ -7,6 +7,134 @@
   <atom:link href="https://eeg1412.github.io/wikimoe-blog-archive/feed.xml" rel="self" type="application/rss+xml"/>
   
     <item>
+      <title>《随兴旅》圣地巡礼之高松玉藻城</title>
+      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/b-teto449f/</link>
+      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/b-teto449f/</guid>
+      <description>2026年5月4日黄金周期间，前往香川县高松市进行《随兴旅》圣地巡礼。行程途经高松车站、玉藻城、鲁皮纳斯商务酒店与高松港，途中经历濑户大桥强风停运，也在港口偶遇《擅长捉弄的高木同学》主题痛船。本文记录了高松巡礼、历史遗迹参观与港口夕景等旅行体验。</description>
+      <pubDate>Wed, 13 May 2026 00:03:46 GMT</pubDate>
+    </item>
+    <item>
+      <title>百合盛典 Prism Garden ― 光庭花开，一瓣情思</title>
+      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/b-tet73zn0/</link>
+      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/b-tet73zn0/</guid>
+      <description>「Prism Garden ― 光庭花开，一瓣情思」是 Melonbooks 于2026年5月2日至5月6日在埼玉县大宫 Sonic City 举办的百合作品主题展示活动。本文记录了2026年5月3日参观展览的体验，介绍复制原画展示区、色纸展示区、作品看板拍照点、入场特典、合照点、签名板及周边情况，并重点提到《Happy Sugar Life》《我们不可能成为恋人！绝对不行。※似乎可行！？》《与你相恋到生命尽头》等作品。整体展览内容丰富，是百合爱好者值得关注的活动。</description>
+      <pubDate>Sun, 10 May 2026 22:56:06 GMT</pubDate>
+    </item>
+    <item>
+      <title>这次的旅途结束了。旅途很开心，但是接下来要修好多图了呀🥹。</title>
+      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/t-tem84neg/</link>
+      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/t-tem84neg/</guid>
+      <description>这次的旅途结束了。旅途很开心，但是接下来要修好多图了呀🥹。</description>
+      <pubDate>Wed, 06 May 2026 12:31:35 GMT</pubDate>
+    </item>
+    <item>
+      <title>昨天的旅途虽然上岛的时候是一个人，但是途中遇到了很多同好，最后是一群人结伴离岛。甚至当地岛民们还在港</title>
+      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/t-tel7rmiu/</link>
+      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/t-tel7rmiu/</guid>
+      <description>昨天的旅途虽然上岛的时候是一个人，但是途中遇到了很多同好，最后是一群人结伴离岛。甚至当地岛民们还在港口送行，真的太感动了。</description>
+      <pubDate>Tue, 05 May 2026 23:26:10 GMT</pubDate>
+    </item>
+    <item>
+      <title>近两周一直在搭配 AI 创建 维基萌 的附属多语言翻译站的代码。
+现在已经有一些成果了，有兴趣的话可</title>
+      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/t-tecjwm9b/</link>
+      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/t-tecjwm9b/</guid>
+      <description>近两周一直在搭配 AI 创建 维基萌 的附属多语言翻译站的代码。
+现在已经有一些成果了，有兴趣的话可以访问以下链接查看：
+https://eeg1412.github.io/wikimoe-blog-archive/ja-JP
+https://eeg1412.github.io/wikimoe-blog-archive/en-US
+https://eeg1412.github.io/wikimoe-blog-archive/zh-HK
+
+翻译站的核心理念是只读维基萌的数据，并创建副本和翻译版。
+接入了最新的 DeepSeek v4 对内容进行翻译。
+翻译一篇文章的成本大约在几分钱人民币，还是很划算的！
+目前来看运转良好。就是还无法完全自动化，原因主要是以下2点：
+1.专有名词的翻译。
+2.封面图的文字。
+
+现状需要我通过带有搜索功能的AI先整理一遍名词的翻译，然后再以此次任务的提示词的形式将数据注入完成的。
+虽然这套流程也可以用AI完成，但是考虑到不稳定性，还是需要我来人工质检一遍。
+封面图的文字问题，这个其实接入OpenAI的 API 可以解决，但是现状还需要评估一下。</description>
+      <pubDate>Fri, 01 May 2026 07:09:57 GMT</pubDate>
+    </item>
+    <item>
+      <title>惊了！ChatGPT images 2.0居然可以生成全景图片！</title>
+      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/t-te7dnvga/</link>
+      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/t-te7dnvga/</guid>
+      <description>惊了！ChatGPT images 2.0居然可以生成全景图片！</description>
+      <pubDate>Tue, 28 Apr 2026 12:07:07 GMT</pubDate>
+    </item>
+    <item>
+      <title>踏入迷途橘 《Summer Pockets》 圣地巡礼之国营常陆海滨公园</title>
+      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/b-te1ibpro/</link>
+      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/b-te1ibpro/</guid>
+      <description>2026年4月19日，天气晴，今天去位于茨城县常陆那珂市的国营常陆海滨公园看花，同时这里也是游戏《Summer Pockets》的迷途橘的取景地。</description>
+      <pubDate>Sun, 26 Apr 2026 23:11:25 GMT</pubDate>
+    </item>
+    <item>
+      <title>新宿电影院正在展出《吹响吧！上低音号》的展览物。</title>
+      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/t-te3log06/</link>
+      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/t-te3log06/</guid>
+      <description>新宿电影院正在展出《吹响吧！上低音号》的展览物。</description>
+      <pubDate>Sun, 26 Apr 2026 11:09:51 GMT</pubDate>
+    </item>
+    <item>
+      <title>让 ChatGPT images 2.0 重新生成了我的头像人设图。</title>
+      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/t-te30h2w5/</link>
+      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/t-te30h2w5/</guid>
+      <description>让 ChatGPT images 2.0 重新生成了我的头像人设图。</description>
+      <pubDate>Sun, 26 Apr 2026 03:31:50 GMT</pubDate>
+    </item>
+    <item>
+      <title>维基萌博客系统发布了新版本啦！版本号为：v1.2.0
+本次更新重点重构管理端构建体系，改为基于 Vi</title>
+      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/t-te1noj4x/</link>
+      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/t-te1noj4x/</guid>
+      <description>维基萌博客系统发布了新版本啦！版本号为：v1.2.0
+本次更新重点重构管理端构建体系，改为基于 Vite 构建，同时新增独立的全景查看功能，并完善路由错误处理与交互细节。
+详见：https://github.com/eeg1412/wikimoeNodeJSBlog/releases/tag/v1.2.0</description>
+      <pubDate>Sat, 25 Apr 2026 09:57:53 GMT</pubDate>
+    </item>
+    <item>
+      <title>被 ChatGPT images 2.0 的效果惊艳到了。</title>
+      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/t-tdzus41x/</link>
+      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/t-tdzus41x/</guid>
+      <description>被 ChatGPT images 2.0 的效果惊艳到了。</description>
+      <pubDate>Fri, 24 Apr 2026 10:36:04 GMT</pubDate>
+    </item>
+    <item>
+      <title>试用了 GitHub Copilot 的 Opus 4.7，整体体验并不理想。
+我拿一个从零开始的工</title>
+      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/tdxi8l68/</link>
+      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/tdxi8l68/</guid>
+      <description>试用了 GitHub Copilot 的 Opus 4.7，整体体验并不理想。
+我拿一个从零开始的工具类项目做测试，前后尝试了 5 次，竟然有 3 次直接被拒绝。理由都是认为这个项目需要团队投入数周甚至数月，超出了 AI 能完成的范围。但实际上，这个项目代码量最多也就一万行左右，我一个人一个周末完全可以完成。
+这种“直接拒绝”的处理方式确实有些过头，系统级提示词到底是如何设计的？类似情况在 4.6 版本中从未出现过。当初难度更高的项目（比如维基萌公会）都能被耐心完成。
+在我不断调整提示词、强烈要求之后，有 2 次成功执行，但结果质量依然不尽如人意，问题包括但不限于：
+功能缺失、逻辑遗漏
+声称“已完成”，但实际并未完成
+无视我提供的前端代码，自行重新实现
+在一个表单中，将多个字段通过遍历逐个提交的低效做法
+这些问题，本质上更像是思考深度不足导致的。相比之下，Github Copilot 版的 4.6 思考深度是高，而 4.7 是中。
+总体来说，4.7 在价格提升数倍的情况下，却带来了明显下降的体验，难免让人失望。更何况还强制下架了 4.6，以“升级”为名降低成本，这种做法确实难以令人认同。</description>
+      <pubDate>Thu, 23 Apr 2026 04:09:57 GMT</pubDate>
+    </item>
+    <item>
+      <title>Github Copilot 停止了新用户注册，并且下架了opus4.6，还增加了用户的每周使用限制</title>
+      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/tdtsc9mr/</link>
+      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/tdtsc9mr/</guid>
+      <description>Github Copilot 停止了新用户注册，并且下架了opus4.6，还增加了用户的每周使用限制。
+看来面向个人用户的AI好时代提前结束了？</description>
+      <pubDate>Tue, 21 Apr 2026 03:57:43 GMT</pubDate>
+    </item>
+    <item>
+      <title>我进入了迷途橘。</title>
+      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/tdqdcdxj/</link>
+      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/tdqdcdxj/</guid>
+      <description>我进入了迷途橘。</description>
+      <pubDate>Sun, 19 Apr 2026 07:41:01 GMT</pubDate>
+    </item>
+    <item>
       <title>让AI生成了头像的表情包，都好可爱呀！</title>
       <link>https://eeg1412.github.io/wikimoe-blog-archive/post/tdc6i4iv/</link>
       <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/tdc6i4iv/</guid>
@@ -69,126 +197,6 @@
       <description>CloudCone退款拖了我2个月，然后今天回复我因为时间太久了，退不了。然后直接把工单停了。
 啊？</description>
       <pubDate>Mon, 06 Apr 2026 11:46:58 GMT</pubDate>
-    </item>
-    <item>
-      <title>周末想升级Nuxt到4.4.2版本，结果困难重重。
-首先是 Nuxt 所依赖的 Nitro ，在 2</title>
-      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/td09rqec/</link>
-      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/td09rqec/</guid>
-      <description>周末想升级Nuxt到4.4.2版本，结果困难重重。
-首先是 Nuxt 所依赖的 Nitro ，在 2.13.1 升级到 2.13.2 的时候，把依赖项 rollup-plugin-visualizer 从 v6 升级到了 v7 。这项更改直接导致了 Nuxt 的最低 Node.js 要求从 20.x 提升到了 22.x 。
-于是我切换 Node.js 的版本到 22.x ，发现程序内因为连接被重置导致Mongodb无法连接。于是我又尝试升级到 24.x 发现仍然连接被重置。
-上网一查，原来当前 Node.js 不管是 v22.22.2 还是 v24.14.1 ，在 Windows 下都无法正常连接。
-相关 issues 地址：https://github.com/meteor/meteor/issues/14246
-当我好不容易把 Node.js 切换到没有这个问题的版本之后， Nuxt 又出问题了。
-Nuxt 的 @nuxt/vite-builder 依赖项，在 windows 开发模式中无法正确拼接 CSS 地址。
-于是作罢，回退版本。
-现在搞不懂到底是 windows 的问题还是 windows 不受待见的问题，难道未来真的要将开发和生活分 2 台电脑来完成了吗？</description>
-      <pubDate>Sun, 05 Apr 2026 05:26:13 GMT</pubDate>
-    </item>
-    <item>
-      <title>维基萌博客系统发布了新版本啦！版本号为：v1.1.0
-随着博客文章编辑项目越来越多，在文章编辑时可以</title>
-      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/tcybfl3f/</link>
-      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/tcybfl3f/</guid>
-      <description>维基萌博客系统发布了新版本啦！版本号为：v1.1.0
-随着博客文章编辑项目越来越多，在文章编辑时可以生成候补内容，方便快速填写相关内容。
-详见：https://github.com/eeg1412/wikimoeNodeJSBlog/releases/tag/v1.1.0</description>
-      <pubDate>Sat, 04 Apr 2026 04:10:04 GMT</pubDate>
-    </item>
-    <item>
-      <title>最近发生的种种让我意识到了似乎应该建立一个维基萌档案馆，防止哪一天网站没了或者我没了。
-档案馆地址：</title>
-      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/tctejz4f/</link>
-      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/tctejz4f/</guid>
-      <description>最近发生的种种让我意识到了似乎应该建立一个维基萌档案馆，防止哪一天网站没了或者我没了。
-档案馆地址：https://eeg1412.github.io/wikimoe-blog-archive/</description>
-      <pubDate>Thu, 02 Apr 2026 01:01:04 GMT</pubDate>
-    </item>
-    <item>
-      <title>《点兔》官网愚人节活动「Magical Order Rabbit」</title>
-      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/tctctjpz/</link>
-      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/tctctjpz/</guid>
-      <description>又到了每年惯例的《点兔》愚人节活动啦！这次的主题是「Magical Order Rabbit」——被视为魔法使者圣地的雾之石造城市，人们与魔法共同生活着。</description>
-      <pubDate>Wed, 01 Apr 2026 12:26:04 GMT</pubDate>
-    </item>
-    <item>
-      <title>《我们不可能成为恋人！绝对不行。 (※似乎可行？)》在4月1日发布了决算报告书。
-太过整活，看完之后</title>
-      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/tcteeju9/</link>
-      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/tcteeju9/</guid>
-      <description>《我们不可能成为恋人！绝对不行。 (※似乎可行？)》在4月1日发布了决算报告书。
-太过整活，看完之后我只能说玲奈子罪大恶极！可怜的香穗酱居然一次都没kiss过。</description>
-      <pubDate>Wed, 01 Apr 2026 12:23:07 GMT</pubDate>
-    </item>
-    <item>
-      <title>去逛了AnimeJapan2026</title>
-      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/tcnqjiwm/</link>
-      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/tcnqjiwm/</guid>
-      <description>2026年3月29日，天气晴，今天去逛AnimeJapan2026。</description>
-      <pubDate>Sun, 29 Mar 2026 23:13:37 GMT</pubDate>
-    </item>
-    <item>
-      <title>两个世代的魔法少女。</title>
-      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/tcnhw6fu/</link>
-      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/tcnhw6fu/</guid>
-      <description>两个世代的魔法少女。</description>
-      <pubDate>Sun, 29 Mar 2026 07:52:54 GMT</pubDate>
-    </item>
-    <item>
-      <title>人类未来的演唱会2026</title>
-      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/tcngvse8/</link>
-      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/tcngvse8/</guid>
-      <description>人类未来的演唱会2026</description>
-      <pubDate>Sun, 29 Mar 2026 07:31:04 GMT</pubDate>
-    </item>
-    <item>
-      <title>今天去看了《秒速5厘米》的重映。</title>
-      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/tcm1qxay/</link>
-      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/tcm1qxay/</guid>
-      <description>今天去看了《秒速5厘米》的重映。</description>
-      <pubDate>Sat, 28 Mar 2026 13:06:31 GMT</pubDate>
-    </item>
-    <item>
-      <title>这家店是有多喜欢洛琪希呀。</title>
-      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/tcljt7l3/</link>
-      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/tcljt7l3/</guid>
-      <description>这家店是有多喜欢洛琪希呀。</description>
-      <pubDate>Sat, 28 Mar 2026 06:39:07 GMT</pubDate>
-    </item>
-    <item>
-      <title>通了《告别回忆 双想》宁宁的两条线。
-这下彻底清楚为什么这款作品的整体评价是褒贬不一了。
-宁宁线的剧</title>
-      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/tcj7noiq/</link>
-      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/tcj7noiq/</guid>
-      <description>通了《告别回忆 双想》宁宁的两条线。
-这下彻底清楚为什么这款作品的整体评价是褒贬不一了。
-宁宁线的剧情内容确实非常挑观众的三观。就连自认为属于能接受的我来说，当剧情推进到那个时候也产生了一丝不适感。
-当然我并不是否认这段剧情不好，而是剧情非常令我惊讶。
-在这个剧情普遍公式化的今天，能有这么“非主流价值观”的剧情还是很难得的。</description>
-      <pubDate>Fri, 27 Mar 2026 00:27:32 GMT</pubDate>
-    </item>
-    <item>
-      <title>探访日本的废校：《中二病也要谈恋爱！》圣地巡礼之杜鹃花学校（原镰挂小学）</title>
-      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/tcaqygd2/</link>
-      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/tcaqygd2/</guid>
-      <description>2026年3月21日，今天去位于日本滋贺县蒲生郡日野町的杜鹃花学校（原镰挂小学）。这里是动画《中二病也要谈恋爱！》的学校原型。</description>
-      <pubDate>Sun, 22 Mar 2026 23:13:52 GMT</pubDate>
-    </item>
-    <item>
-      <title>欢迎加入 极东魔术昼寝结社之夏</title>
-      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/tc8ccwz9/</link>
-      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/tc8ccwz9/</guid>
-      <description>欢迎加入 极东魔术昼寝结社之夏</description>
-      <pubDate>Sat, 21 Mar 2026 03:30:21 GMT</pubDate>
-    </item>
-    <item>
-      <title>真的是时代的眼泪</title>
-      <link>https://eeg1412.github.io/wikimoe-blog-archive/post/69bd280ba9f8080e0879d3b4/</link>
-      <guid>https://eeg1412.github.io/wikimoe-blog-archive/post/69bd280ba9f8080e0879d3b4/</guid>
-      <description>真的是时代的眼泪</description>
-      <pubDate>Fri, 20 Mar 2026 10:57:15 GMT</pubDate>
     </item>
 </channel>
 </rss>
